@@ -1,0 +1,6 @@
+{
+  "type": "harvestfestival:items_shipped",
+  "id": "harvestfestival:ship_1000_crops",
+  "itemTag": "forge:crops",
+  "requirement": 1000
+}

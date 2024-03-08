@@ -1,0 +1,11 @@
+{
+  "values": [
+    "harvestfestival:mystril_node",
+    "harvestfestival:gem_node",
+    "harvestfestival:diamond_node",
+    "harvestfestival:emerald_node",
+    "minecraft:diamond_ore",
+    "minecraft:gold_ore",
+    "minecraft:emerald_ore"
+  ]
+}

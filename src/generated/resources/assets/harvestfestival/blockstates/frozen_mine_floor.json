@@ -1,0 +1,74 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_blank",
+        "weight": 60
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_bones_1",
+        "weight": 3
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_bones_2",
+        "weight": 3
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_bones_3",
+        "weight": 3
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_bones_4",
+        "weight": 3
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_leaves_1",
+        "weight": 2
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_leaves_2",
+        "weight": 2
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_leaves_3",
+        "weight": 2
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_leaves_4",
+        "weight": 2
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_pebble_1",
+        "weight": 4
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_pebble_2",
+        "weight": 4
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_pebble_3",
+        "weight": 4
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_pebble_4",
+        "weight": 4
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_pebble_5",
+        "weight": 4
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_pebble_6",
+        "weight": 4
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_rock_1",
+        "weight": 3
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_floor_rock_2",
+        "weight": 3
+      }
+    ]
+  }
+}

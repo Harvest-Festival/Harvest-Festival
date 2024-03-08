@@ -1,0 +1,6 @@
+{
+  "parent": "harvestfestival:block/small_stones",
+  "textures": {
+    "particle": "harvestfestival:block/stone_2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/silver_node"
+      },
+      {
+        "model": "harvestfestival:block/silver_node",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/silver_node",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/silver_node",
+        "y": 180
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/gem_node"
+      },
+      {
+        "model": "harvestfestival:block/gem_node",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/gem_node",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/gem_node",
+        "y": 180
+      }
+    ]
+  }
+}

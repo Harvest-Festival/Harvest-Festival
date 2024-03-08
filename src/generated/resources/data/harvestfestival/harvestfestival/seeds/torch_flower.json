@@ -1,0 +1,9 @@
+{
+  "Block": "minecraft:torchflower_crop",
+  "Color": "#FFD800",
+  "Seeds": {
+    "Count": 1,
+    "id": "minecraft:torchflower_seeds"
+  },
+  "Type": "crop"
+}

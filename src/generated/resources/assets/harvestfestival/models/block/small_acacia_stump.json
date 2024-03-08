@@ -1,0 +1,7 @@
+{
+  "parent": "harvestfestival:block/small_stump",
+  "textures": {
+    "side": "minecraft:block/acacia_log",
+    "top": "minecraft:block/acacia_log_top"
+  }
+}

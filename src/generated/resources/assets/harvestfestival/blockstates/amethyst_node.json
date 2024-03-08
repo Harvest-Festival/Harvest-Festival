@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/amethyst_node"
+      },
+      {
+        "model": "harvestfestival:block/amethyst_node",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/amethyst_node",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/amethyst_node",
+        "y": 180
+      }
+    ]
+  }
+}

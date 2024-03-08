@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "harvestfestival:block/acacia_juvenile_lower"
+    },
+    "half=upper": {
+      "model": "harvestfestival:block/acacia_juvenile_upper"
+    }
+  }
+}

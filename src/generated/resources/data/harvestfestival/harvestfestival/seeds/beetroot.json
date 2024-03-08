@@ -1,0 +1,9 @@
+{
+  "Block": "minecraft:beetroots",
+  "Color": "#690000",
+  "Seeds": {
+    "Count": 1,
+    "id": "minecraft:beetroot_seeds"
+  },
+  "Type": "crop"
+}

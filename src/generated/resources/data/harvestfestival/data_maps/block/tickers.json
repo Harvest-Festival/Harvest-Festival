@@ -1,0 +1,145 @@
+{
+  "values": {
+    "harvestfestival:acacia_juvenile": {
+      "type": "harvestfestival:juvenile"
+    },
+    "harvestfestival:acacia_seedling": {
+      "type": "harvestfestival:seedling"
+    },
+    "harvestfestival:birch_juvenile": {
+      "type": "harvestfestival:juvenile"
+    },
+    "harvestfestival:birch_seedling": {
+      "type": "harvestfestival:seedling"
+    },
+    "harvestfestival:cherry_juvenile": {
+      "type": "harvestfestival:juvenile"
+    },
+    "harvestfestival:cherry_seedling": {
+      "type": "harvestfestival:seedling"
+    },
+    "harvestfestival:dark_oak_juvenile": {
+      "type": "harvestfestival:juvenile"
+    },
+    "harvestfestival:dark_oak_seedling": {
+      "type": "harvestfestival:seedling"
+    },
+    "harvestfestival:jungle_juvenile": {
+      "type": "harvestfestival:juvenile"
+    },
+    "harvestfestival:jungle_seedling": {
+      "type": "harvestfestival:seedling"
+    },
+    "harvestfestival:mangrove_juvenile": {
+      "type": "harvestfestival:juvenile"
+    },
+    "harvestfestival:mangrove_seedling": {
+      "type": "harvestfestival:seedling"
+    },
+    "harvestfestival:oak_juvenile": {
+      "type": "harvestfestival:juvenile"
+    },
+    "harvestfestival:oak_seedling": {
+      "type": "harvestfestival:seedling"
+    },
+    "harvestfestival:spruce_juvenile": {
+      "type": "harvestfestival:juvenile"
+    },
+    "harvestfestival:spruce_seedling": {
+      "type": "harvestfestival:seedling"
+    },
+    "minecraft:acacia_sapling": {
+      "type": "harvestfestival:sapling"
+    },
+    "minecraft:bamboo": {
+      "type": "harvestfestival:growth"
+    },
+    "minecraft:beetroots": {
+      "type": "harvestfestival:crop"
+    },
+    "minecraft:birch_sapling": {
+      "type": "harvestfestival:sapling"
+    },
+    "minecraft:cactus": {
+      "type": "harvestfestival:growth"
+    },
+    "minecraft:carrots": {
+      "type": "harvestfestival:crop"
+    },
+    "minecraft:cherry_sapling": {
+      "type": "harvestfestival:sapling"
+    },
+    "minecraft:chorus_plant": {
+      "type": "harvestfestival:growth"
+    },
+    "minecraft:cocoa": {
+      "type": "harvestfestival:growth"
+    },
+    "minecraft:dark_oak_sapling": {
+      "type": "harvestfestival:sapling"
+    },
+    "minecraft:farmland": {
+      "type": "harvestfestival:soil"
+    },
+    "minecraft:jungle_sapling": {
+      "type": "harvestfestival:sapling"
+    },
+    "minecraft:mangrove_propagule": {
+      "type": "harvestfestival:sapling"
+    },
+    "minecraft:melon": {
+      "type": "harvestfestival:quality_retaining",
+      "quality": {
+        "modifier": 1.0
+      }
+    },
+    "minecraft:melon_stem": {
+      "type": "harvestfestival:crop"
+    },
+    "minecraft:nether_wart": {
+      "type": "harvestfestival:crop"
+    },
+    "minecraft:oak_sapling": {
+      "type": "harvestfestival:sapling"
+    },
+    "minecraft:potatoes": {
+      "type": "harvestfestival:crop"
+    },
+    "minecraft:pumpkin": {
+      "type": "harvestfestival:quality_retaining",
+      "quality": {
+        "modifier": 1.0
+      }
+    },
+    "minecraft:pumpkin_stem": {
+      "type": "harvestfestival:crop"
+    },
+    "minecraft:short_grass": {
+      "type": "harvestfestival:spreadable"
+    },
+    "minecraft:spruce_sapling": {
+      "type": "harvestfestival:sapling"
+    },
+    "minecraft:sugar_cane": {
+      "type": "harvestfestival:growth"
+    },
+    "minecraft:sweet_berry_bush": {
+      "type": "harvestfestival:growth"
+    },
+    "minecraft:tall_grass": {
+      "type": "harvestfestival:spreadable"
+    },
+    "minecraft:torchflower_crop": {
+      "type": "harvestfestival:crop"
+    },
+    "minecraft:vine": {
+      "type": "harvestfestival:growth"
+    },
+    "minecraft:weeping_vines": {
+      "type": "harvestfestival:growth"
+    },
+    "minecraft:wheat": {
+      "type": "harvestfestival:crop"
+    }
+  }
+}

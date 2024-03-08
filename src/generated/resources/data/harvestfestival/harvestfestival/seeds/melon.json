@@ -1,0 +1,9 @@
+{
+  "Block": "minecraft:melon_stem",
+  "Color": "#C92B3E",
+  "Seeds": {
+    "Count": 1,
+    "id": "minecraft:melon_seeds"
+  },
+  "Type": "crop"
+}

@@ -1,0 +1,5 @@
+ID,Order,Tag,Sprite,Shadow Sprite
+harvestfestival:shipping,1,harvestfestival:farming_collection,harvestfestival:book/shipping_collection,harvestfestival:book/shipping_collection_shadowed
+harvestfestival:cooking,4,harvestfestival:cooking_collection,harvestfestival:book/cooking_collection,harvestfestival:book/cooking_collection_shadowed
+harvestfestival:fishing,2,harvestfestival:fishing_collection,harvestfestival:book/fishing_collection,harvestfestival:book/fishing_collection_shadowed
+harvestfestival:mining,3,harvestfestival:mineral_collection,harvestfestival:book/mining_collection,harvestfestival:book/mining_collection_shadowed

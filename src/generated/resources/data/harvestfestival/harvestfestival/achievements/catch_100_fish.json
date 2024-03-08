@@ -1,0 +1,6 @@
+{
+  "type": "harvestfestival:custom_stat",
+  "id": "harvestfestival:catch_100_fish",
+  "requirement": 100,
+  "stat": "minecraft:fish_caught"
+}

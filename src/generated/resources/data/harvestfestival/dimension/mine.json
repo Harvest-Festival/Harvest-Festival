@@ -1,0 +1,1136 @@
+{
+  "type": "harvestfestival:mine_type",
+  "generator": {
+    "type": "harvestfestival:mine_chunk_gen",
+    "settings": {
+      "tiers": [
+        {
+          "default_biome": "harvestfestival:mossy_caverns",
+          "floor": {
+            "Name": "harvestfestival:mine_floor"
+          },
+          "hole": {
+            "Name": "harvestfestival:mine_hole"
+          },
+          "hud": "harvestfestival:textures/gui/mine_hud.png",
+          "ladder": {
+            "Name": "harvestfestival:mine_ladder",
+            "Properties": {
+              "facing": "north",
+              "waterlogged": "false"
+            }
+          },
+          "loots": [
+            {
+              "cluster_amount": 3,
+              "cluster_distance": 10,
+              "max_floor": 30,
+              "min_floor": 10,
+              "state": {
+                "Name": "minecraft:brown_mushroom"
+              },
+              "weight": 120
+            },
+            {
+              "cluster_amount": 3,
+              "cluster_distance": 20,
+              "max_floor": 30,
+              "min_floor": 20,
+              "state": {
+                "Name": "minecraft:red_mushroom"
+              },
+              "weight": 100
+            },
+            {
+              "cluster_amount": 8,
+              "cluster_distance": 8,
+              "max_floor": 30,
+              "state": {
+                "Name": "harvestfestival:weeds"
+              },
+              "weight": 320
+            },
+            {
+              "cluster_amount": 3,
+              "cluster_distance": 4,
+              "max_floor": 40,
+              "state": {
+                "Name": "harvestfestival:barrel"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 2,
+              "cluster_distance": 2,
+              "max_floor": 40,
+              "stackable": true,
+              "state": {
+                "Name": "harvestfestival:crate"
+              },
+              "weight": 10
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 20,
+              "state": {
+                "Name": "harvestfestival:small_dark_oak_branch"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 20,
+              "min_floor": 3,
+              "state": {
+                "Name": "harvestfestival:medium_dark_oak_branch"
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 20,
+              "min_floor": 5,
+              "state": {
+                "Name": "harvestfestival:small_dark_oak_stump"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 20,
+              "min_floor": 6,
+              "state": {
+                "Name": "harvestfestival:large_dark_oak_branch"
+              },
+              "weight": 30
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 20,
+              "min_floor": 7,
+              "state": {
+                "Name": "harvestfestival:medium_dark_oak_stump"
+              },
+              "weight": 20
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 20,
+              "min_floor": 8,
+              "state": {
+                "Name": "harvestfestival:large_dark_oak_stump"
+              },
+              "weight": 10
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 31,
+              "min_floor": 21,
+              "state": {
+                "Name": "harvestfestival:small_stones"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 32,
+              "min_floor": 22,
+              "state": {
+                "Name": "harvestfestival:medium_stones"
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 33,
+              "min_floor": 23,
+              "state": {
+                "Name": "harvestfestival:small_boulder"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 34,
+              "min_floor": 24,
+              "state": {
+                "Name": "harvestfestival:large_stones"
+              },
+              "weight": 30
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 36,
+              "min_floor": 26,
+              "state": {
+                "Name": "harvestfestival:medium_boulder"
+              },
+              "weight": 20
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 38,
+              "min_floor": 28,
+              "state": {
+                "Name": "harvestfestival:large_boulder"
+              },
+              "weight": 10
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:rock"
+              },
+              "weight": 1000
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 40,
+              "min_floor": 6,
+              "state": {
+                "Name": "harvestfestival:copper_node"
+              },
+              "weight": 80
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 40,
+              "min_floor": 11,
+              "state": {
+                "Name": "harvestfestival:amethyst_node"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 40,
+              "min_floor": 31,
+              "state": {
+                "Name": "harvestfestival:copper_node"
+              },
+              "weight": 20
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 30,
+              "min_floor": 26,
+              "state": {
+                "Name": "harvestfestival:dwarfen_shroom"
+              },
+              "weight": 10
+            }
+          ],
+          "lower_portal": {
+            "Name": "harvestfestival:lower_portal",
+            "Properties": {
+              "ew": "false",
+              "section": "tm"
+            }
+          },
+          "order": 0,
+          "ranges": [
+            {
+              "biome": "harvestfestival:mossy_caverns",
+              "loot_chance_divisor": 840,
+              "loot_chance_max": 0.175,
+              "loot_chance_min": 0.006,
+              "max": 10,
+              "max_mobs": 8,
+              "min": 1
+            },
+            {
+              "biome": "harvestfestival:mycelium_hollows",
+              "loot_chance_divisor": 880,
+              "loot_chance_max": 0.2,
+              "loot_chance_min": 0.0055,
+              "max": 20,
+              "max_mobs": 10,
+              "min": 11
+            },
+            {
+              "biome": "harvestfestival:silted_depths",
+              "loot_chance_divisor": 920,
+              "loot_chance_max": 0.225,
+              "loot_chance_min": 0.00525,
+              "max": 30,
+              "max_mobs": 12,
+              "min": 21
+            },
+            {
+              "biome": "harvestfestival:rock_caves",
+              "floor": {
+                "Name": "harvestfestival:mine_wall"
+              },
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 40,
+              "max_mobs": 16,
+              "min": 31
+            }
+          ],
+          "room_generators": [
+            {
+              "generator": {
+                "type": "harvestfestival:tunnel"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:circle"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:hexagon"
+              }
+            }
+          ],
+          "special_loots": [],
+          "upper_portal": {
+            "Name": "harvestfestival:upper_portal",
+            "Properties": {
+              "ew": "false",
+              "section": "tm"
+            }
+          },
+          "walls": {
+            "Name": "harvestfestival:mine_wall"
+          }
+        },
+        {
+          "default_biome": "harvestfestival:frostwood_glade",
+          "floor": {
+            "Name": "harvestfestival:frozen_mine_floor"
+          },
+          "hole": {
+            "Name": "harvestfestival:frozen_mine_hole"
+          },
+          "hud": "harvestfestival:textures/gui/frozen_mine_hud.png",
+          "ladder": {
+            "Name": "harvestfestival:frozen_mine_ladder",
+            "Properties": {
+              "facing": "north",
+              "waterlogged": "false"
+            }
+          },
+          "loots": [
+            {
+              "cluster_amount": 8,
+              "cluster_distance": 8,
+              "max_floor": 10,
+              "state": {
+                "Name": "minecraft:dead_bush"
+              },
+              "weight": 320
+            },
+            {
+              "cluster_amount": 1,
+              "cluster_distance": 3,
+              "max_floor": 13,
+              "state": {
+                "Name": "minecraft:sweet_berry_bush",
+                "Properties": {
+                  "age": "3"
+                }
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:ice_rock"
+              },
+              "weight": 850
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:ice_crystal"
+              },
+              "weight": 480
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:frozen_barrel"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 8,
+              "cluster_distance": 3,
+              "state": {
+                "Name": "harvestfestival:frozen_barrel"
+              },
+              "weight": 10
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:silver_node"
+              },
+              "weight": 80
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:copper_node"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:amethyst_node"
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:topaz_node"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:gem_node"
+              },
+              "weight": 0
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "min_floor": 30,
+              "state": {
+                "Name": "harvestfestival:silver_node"
+              },
+              "weight": 20
+            }
+          ],
+          "lower_portal": {
+            "Name": "harvestfestival:frozen_lower_portal",
+            "Properties": {
+              "ew": "false",
+              "section": "tm"
+            }
+          },
+          "order": 1,
+          "ranges": [
+            {
+              "biome": "harvestfestival:frostwood_glade",
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 10,
+              "max_mobs": 12,
+              "min": 1
+            },
+            {
+              "biome": "harvestfestival:snowdrift_caverns",
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 20,
+              "max_mobs": 16,
+              "min": 11
+            },
+            {
+              "biome": "harvestfestival:glacial_sanctum",
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 30,
+              "max_mobs": 20,
+              "min": 21
+            },
+            {
+              "biome": "harvestfestival:frozen_fortress",
+              "floor": {
+                "Name": "harvestfestival:frozen_mine_wall"
+              },
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 40,
+              "max_mobs": 24,
+              "min": 31,
+              "wall": {
+                "Name": "harvestfestival:frozen_mine_bricks"
+              }
+            }
+          ],
+          "room_generators": [
+            {
+              "generator": {
+                "type": "harvestfestival:circle",
+                "max": 16
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:sprites"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:star"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:snowflake"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:tunnel"
+              }
+            }
+          ],
+          "special_loots": [],
+          "upper_portal": {
+            "Name": "harvestfestival:frozen_upper_portal",
+            "Properties": {
+              "ew": "false",
+              "section": "tm"
+            }
+          },
+          "walls": {
+            "Name": "harvestfestival:frozen_mine_wall"
+          }
+        },
+        {
+          "default_biome": "harvestfestival:infernal_forest",
+          "floor": {
+            "Name": "harvestfestival:hell_mine_floor"
+          },
+          "hole": {
+            "Name": "harvestfestival:hell_mine_hole"
+          },
+          "hud": "harvestfestival:textures/gui/hell_mine_hud.png",
+          "ladder": {
+            "Name": "harvestfestival:hell_mine_ladder",
+            "Properties": {
+              "facing": "north",
+              "waterlogged": "false"
+            }
+          },
+          "loots": [
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 3,
+              "state": {
+                "Name": "minecraft:warped_fungus"
+              },
+              "weight": 30
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "min_floor": 10,
+              "state": {
+                "Name": "minecraft:crimson_fungus"
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "state": {
+                "Name": "harvestfestival:small_warped_branch"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 3,
+              "state": {
+                "Name": "harvestfestival:medium_warped_branch"
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 5,
+              "state": {
+                "Name": "harvestfestival:small_warped_stump"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 6,
+              "state": {
+                "Name": "harvestfestival:large_warped_branch"
+              },
+              "weight": 30
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 7,
+              "state": {
+                "Name": "harvestfestival:medium_warped_stump"
+              },
+              "weight": 20
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 8,
+              "state": {
+                "Name": "harvestfestival:large_warped_stump"
+              },
+              "weight": 10
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "state": {
+                "Name": "harvestfestival:small_crimson_branch"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 3,
+              "state": {
+                "Name": "harvestfestival:medium_crimson_branch"
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 5,
+              "state": {
+                "Name": "harvestfestival:small_crimson_stump"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 6,
+              "state": {
+                "Name": "harvestfestival:large_crimson_branch"
+              },
+              "weight": 30
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 7,
+              "state": {
+                "Name": "harvestfestival:medium_crimson_stump"
+              },
+              "weight": 20
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "max_floor": 10,
+              "min_floor": 8,
+              "state": {
+                "Name": "harvestfestival:large_crimson_stump"
+              },
+              "weight": 10
+            },
+            {
+              "cluster_amount": 8,
+              "cluster_distance": 8,
+              "max_floor": 30,
+              "state": {
+                "Name": "harvestfestival:weeds"
+              },
+              "weight": 320
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:hell_rock"
+              },
+              "weight": 1440
+            },
+            {
+              "cluster_amount": 2,
+              "cluster_distance": 2,
+              "state": {
+                "Name": "harvestfestival:hell_chest"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:gold_node"
+              },
+              "weight": 80
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:gold_node"
+              },
+              "weight": 80
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:silver_node"
+              },
+              "weight": 70
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:copper_node"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:amethyst_node"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:topaz_node"
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:jade_node"
+              },
+              "weight": 55
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:ruby_node"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:gem_node"
+              },
+              "weight": 25
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "min_floor": 30,
+              "state": {
+                "Name": "harvestfestival:silver_node"
+              },
+              "weight": 20
+            }
+          ],
+          "lower_portal": {
+            "Name": "harvestfestival:hell_lower_portal",
+            "Properties": {
+              "ew": "false",
+              "section": "tm"
+            }
+          },
+          "order": 2,
+          "ranges": [
+            {
+              "biome": "harvestfestival:infernal_forest",
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 10,
+              "max_mobs": 26,
+              "min": 1
+            },
+            {
+              "biome": "harvestfestival:scorchlands",
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 20,
+              "max_mobs": 28,
+              "min": 11
+            },
+            {
+              "biome": "harvestfestival:radiant_abyss",
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 30,
+              "max_mobs": 30,
+              "min": 21
+            },
+            {
+              "biome": "harvestfestival:brimstone_keep",
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 40,
+              "max_mobs": 32,
+              "min": 31,
+              "wall": {
+                "Name": "harvestfestival:hell_mine_bricks"
+              }
+            }
+          ],
+          "room_generators": [
+            {
+              "generator": {
+                "type": "harvestfestival:multi_tunnel",
+                "max_circle": 13,
+                "min_tunnel_width": 2
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:tunnel"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:spiral"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:hexagon"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:triangle"
+              }
+            }
+          ],
+          "special_loots": [],
+          "upper_portal": {
+            "Name": "harvestfestival:hell_upper_portal",
+            "Properties": {
+              "ew": "false",
+              "section": "tm"
+            }
+          },
+          "walls": {
+            "Name": "harvestfestival:hell_mine_wall"
+          }
+        },
+        {
+          "default_biome": "harvestfestival:subterranean_abyss",
+          "floor": {
+            "Name": "harvestfestival:mine_floor"
+          },
+          "hole": {
+            "Name": "harvestfestival:mine_hole"
+          },
+          "hud": "harvestfestival:textures/gui/mine_hud.png",
+          "ladder": {
+            "Name": "harvestfestival:mine_ladder",
+            "Properties": {
+              "facing": "north",
+              "waterlogged": "false"
+            }
+          },
+          "loots": [
+            {
+              "cluster_amount": 8,
+              "cluster_distance": 8,
+              "state": {
+                "Name": "harvestfestival:weeds"
+              },
+              "weight": 320
+            },
+            {
+              "cluster_amount": 4,
+              "cluster_distance": 2,
+              "state": {
+                "Name": "harvestfestival:barrel"
+              },
+              "weight": 30
+            },
+            {
+              "cluster_amount": 2,
+              "cluster_distance": 1,
+              "stackable": true,
+              "state": {
+                "Name": "harvestfestival:crate"
+              },
+              "weight": 20
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:rock"
+              },
+              "weight": 1500
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:copper_node"
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:silver_node"
+              },
+              "weight": 60
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:gold_node"
+              },
+              "weight": 70
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:mystril_node"
+              },
+              "weight": 80
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:amethyst_node"
+              },
+              "weight": 30
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:topaz_node"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:jade_node"
+              },
+              "weight": 55
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:ruby_node"
+              },
+              "weight": 50
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:diamond_node"
+              },
+              "weight": 30
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:emerald_node"
+              },
+              "weight": 40
+            },
+            {
+              "cluster_amount": 0,
+              "cluster_distance": 0,
+              "state": {
+                "Name": "harvestfestival:gem_node"
+              },
+              "weight": 100
+            }
+          ],
+          "lower_portal": {
+            "Name": "harvestfestival:lower_portal",
+            "Properties": {
+              "ew": "false",
+              "section": "tm"
+            }
+          },
+          "order": 3,
+          "ranges": [
+            {
+              "biome": "harvestfestival:subterranean_abyss",
+              "loot_chance_divisor": 960,
+              "loot_chance_max": 0.25,
+              "loot_chance_min": 0.005,
+              "max": 40,
+              "max_mobs": 40,
+              "min": 1
+            }
+          ],
+          "room_generators": [
+            {
+              "generator": {
+                "type": "harvestfestival:random_room"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:tunnel",
+                "min_tunnel_width": 2
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:tunnel",
+                "max_tunnel_width": 6,
+                "min_random": 16
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:circle",
+                "max": 16
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:random_path"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:sidewinder"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:maze"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:branches"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:ring"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:misc"
+              }
+            },
+            {
+              "generator": {
+                "type": "harvestfestival:template",
+                "resource": "harvestfestival:wheel"
+              }
+            }
+          ],
+          "special_loots": [
+            {
+              "divider": 4096.0,
+              "minimum_floor": 141,
+              "state": {
+                "Name": "harvestfestival:mystril_node"
+              }
+            }
+          ],
+          "upper_portal": {
+            "Name": "harvestfestival:lower_portal",
+            "Properties": {
+              "ew": "false",
+              "section": "tm"
+            }
+          },
+          "walls": {
+            "Name": "harvestfestival:mine_wall"
+          }
+        }
+      ]
+    }
+  }
+}

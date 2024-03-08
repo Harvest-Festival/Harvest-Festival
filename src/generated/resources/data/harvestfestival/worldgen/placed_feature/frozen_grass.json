@@ -1,0 +1,17 @@
+{
+  "feature": "harvestfestival:frozen_grass",
+  "placement": [
+    {
+      "type": "minecraft:noise_threshold_count",
+      "above_noise": 4,
+      "below_noise": 2,
+      "noise_level": -0.8
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

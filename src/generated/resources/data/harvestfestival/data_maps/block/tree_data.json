@@ -1,0 +1,226 @@
+{
+  "values": {
+    "harvestfestival:acacia_juvenile": {
+      "days": 5,
+      "next": {
+        "Name": "minecraft:acacia_sapling",
+        "Properties": {
+          "stage": "1"
+        }
+      }
+    },
+    "harvestfestival:acacia_seedling": {
+      "days": 2,
+      "next": {
+        "Name": "minecraft:acacia_sapling",
+        "Properties": {
+          "stage": "0"
+        }
+      }
+    },
+    "harvestfestival:birch_juvenile": {
+      "days": 15,
+      "next": {
+        "Name": "minecraft:birch_sapling",
+        "Properties": {
+          "stage": "1"
+        }
+      }
+    },
+    "harvestfestival:birch_seedling": {
+      "days": 5,
+      "next": {
+        "Name": "minecraft:birch_sapling",
+        "Properties": {
+          "stage": "0"
+        }
+      }
+    },
+    "harvestfestival:cherry_juvenile": {
+      "days": 18,
+      "next": {
+        "Name": "minecraft:cherry_sapling",
+        "Properties": {
+          "stage": "1"
+        }
+      }
+    },
+    "harvestfestival:cherry_seedling": {
+      "days": 11,
+      "next": {
+        "Name": "minecraft:cherry_sapling",
+        "Properties": {
+          "stage": "0"
+        }
+      }
+    },
+    "harvestfestival:dark_oak_juvenile": {
+      "days": 10,
+      "next": {
+        "Name": "minecraft:dark_oak_sapling",
+        "Properties": {
+          "stage": "1"
+        }
+      }
+    },
+    "harvestfestival:dark_oak_seedling": {
+      "days": 5,
+      "next": {
+        "Name": "minecraft:dark_oak_sapling",
+        "Properties": {
+          "stage": "0"
+        }
+      }
+    },
+    "harvestfestival:jungle_juvenile": {
+      "days": 7,
+      "next": {
+        "Name": "minecraft:jungle_sapling",
+        "Properties": {
+          "stage": "1"
+        }
+      }
+    },
+    "harvestfestival:jungle_seedling": {
+      "days": 3,
+      "next": {
+        "Name": "minecraft:jungle_sapling",
+        "Properties": {
+          "stage": "0"
+        }
+      }
+    },
+    "harvestfestival:mangrove_juvenile": {
+      "days": 6,
+      "next": {
+        "Name": "minecraft:mangrove_propagule",
+        "Properties": {
+          "age": "0",
+          "hanging": "false",
+          "stage": "1",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "harvestfestival:mangrove_seedling": {
+      "days": 3,
+      "next": {
+        "Name": "minecraft:mangrove_propagule",
+        "Properties": {
+          "age": "0",
+          "hanging": "false",
+          "stage": "0",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "harvestfestival:oak_juvenile": {
+      "days": 10,
+      "next": {
+        "Name": "minecraft:oak_sapling",
+        "Properties": {
+          "stage": "1"
+        }
+      }
+    },
+    "harvestfestival:oak_seedling": {
+      "days": 5,
+      "next": {
+        "Name": "minecraft:oak_sapling",
+        "Properties": {
+          "stage": "0"
+        }
+      }
+    },
+    "harvestfestival:spruce_juvenile": {
+      "days": 10,
+      "next": {
+        "Name": "minecraft:spruce_sapling",
+        "Properties": {
+          "stage": "1"
+        }
+      }
+    },
+    "harvestfestival:spruce_seedling": {
+      "days": 5,
+      "next": {
+        "Name": "minecraft:spruce_sapling",
+        "Properties": {
+          "stage": "0"
+        }
+      }
+    },
+    "minecraft:acacia_sapling": {
+      "days": 3,
+      "next": {
+        "Name": "harvestfestival:acacia_juvenile",
+        "Properties": {
+          "half": "lower"
+        }
+      }
+    },
+    "minecraft:birch_sapling": {
+      "days": 10,
+      "next": {
+        "Name": "harvestfestival:birch_juvenile",
+        "Properties": {
+          "half": "lower"
+        }
+      }
+    },
+    "minecraft:cherry_sapling": {
+      "days": 15,
+      "next": {
+        "Name": "harvestfestival:cherry_juvenile",
+        "Properties": {
+          "half": "lower"
+        }
+      }
+    },
+    "minecraft:dark_oak_sapling": {
+      "days": 5,
+      "next": {
+        "Name": "harvestfestival:dark_oak_juvenile",
+        "Properties": {
+          "half": "lower"
+        }
+      }
+    },
+    "minecraft:jungle_sapling": {
+      "days": 5,
+      "next": {
+        "Name": "harvestfestival:jungle_juvenile",
+        "Properties": {
+          "half": "lower"
+        }
+      }
+    },
+    "minecraft:mangrove_propagule": {
+      "days": 6,
+      "next": {
+        "Name": "harvestfestival:mangrove_juvenile",
+        "Properties": {
+          "half": "lower"
+        }
+      }
+    },
+    "minecraft:oak_sapling": {
+      "days": 5,
+      "next": {
+        "Name": "harvestfestival:oak_juvenile",
+        "Properties": {
+          "half": "lower"
+        }
+      }
+    },
+    "minecraft:spruce_sapling": {
+      "days": 5,
+      "next": {
+        "Name": "harvestfestival:spruce_juvenile",
+        "Properties": {
+          "half": "lower"
+        }
+      }
+    }
+  }
+}

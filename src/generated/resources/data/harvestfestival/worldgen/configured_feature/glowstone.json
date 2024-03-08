@@ -1,0 +1,19 @@
+{
+  "type": "harvestfestival:blob_modifiable",
+  "config": {
+    "block": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:glowstone"
+      }
+    },
+    "ceiling": [
+      {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "harvestfestival:hell_mine_wall"
+        }
+      }
+    ]
+  }
+}

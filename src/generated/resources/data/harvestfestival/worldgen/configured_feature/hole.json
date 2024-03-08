@@ -1,0 +1,18 @@
+{
+  "type": "harvestfestival:hole",
+  "config": {
+    "depth": 8,
+    "hole": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "harvestfestival:mine_hole"
+      }
+    },
+    "wall": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "harvestfestival:mine_wall"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Block": "minecraft:carrots",
+  "Color": "#F8AC33",
+  "Name": {
+    "translate": "item.harvestfestival.carrot_seeds"
+  },
+  "Seeds": {
+    "Count": 1,
+    "id": "minecraft:carrot"
+  },
+  "Type": "crop"
+}

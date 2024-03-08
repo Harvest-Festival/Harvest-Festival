@@ -1,0 +1,6 @@
+{
+  "type": "harvestfestival:entities_killed",
+  "entity": "minecraft:slime",
+  "id": "harvestfestival:kill_10_slimes",
+  "requirement": 10
+}

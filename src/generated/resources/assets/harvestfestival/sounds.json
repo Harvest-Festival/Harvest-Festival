@@ -1,0 +1,45 @@
+{
+  "blessing": {
+    "sounds": [
+      "harvestfestival:blessing"
+    ],
+    "subtitle": "subtitles.goddess_blessing"
+  },
+  "frost_slime": {
+    "sounds": [
+      "harvestfestival:frost_slime"
+    ],
+    "subtitle": "subtitles.frost_slime"
+  },
+  "goddess": {
+    "sounds": [
+      "harvestfestival:goddess"
+    ],
+    "subtitle": "subtitles.goddess_spawn"
+  },
+  "rock_smash": {
+    "sounds": [
+      "harvestfestival:rock_smash"
+    ],
+    "subtitle": "subtitles.smashrock"
+  },
+  "wood_chop": {
+    "sounds": [
+      "harvestfestival:wood_chop"
+    ],
+    "subtitle": "subtitles.smashwood"
+  },
+  "yawn": {
+    "sounds": [
+      {
+        "name": "harvestfestival:yawn_1",
+        "volume": 0.25
+      },
+      {
+        "name": "harvestfestival:yawn_2",
+        "volume": 0.33
+      }
+    ],
+    "subtitle": "subtitles.yawn"
+  }
+}

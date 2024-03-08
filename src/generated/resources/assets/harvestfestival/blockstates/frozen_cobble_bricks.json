@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/frozen_cobble_bricks"
+      },
+      {
+        "model": "harvestfestival:block/frozen_cobble_bricks_rotated",
+        "y": 90
+      }
+    ]
+  }
+}

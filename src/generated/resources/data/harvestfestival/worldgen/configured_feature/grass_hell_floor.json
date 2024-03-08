@@ -1,0 +1,27 @@
+{
+  "type": "harvestfestival:replace_floor",
+  "config": {
+    "number_of_blocks": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 32,
+        "min_inclusive": 24
+      }
+    },
+    "replace": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "harvestfestival:hell_mine_floor"
+      }
+    },
+    "state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:grass_block",
+        "Properties": {
+          "snowy": "false"
+        }
+      }
+    }
+  }
+}

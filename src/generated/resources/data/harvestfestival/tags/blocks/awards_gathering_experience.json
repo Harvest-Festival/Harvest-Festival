@@ -1,0 +1,15 @@
+{
+  "values": [
+    "harvestfestival:small_stones",
+    "harvestfestival:medium_stones",
+    "harvestfestival:large_stones",
+    "harvestfestival:small_boulder",
+    "harvestfestival:medium_boulder",
+    "harvestfestival:large_boulder",
+    "#minecraft:logs",
+    "#minecraft:small_flowers",
+    "harvestfestival:toadstool",
+    "harvestfestival:dwarfen_shroom",
+    "harvestfestival:wild_grapes"
+  ]
+}

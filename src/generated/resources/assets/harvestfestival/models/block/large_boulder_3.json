@@ -1,0 +1,6 @@
+{
+  "parent": "harvestfestival:block/large_boulder",
+  "textures": {
+    "particle": "harvestfestival:block/stone_3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "harvestfestival:gift",
+  "delivery_time": 0,
+  "expiry": 7,
+  "items": [
+    {
+      "Count": 1,
+      "id": "minecraft:carrot"
+    }
+  ],
+  "repeatable": true,
+  "text": "I hope you're enjoying the festival, I've sent you a little something to help you out!"
+}

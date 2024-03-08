@@ -1,0 +1,605 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:junk_ore",
+          "weight": 170
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 1
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:copper_coin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 10
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:adamantite",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 10
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:orichalc",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 41
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:silver_coin",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 81
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:gold_coin"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "harvestfestival:mine_floor_exact",
+                      "multiple": 30
+                    },
+                    {
+                      "condition": "harvestfestival:obtained",
+                      "item": "harvestfestival:blessed_axe"
+                    }
+                  ]
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:mythic_stone"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "harvestfestival:mine_floor_between",
+                      "end": 84,
+                      "start": 43
+                    },
+                    {
+                      "condition": "harvestfestival:mine_floor_multiple_of",
+                      "multiple": 20
+                    },
+                    {
+                      "condition": "harvestfestival:obtained",
+                      "item": "harvestfestival:blessed_axe"
+                    }
+                  ]
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:mythic_stone"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "harvestfestival:mine_floor_between",
+                      "end": 126,
+                      "start": 85
+                    },
+                    {
+                      "condition": "harvestfestival:mine_floor_multiple_of",
+                      "multiple": 15
+                    },
+                    {
+                      "condition": "harvestfestival:obtained",
+                      "item": "harvestfestival:blessed_axe"
+                    }
+                  ]
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:mythic_stone",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "harvestfestival:mine_floor_between",
+                      "end": 168,
+                      "start": 127
+                    },
+                    {
+                      "condition": "harvestfestival:mine_floor_multiple_of",
+                      "multiple": 10
+                    },
+                    {
+                      "condition": "harvestfestival:obtained",
+                      "item": "harvestfestival:blessed_axe"
+                    }
+                  ]
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:mythic_stone",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "harvestfestival:mine_floor_between",
+                      "end": 211,
+                      "start": 169
+                    },
+                    {
+                      "condition": "harvestfestival:mine_floor_multiple_of",
+                      "multiple": 5
+                    },
+                    {
+                      "condition": "harvestfestival:obtained",
+                      "item": "harvestfestival:blessed_axe"
+                    }
+                  ]
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:mythic_stone",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "harvestfestival:mine_floor_between",
+                      "end": 254,
+                      "start": 212
+                    },
+                    {
+                      "condition": "harvestfestival:mine_floor_multiple_of",
+                      "multiple": 3
+                    },
+                    {
+                      "condition": "harvestfestival:obtained",
+                      "item": "harvestfestival:blessed_axe"
+                    }
+                  ]
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:mythic_stone",
+          "weight": 16
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "harvestfestival:apply_mining_skill",
+              "skill": "mining"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 255
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "function": "minecraft:apply_bonus"
+            }
+          ],
+          "name": "harvestfestival:mythic_stone",
+          "weight": 32
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "harvestfestival:mine_floor_exact",
+                  "multiple": 39
+                },
+                {
+                  "condition": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "condition": "harvestfestival:obtained",
+                      "item": "harvestfestival:mystril_axe"
+                    },
+                    {
+                      "condition": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "condition": "harvestfestival:obtained",
+                          "item": "harvestfestival:mystril_hammer"
+                        },
+                        {
+                          "condition": "minecraft:all_of",
+                          "terms": [
+                            {
+                              "condition": "harvestfestival:obtained",
+                              "item": "harvestfestival:mystril_hoe"
+                            },
+                            {
+                              "condition": "harvestfestival:obtained",
+                              "item": "harvestfestival:mystril_sword"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:cursed_hoe"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_exact",
+              "multiple": 49
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:cursed_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_exact",
+              "multiple": 59
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:cursed_hammer"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "condition": "harvestfestival:mine_floor_exact",
+                  "multiple": 99
+                }
+              ],
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:cursed_sword"
+        }
+      ],
+      "rolls": 3.0
+    }
+  ],
+  "random_sequence": "harvestfestival:blocks/hell_rock"
+}

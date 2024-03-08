@@ -1,0 +1,12 @@
+{
+  "values": [
+    "harvestfestival:small_stones",
+    "harvestfestival:medium_stones",
+    "harvestfestival:large_stones",
+    "harvestfestival:small_boulder",
+    "harvestfestival:medium_boulder",
+    "harvestfestival:large_boulder",
+    "minecraft:tall_grass",
+    "minecraft:short_grass"
+  ]
+}

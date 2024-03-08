@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/mystril_node"
+      },
+      {
+        "model": "harvestfestival:block/mystril_node",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/mystril_node",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/mystril_node",
+        "y": 180
+      }
+    ]
+  }
+}

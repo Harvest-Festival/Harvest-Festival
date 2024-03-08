@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/hell_chest"
+      },
+      {
+        "model": "harvestfestival:block/hell_chest",
+        "y": 90
+      }
+    ]
+  }
+}

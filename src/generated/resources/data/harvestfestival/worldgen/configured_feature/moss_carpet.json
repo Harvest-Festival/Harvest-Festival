@@ -1,0 +1,12 @@
+{
+  "type": "harvestfestival:decorate_floor",
+  "config": {
+    "random": 1,
+    "state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:moss_carpet"
+      }
+    }
+  }
+}

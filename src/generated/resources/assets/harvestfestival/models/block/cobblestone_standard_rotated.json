@@ -1,0 +1,6 @@
+{
+  "parent": "harvestfestival:block/cobblestone",
+  "textures": {
+    "particle": "harvestfestival:block/mine/interior/standard/wall_blank"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "carvers": {},
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 12638463,
+    "foliage_color": -13754573,
+    "grass_color": -13754573,
+    "sky_color": 0,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "harvestfestival:nether_bricks"
+    ],
+    [],
+    [],
+    [],
+    [
+      "harvestfestival:hell_cobble_bricks"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:magma_cube",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 5
+      },
+      {
+        "type": "minecraft:wither_skeleton",
+        "maxCount": 5,
+        "minCount": 3,
+        "weight": 30
+      },
+      {
+        "type": "minecraft:blaze",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 15
+      },
+      {
+        "type": "harvestfestival:hell_bat",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 25
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 2.0
+}

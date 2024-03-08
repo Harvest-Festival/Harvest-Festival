@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/medium_boulder_1"
+      },
+      {
+        "model": "harvestfestival:block/medium_boulder_2"
+      },
+      {
+        "model": "harvestfestival:block/medium_boulder_3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "harvestfestival:replace_floor",
+  "config": {
+    "number_of_blocks": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 32,
+        "min_inclusive": 16
+      }
+    },
+    "replace": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "harvestfestival:mine_wall"
+      }
+    },
+    "state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:tuff"
+      }
+    }
+  }
+}

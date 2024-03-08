@@ -1,0 +1,7 @@
+{
+  "parent": "harvestfestival:block/barrel",
+  "textures": {
+    "lid": "harvestfestival:block/mine/crates/frozen_barrel_lid",
+    "particle": "harvestfestival:block/mine/crates/frozen_barrel"
+  }
+}

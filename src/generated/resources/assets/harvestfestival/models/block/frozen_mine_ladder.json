@@ -1,0 +1,6 @@
+{
+  "parent": "harvestfestival:block/ladder",
+  "textures": {
+    "main": "harvestfestival:block/mine/interior/frozen/ladder"
+  }
+}

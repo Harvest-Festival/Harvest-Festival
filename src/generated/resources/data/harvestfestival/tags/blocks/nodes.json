@@ -1,0 +1,16 @@
+{
+  "values": [
+    "harvestfestival:amethyst_node",
+    "harvestfestival:copper_node",
+    "harvestfestival:diamond_node",
+    "harvestfestival:emerald_node",
+    "harvestfestival:gem_node",
+    "harvestfestival:gold_node",
+    "harvestfestival:iron_node",
+    "harvestfestival:jade_node",
+    "harvestfestival:mystril_node",
+    "harvestfestival:ruby_node",
+    "harvestfestival:silver_node",
+    "harvestfestival:topaz_node"
+  ]
+}

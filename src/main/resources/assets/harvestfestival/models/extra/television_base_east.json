@@ -1,0 +1,94 @@
+{
+	"parent": "minecraft:block/block",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"particle": "harvestfestival:block/television",
+		"texture": "harvestfestival:block/television"
+	},
+	"elements": [
+		{
+			"name": "television",
+			"from": [3, 3, 2],
+			"to": [10, 15, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"faces": {
+				"north": {"uv": [6.5, 0, 10, 6], "texture": "#texture"},
+				"east": {"uv": [4, 6, 10, 12], "texture": "#texture"},
+				"south": {"uv": [6.5, 0, 10, 6], "texture": "#texture"},
+				"west": {"uv": [10, 0, 16, 6], "texture": "#texture"},
+				"up": {"uv": [10, 9.5, 16, 13], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [10, 6, 16, 9.5], "rotation": 90, "texture": "#texture"}
+			}
+		},
+		{
+			"name": "leg",
+			"from": [7, 0, 11],
+			"to": [9, 3, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"east": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"south": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"west": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"up": {"uv": [2, 0, 4, 2], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [2, 0, 4, 2], "rotation": 90, "texture": "#texture"}
+			}
+		},
+		{
+			"name": "leg2",
+			"from": [4, 0, 3],
+			"to": [6, 3, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"east": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"south": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"west": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"up": {"uv": [2, 0, 4, 2], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [2, 0, 4, 2], "rotation": 90, "texture": "#texture"}
+			}
+		},
+		{
+			"name": "leg3",
+			"from": [4, 0, 11],
+			"to": [6, 3, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"east": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"south": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"west": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"up": {"uv": [2, 0, 4, 2], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [2, 0, 4, 2], "rotation": 90, "texture": "#texture"}
+			}
+		},
+		{
+			"name": "leg4",
+			"from": [7, 0, 3],
+			"to": [9, 3, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"east": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"south": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"west": {"uv": [0, 0, 2, 3], "texture": "#texture"},
+				"up": {"uv": [2, 0, 4, 2], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [2, 0, 4, 2], "rotation": 90, "texture": "#texture"}
+			}
+		},
+		{
+			"name": "television_front",
+			"from": [1, 5, 4],
+			"to": [3, 13, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"faces": {
+				"north": {"uv": [3, 3, 4, 7], "texture": "#texture"},
+				"east": {"uv": [0, 3, 4, 7], "texture": "#texture"},
+				"south": {"uv": [0, 3, 1, 7], "texture": "#texture"},
+				"west": {"uv": [0, 3, 4, 7], "texture": "#texture"},
+				"up": {"uv": [0, 3, 4, 4], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [0, 6, 4, 7], "rotation": 90, "texture": "#texture"}
+			}
+		}
+	]
+}

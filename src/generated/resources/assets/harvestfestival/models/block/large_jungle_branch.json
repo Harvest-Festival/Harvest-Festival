@@ -1,0 +1,7 @@
+{
+  "parent": "harvestfestival:block/large_branch",
+  "textures": {
+    "side": "minecraft:block/jungle_log",
+    "top": "minecraft:block/jungle_log_top"
+  }
+}

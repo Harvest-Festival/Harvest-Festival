@@ -1,0 +1,12 @@
+{
+  "values": [
+    "#minecraft:logs",
+    "#forge:stone",
+    "#forge:sand",
+    "#minecraft:dirt",
+    "harvestfestival:rock",
+    "harvestfestival:ice_crystal",
+    "harvestfestival:ice_rock",
+    "harvestfestival:hell_rock"
+  ]
+}

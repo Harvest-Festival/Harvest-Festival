@@ -1,0 +1,38 @@
+{
+  "type": "harvestfestival:decorate_floor",
+  "config": {
+    "random": 3,
+    "state": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "minecraft:snow",
+            "Properties": {
+              "layers": "1"
+            }
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "minecraft:snow",
+            "Properties": {
+              "layers": "2"
+            }
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "minecraft:snow",
+            "Properties": {
+              "layers": "3"
+            }
+          },
+          "weight": 1
+        }
+      ]
+    }
+  }
+}

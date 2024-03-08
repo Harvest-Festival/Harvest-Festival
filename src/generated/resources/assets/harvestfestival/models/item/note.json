@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "harvestfestival:note_special",
+      "predicate": {
+        "harvestfestival:special": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "harvestfestival:item/note"
+  }
+}

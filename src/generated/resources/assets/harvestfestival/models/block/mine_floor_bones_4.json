@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "harvestfestival:block/mine/wall_blank",
+    "top": "harvestfestival:block/mine/floor_bones_4"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Block": "minecraft:pumpkin_stem",
+  "Color": "#E09A39",
+  "Seeds": {
+    "Count": 1,
+    "id": "minecraft:pumpkin_seeds"
+  },
+  "Type": "crop"
+}

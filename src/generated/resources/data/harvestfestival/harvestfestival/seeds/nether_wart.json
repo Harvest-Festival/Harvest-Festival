@@ -1,0 +1,9 @@
+{
+  "Block": "minecraft:nether_wart",
+  "Color": "#8B0000",
+  "Seeds": {
+    "Count": 1,
+    "id": "minecraft:nether_wart"
+  },
+  "Type": "crop"
+}

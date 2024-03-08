@@ -1,0 +1,9 @@
+{
+  "Block": "minecraft:wheat",
+  "Color": "#EAC715",
+  "Seeds": {
+    "Count": 1,
+    "id": "minecraft:wheat_seeds"
+  },
+  "Type": "crop"
+}

@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/frozen_mine_wall_blank",
+        "weight": 20
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_wall_gems_1"
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_wall_gems_2"
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_wall_gems_3"
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_wall_gems_4"
+      },
+      {
+        "model": "harvestfestival:block/frozen_mine_wall_gems_5"
+      }
+    ]
+  }
+}

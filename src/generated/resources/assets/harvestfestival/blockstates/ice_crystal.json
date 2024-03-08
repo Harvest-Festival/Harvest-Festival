@@ -1,0 +1,606 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t1"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t1",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t1",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t1",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t2"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t2",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t2",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t2",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t3"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t3",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t3",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t3",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t4"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t4",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t4",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t4",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t5"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t5",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t5",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t5",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t6"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t6",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t6",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t6",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t7"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t7",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t7",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t7",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t8"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t8",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t8",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_1_t8",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t1"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t1",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t1",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t1",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t2"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t2",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t2",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t2",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t3"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t3",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t3",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t3",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t4"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t4",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t4",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t4",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t5"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t5",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t5",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t5",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t6"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t6",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t6",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t6",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t7"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t7",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t7",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t7",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t8"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t8",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t8",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_2_t8",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t1"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t1",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t1",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t1",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t2"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t2",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t2",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t2",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t3"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t3",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t3",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t3",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t4"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t4",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t4",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t4",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t5"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t5",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t5",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t5",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t6"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t6",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t6",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t6",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t7"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t7",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t7",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t7",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t8"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t8",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t8",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_3_t8",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t1"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t1",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t1",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t1",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t2"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t2",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t2",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t2",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t3"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t3",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t3",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t3",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t4"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t4",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t4",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t4",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t5"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t5",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t5",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t5",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t6"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t6",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t6",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t6",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t7"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t7",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t7",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t7",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t8"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t8",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t8",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_4_t8",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t1"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t1",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t1",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t1",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t2"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t2",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t2",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t2",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t3"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t3",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t3",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t3",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t4"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t4",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t4",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t4",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t5"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t5",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t5",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t5",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t6"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t6",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t6",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t6",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t7"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t7",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t7",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t7",
+        "y": 180
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t8"
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t8",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t8",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/ice_crystal_5_t8",
+        "y": 180
+      }
+    ]
+  }
+}

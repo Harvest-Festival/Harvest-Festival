@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "harvestfestival:block/birch_juvenile_lower"
+    },
+    "half=upper": {
+      "model": "harvestfestival:block/birch_juvenile_upper"
+    }
+  }
+}

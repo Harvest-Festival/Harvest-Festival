@@ -1,0 +1,23 @@
+{
+  "values": [
+    "harvestfestival:hell_mine_wall",
+    "harvestfestival:hell_mine_bricks",
+    "harvestfestival:hell_mine_floor",
+    "harvestfestival:hell_mine_ladder",
+    "harvestfestival:mine_wall",
+    "harvestfestival:mine_floor",
+    "harvestfestival:mine_ladder",
+    "harvestfestival:upper_portal",
+    "harvestfestival:lower_portal",
+    "harvestfestival:mine_portal",
+    "harvestfestival:frozen_mine_wall",
+    "harvestfestival:frozen_mine_bricks",
+    "harvestfestival:frozen_mine_floor",
+    "harvestfestival:frozen_mine_ladder",
+    "harvestfestival:hell_upper_portal",
+    "harvestfestival:hell_lower_portal",
+    "harvestfestival:frozen_lower_portal",
+    "harvestfestival:frozen_upper_portal",
+    "harvestfestival:elevator"
+  ]
+}

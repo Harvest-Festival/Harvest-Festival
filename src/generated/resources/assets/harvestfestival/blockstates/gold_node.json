@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/gold_node"
+      },
+      {
+        "model": "harvestfestival:block/gold_node",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/gold_node",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/gold_node",
+        "y": 180
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "entries": [
+    "harvestfestival:apply_farming_skill",
+    "harvestfestival:apply_mining_skill",
+    "harvestfestival:disable_seeds",
+    "harvestfestival:disable_apples",
+    "harvestfestival:apply_gathering_skill",
+    "harvestfestival:apply_combat_skill",
+    "harvestfestival:apply_quality"
+  ],
+  "replace": false
+}

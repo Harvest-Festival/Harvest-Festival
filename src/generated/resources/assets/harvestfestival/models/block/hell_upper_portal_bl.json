@@ -1,0 +1,7 @@
+{
+  "parent": "harvestfestival:block/portal",
+  "textures": {
+    "particle": "harvestfestival:block/mine/interior/hell/portal/upper/bl",
+    "wall": "harvestfestival:block/mine/interior/hell/wall_blank"
+  }
+}

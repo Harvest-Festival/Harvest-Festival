@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/large_warped_branch"
+      },
+      {
+        "model": "harvestfestival:block/large_warped_branch",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/large_warped_branch",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/large_warped_branch",
+        "y": 180
+      }
+    ]
+  }
+}

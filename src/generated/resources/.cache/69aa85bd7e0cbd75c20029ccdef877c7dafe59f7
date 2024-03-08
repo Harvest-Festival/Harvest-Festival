@@ -1,0 +1,5 @@
+// 1.20.4	2024-02-04T02:49:04.8655288	Tags for minecraft:entity_type mod id harvestfestival
+884092467cce29bd5a5504f20a2e4d099f334a6c data/forge/tags/entity_types/slimes.json
+a37c8a7cf9e25ba9178196b0552e6c5e79567ffa data/harvestfestival/tags/entity_types/awards_high_combat_experience.json
+193eb862818da23ed2555b771ea59ec6e8411c16 data/harvestfestival/tags/entity_types/awards_low_combat_experience.json
+0bfe0d1e805b6248ff7f77558669f3324268428b data/minecraft/tags/entity_types/frog_food.json

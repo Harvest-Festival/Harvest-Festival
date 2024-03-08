@@ -1,0 +1,9 @@
+{
+  "type": "harvestfestival:disable_drops",
+  "blockTag": [
+    "minecraft:oak_leaves"
+  ],
+  "item": [
+    "minecraft:apple"
+  ]
+}

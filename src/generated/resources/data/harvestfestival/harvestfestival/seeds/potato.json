@@ -1,0 +1,12 @@
+{
+  "Block": "minecraft:potatoes",
+  "Color": "#BE8D2B",
+  "Name": {
+    "translate": "item.harvestfestival.potato_seeds"
+  },
+  "Seeds": {
+    "Count": 1,
+    "id": "minecraft:potato"
+  },
+  "Type": "crop"
+}

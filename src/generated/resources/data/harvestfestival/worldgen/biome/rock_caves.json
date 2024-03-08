@@ -1,0 +1,79 @@
+{
+  "carvers": {},
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 12638463,
+    "sky_color": 0,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [
+      "harvestfestival:coarse_dirt_floor",
+      "harvestfestival:dark_oak_floor"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "harvestfestival:earthen_deepslate_floor",
+      "harvestfestival:earthen_tuff_floor",
+      "harvestfestival:earthen_basalt_floor",
+      "harvestfestival:earthen_blackstone_floor",
+      "harvestfestival:earthen_smooth_basalt_floor"
+    ],
+    [],
+    [],
+    [],
+    [
+      "harvestfestival:cobblestone_lesser"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 5
+      }
+    ],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:spider",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 50
+      },
+      {
+        "type": "minecraft:zombie",
+        "maxCount": 5,
+        "minCount": 3,
+        "weight": 45
+      },
+      {
+        "type": "minecraft:zombie_villager",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 3
+      },
+      {
+        "type": "minecraft:skeleton",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 50
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.2
+}

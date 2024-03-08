@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/small_mangrove_stump"
+      },
+      {
+        "model": "harvestfestival:block/small_mangrove_stump",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/small_mangrove_stump",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/small_mangrove_stump",
+        "y": 180
+      }
+    ]
+  }
+}

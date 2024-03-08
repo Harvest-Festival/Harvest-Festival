@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/hell_cobblestone"
+      },
+      {
+        "model": "harvestfestival:block/hell_cobblestone_rotated",
+        "y": 90
+      }
+    ]
+  }
+}

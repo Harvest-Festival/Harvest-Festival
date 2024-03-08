@@ -1,0 +1,26 @@
+{
+  "values": [
+    "minecraft:cactus",
+    "minecraft:shears",
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:trident",
+    "minecraft:shears",
+    "minecraft:sugar_cane",
+    "#minecraft:hoes",
+    "#forge:seeds",
+    "#forge:crops",
+    "#minecraft:saplings",
+    "minecraft:bucket",
+    "minecraft:water_bucket",
+    "minecraft:lava_bucket",
+    "minecraft:pufferfish_bucket",
+    "minecraft:salmon_bucket",
+    "minecraft:cod_bucket",
+    "minecraft:tropical_fish_bucket",
+    "minecraft:axolotl_bucket",
+    "minecraft:tadpole_bucket",
+    "harvestfestival:goddess_water_bucket",
+    "harvestfestival:icy_water_bucket"
+  ]
+}

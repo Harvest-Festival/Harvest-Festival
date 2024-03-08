@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "harvestfestival:block/mine/interior/hell/wall_gems_4"
+  }
+}

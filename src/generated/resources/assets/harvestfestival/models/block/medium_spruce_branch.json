@@ -1,0 +1,7 @@
+{
+  "parent": "harvestfestival:block/medium_branch",
+  "textures": {
+    "side": "minecraft:block/spruce_log",
+    "top": "minecraft:block/spruce_log_top"
+  }
+}

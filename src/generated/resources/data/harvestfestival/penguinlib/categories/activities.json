@@ -1,0 +1,12 @@
+{
+  "icon": {
+    "type": "penguinlib:item",
+    "item": {
+      "Count": 1,
+      "id": "harvestfestival:basic_axe",
+      "tag": {
+        "Damage": 0
+      }
+    }
+  }
+}

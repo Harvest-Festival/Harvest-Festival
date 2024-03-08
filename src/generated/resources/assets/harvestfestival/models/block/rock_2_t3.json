@@ -1,0 +1,6 @@
+{
+  "parent": "harvestfestival:block/rock_2",
+  "textures": {
+    "particle": "harvestfestival:block/mine/node/rock3"
+  }
+}

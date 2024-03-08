@@ -1,0 +1,356 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 50,
+              "start": 1
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:agate",
+          "weight": 190
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 40,
+              "start": 1
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:amethyst_shard",
+          "weight": 200
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 60,
+              "start": 10
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:fluorite",
+          "weight": 175
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 70,
+              "start": 20
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:peridot",
+          "weight": 160
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 100,
+              "start": 40
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:ruby",
+          "weight": 125
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 80,
+              "start": 30
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:topaz",
+          "weight": 150
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 10
+                },
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 110
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:alexandrite"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 3
+                },
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 81
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:diamond",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 60,
+              "start": 30
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:sapphire",
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 100,
+              "start": 50
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:emerald",
+          "weight": 90
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 100,
+              "start": 70
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:moonstone",
+          "weight": 225
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 100,
+              "start": 60
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:sand_rose",
+          "weight": 200
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 102
+                },
+                {
+                  "condition": "harvestfestival:mine_floor_multiple_of",
+                  "multiple": 3
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:pink_diamond"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "harvestfestival:mine_floor_between_scaled",
+              "end": 100,
+              "start": 50
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "harvestfestival:jade",
+          "weight": 110
+        }
+      ],
+      "rolls": 5.0
+    }
+  ],
+  "random_sequence": "harvestfestival:blocks/gem_node"
+}

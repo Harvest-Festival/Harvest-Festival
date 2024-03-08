@@ -1,0 +1,17 @@
+{
+  "feature": "harvestfestival:crimson_nylium",
+  "placement": [
+    {
+      "type": "minecraft:noise_threshold_count",
+      "above_noise": 8,
+      "below_noise": 4,
+      "noise_level": -0.8
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

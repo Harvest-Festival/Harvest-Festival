@@ -1,0 +1,11 @@
+{
+  "type": "harvestfestival:block_blob",
+  "config": {
+    "block": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:snow_block"
+      }
+    }
+  }
+}

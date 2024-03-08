@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/small_dark_oak_branch"
+      },
+      {
+        "model": "harvestfestival:block/small_dark_oak_branch",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/small_dark_oak_branch",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/small_dark_oak_branch",
+        "y": 180
+      }
+    ]
+  }
+}

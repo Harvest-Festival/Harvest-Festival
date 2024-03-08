@@ -1,0 +1,24 @@
+{
+  "type": "harvestfestival:replace_floor",
+  "config": {
+    "number_of_blocks": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 64,
+        "min_inclusive": 36
+      }
+    },
+    "replace": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "harvestfestival:frozen_mine_floor"
+      }
+    },
+    "state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:packed_ice"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "harvestfestival:block/blue_magic_flower"
+  }
+}

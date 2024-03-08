@@ -1,0 +1,31 @@
+{
+  "type": "harvestfestival:mini_tree",
+  "config": {
+    "leaves": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:oak_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "log": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:warped_stem",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
+    "wall": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "harvestfestival:hell_mine_wall"
+      }
+    }
+  }
+}

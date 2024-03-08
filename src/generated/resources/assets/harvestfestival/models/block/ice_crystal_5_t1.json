@@ -1,0 +1,6 @@
+{
+  "parent": "harvestfestival:block/ice_crystal_5",
+  "textures": {
+    "particle": "harvestfestival:block/mine/node/ice_crystal1"
+  }
+}

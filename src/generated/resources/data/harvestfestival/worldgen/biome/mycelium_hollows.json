@@ -1,0 +1,65 @@
+{
+  "carvers": {},
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 12638463,
+    "sky_color": 0,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [
+      "harvestfestival:earthen_grass",
+      "harvestfestival:dark_oak_floor"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "harvestfestival:mini_dark_oak_tree",
+      "harvestfestival:dark_oak_leaves",
+      "harvestfestival:grass_earth_short",
+      "harvestfestival:grass_earth_tall",
+      "harvestfestival:huge_red_mushroom",
+      "harvestfestival:huge_brown_mushroom",
+      "harvestfestival:dark_forest_trees",
+      "harvestfestival:dark_oak_bushes"
+    ],
+    [
+      "harvestfestival:moss_carpet",
+      "harvestfestival:cobblestone"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:mooshroom",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:slime",
+        "maxCount": 5,
+        "minCount": 3,
+        "weight": 24
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.2
+}

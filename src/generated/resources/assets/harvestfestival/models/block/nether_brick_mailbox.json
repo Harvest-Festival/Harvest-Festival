@@ -1,0 +1,7 @@
+{
+  "parent": "harvestfestival:block/mailbox_base",
+  "textures": {
+    "particle": "harvestfestival:block/mail/nether_brick_mailbox_2",
+    "texture": "harvestfestival:block/mail/nether_brick_mailbox_1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/large_birch_branch"
+      },
+      {
+        "model": "harvestfestival:block/large_birch_branch",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/large_birch_branch",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/large_birch_branch",
+        "y": 180
+      }
+    ]
+  }
+}

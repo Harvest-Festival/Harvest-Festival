@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "harvestfestival:item/tools/gold_axe"
+  }
+}

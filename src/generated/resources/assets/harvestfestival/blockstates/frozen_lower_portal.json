@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "ew=false,section=bl": {
+      "model": "harvestfestival:block/frozen_lower_portal_bl"
+    },
+    "ew=false,section=bm": {
+      "model": "harvestfestival:block/frozen_lower_portal_bm"
+    },
+    "ew=false,section=br": {
+      "model": "harvestfestival:block/frozen_lower_portal_br"
+    },
+    "ew=false,section=tl": {
+      "model": "harvestfestival:block/frozen_lower_portal_tl"
+    },
+    "ew=false,section=tm": {
+      "model": "harvestfestival:block/frozen_lower_portal_tm"
+    },
+    "ew=false,section=tr": {
+      "model": "harvestfestival:block/frozen_lower_portal_tr"
+    },
+    "ew=true,section=bl": {
+      "model": "harvestfestival:block/frozen_lower_portal_bl",
+      "y": 270
+    },
+    "ew=true,section=bm": {
+      "model": "harvestfestival:block/frozen_lower_portal_bm",
+      "y": 270
+    },
+    "ew=true,section=br": {
+      "model": "harvestfestival:block/frozen_lower_portal_br",
+      "y": 270
+    },
+    "ew=true,section=tl": {
+      "model": "harvestfestival:block/frozen_lower_portal_tl",
+      "y": 270
+    },
+    "ew=true,section=tm": {
+      "model": "harvestfestival:block/frozen_lower_portal_tm",
+      "y": 270
+    },
+    "ew=true,section=tr": {
+      "model": "harvestfestival:block/frozen_lower_portal_tr",
+      "y": 270
+    }
+  }
+}

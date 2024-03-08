@@ -1,0 +1,12 @@
+{
+  "type": "harvestfestival:decorate_floor",
+  "config": {
+    "random": 2,
+    "state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "harvestfestival:hell_cobble_bricks"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "values": [
+    "harvestfestival:junk_ore",
+    "harvestfestival:mythic_stone",
+    "#forge:raw_materials",
+    "#forge:gems",
+    "#forge:dusts/redstone",
+    "#forge:coin"
+  ]
+}

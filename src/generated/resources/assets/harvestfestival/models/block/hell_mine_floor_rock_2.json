@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "harvestfestival:block/mine/interior/hell/wall_blank",
+    "top": "harvestfestival:block/mine/interior/hell/floor_rock_2"
+  }
+}

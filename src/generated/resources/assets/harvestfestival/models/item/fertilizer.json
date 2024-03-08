@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "harvestfestival:item/bone_meal_fertilizer",
+      "predicate": {
+        "harvestfestival:fertilizer": 0.2
+      }
+    },
+    {
+      "model": "harvestfestival:item/basic_fertilizer",
+      "predicate": {
+        "harvestfestival:fertilizer": 0.3
+      }
+    },
+    {
+      "model": "harvestfestival:item/quality_fertilizer",
+      "predicate": {
+        "harvestfestival:fertilizer": 0.4
+      }
+    },
+    {
+      "model": "harvestfestival:item/speed_fertilizer",
+      "predicate": {
+        "harvestfestival:fertilizer": 0.5
+      }
+    },
+    {
+      "model": "harvestfestival:item/turbo_fertilizer",
+      "predicate": {
+        "harvestfestival:fertilizer": 0.6
+      }
+    },
+    {
+      "model": "harvestfestival:item/retention_fertilizer",
+      "predicate": {
+        "harvestfestival:fertilizer": 0.7
+      }
+    },
+    {
+      "model": "harvestfestival:item/aqua_guard_fertilizer",
+      "predicate": {
+        "harvestfestival:fertilizer": 0.8
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "harvestfestival:item/farming/none_fertilizer"
+  }
+}

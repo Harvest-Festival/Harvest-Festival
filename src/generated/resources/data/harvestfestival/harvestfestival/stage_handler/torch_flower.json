@@ -1,0 +1,11 @@
+{
+  "type": "harvestfestival:pattern",
+  "can_grow": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    true
+  ]
+}

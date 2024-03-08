@@ -1,0 +1,17 @@
+{
+	"parent": "minecraft:block/block",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"screen": "harvestfestival:tv_program/off"
+	},
+	"elements": [
+		{
+			"name": "screen",
+			"from": [9.05, 6, 3],
+			"to": [10.05, 14, 13],
+			"faces": {
+				"east": {"uv": [0, 1.5, 16, 14.5], "texture": "#screen"}
+			}
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "harvestfestival:silver_coin",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "harvestfestival:adamantite",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "harvestfestival:moonstone"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 140
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "harvestfestival:blocks/ice_crystal"
+}

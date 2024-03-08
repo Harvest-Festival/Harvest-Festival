@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/fishing_rod",
+  "textures": {
+    "layer0": "harvestfestival:item/tools/basic_fishing_rod_cast"
+  }
+}

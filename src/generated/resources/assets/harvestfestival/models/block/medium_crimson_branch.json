@@ -1,0 +1,7 @@
+{
+  "parent": "harvestfestival:block/medium_branch",
+  "textures": {
+    "side": "minecraft:block/crimson_stem",
+    "top": "minecraft:block/crimson_stem_top"
+  }
+}

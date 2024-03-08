@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:directory",
+      "prefix": "fertilizer/",
+      "source": "fertilizer"
+    },
+    {
+      "type": "minecraft:directory",
+      "prefix": "quality/",
+      "source": "quality"
+    },
+    {
+      "type": "minecraft:directory",
+      "prefix": "tv_program/",
+      "source": "tv_program"
+    }
+  ]
+}

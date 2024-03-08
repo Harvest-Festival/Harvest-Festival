@@ -1,0 +1,161 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"ore": "harvestfestival:block/mine/node/ore_iron",
+		"rock": "harvestfestival:block/mine/node/rock_iron",
+		"particle": "harvestfestival:block/mine/node/rock_iron"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 13],
+			"to": [12, 5, 15],
+			"faces": {
+				"north": {"uv": [5, 6, 13, 11], "texture": "#rock"},
+				"east": {"uv": [2, 3, 4, 8], "texture": "#rock"},
+				"south": {"uv": [7, 9, 15, 14], "texture": "#rock"},
+				"west": {"uv": [2, 3, 4, 8], "texture": "#rock"},
+				"up": {"uv": [2, 3, 10, 5], "texture": "#rock"},
+				"down": {"uv": [0, 0, 8, 2], "texture": "#rock"}
+			}
+		},
+		{
+			"from": [3, 0, 3],
+			"to": [13, 6, 13],
+			"faces": {
+				"north": {"uv": [3, 3, 13, 13], "texture": "#rock"},
+				"east": {"uv": [3, 3, 13, 13], "texture": "#rock"},
+				"south": {"uv": [3, 3, 13, 13], "texture": "#rock"},
+				"west": {"uv": [3, 3, 13, 13], "texture": "#rock"},
+				"up": {"uv": [3, 3, 13, 13], "texture": "#rock"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#rock"}
+			}
+		},
+		{
+			"from": [4, 6, 4],
+			"to": [12, 8, 12],
+			"faces": {
+				"north": {"uv": [0, 8, 8, 16], "texture": "#rock"},
+				"east": {"uv": [7, 0, 15, 8], "texture": "#rock"},
+				"south": {"uv": [4, 4, 12, 12], "texture": "#rock"},
+				"west": {"uv": [3, 4, 11, 12], "texture": "#rock"},
+				"up": {"uv": [5, 5, 13, 13], "texture": "#rock"},
+				"down": {"uv": [5, 3, 13, 11], "texture": "#rock"}
+			}
+		},
+		{
+			"from": [1, 0, 4],
+			"to": [3, 5, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 5], "texture": "#rock"},
+				"east": {"uv": [2, 3, 10, 8], "texture": "#rock"},
+				"south": {"uv": [2, 3, 4, 8], "texture": "#rock"},
+				"west": {"uv": [6, 7, 14, 12], "texture": "#rock"},
+				"up": {"uv": [2, 3, 4, 11], "texture": "#rock"},
+				"down": {"uv": [0, 0, 2, 8], "texture": "#rock"}
+			}
+		},
+		{
+			"from": [13, 0, 4],
+			"to": [15, 5, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 5], "texture": "#rock"},
+				"east": {"uv": [6, 7, 14, 12], "texture": "#rock"},
+				"south": {"uv": [2, 3, 4, 8], "texture": "#rock"},
+				"west": {"uv": [2, 3, 10, 8], "texture": "#rock"},
+				"up": {"uv": [2, 3, 4, 11], "texture": "#rock"},
+				"down": {"uv": [0, 0, 2, 8], "texture": "#rock"}
+			}
+		},
+		{
+			"from": [4, 0, 1],
+			"to": [12, 5, 3],
+			"faces": {
+				"north": {"uv": [7, 3, 15, 8], "texture": "#rock"},
+				"east": {"uv": [2, 3, 4, 8], "texture": "#rock"},
+				"south": {"uv": [2, 3, 10, 8], "texture": "#rock"},
+				"west": {"uv": [2, 3, 4, 8], "texture": "#rock"},
+				"up": {"uv": [2, 3, 10, 5], "texture": "#rock"},
+				"down": {"uv": [0, 0, 8, 2], "texture": "#rock"}
+			}
+		},
+		{
+			"from": [4, 0, 5],
+			"to": [8, 4, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"east": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"south": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"west": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"up": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"down": {"uv": [7, 6, 11, 10], "texture": "#ore"}
+			}
+		},
+		{
+			"from": [4, 11, 7],
+			"to": [8, 15, 11],
+			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"east": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"south": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"west": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"up": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"down": {"uv": [7, 6, 11, 10], "texture": "#ore"}
+			}
+		},
+		{
+			"from": [6, 7, 10],
+			"to": [10, 11, 14],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"east": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"south": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"west": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"up": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"down": {"uv": [7, 6, 11, 10], "texture": "#ore"}
+			}
+		},
+		{
+			"from": [6, 3, 8],
+			"to": [10, 7, 12],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"east": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"south": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"west": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"up": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"down": {"uv": [7, 6, 11, 10], "texture": "#ore"}
+			}
+		},
+		{
+			"from": [5, 2, -3],
+			"to": [9, 6, 1],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"east": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"south": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"west": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"up": {"uv": [7, 6, 11, 10], "texture": "#ore"},
+				"down": {"uv": [7, 6, 11, 10], "texture": "#ore"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Node Block",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5]
+		},
+		{
+			"name": "Ores",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [6, 7, 8, 9, 10]
+		}
+	]
+}

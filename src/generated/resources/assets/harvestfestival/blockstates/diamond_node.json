@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/diamond_node"
+      },
+      {
+        "model": "harvestfestival:block/diamond_node",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/diamond_node",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/diamond_node",
+        "y": 180
+      }
+    ]
+  }
+}

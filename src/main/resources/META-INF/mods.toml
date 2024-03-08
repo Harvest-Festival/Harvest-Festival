@@ -1,0 +1,55 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+description='''${mod_description}'''
+[[dependencies.${mod_id}]]
+    modId="shopaholic"
+    type="optional"
+    versionRange="${shopaholic_version_range}"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="simplyseasons"
+    type="optional"
+    versionRange="${simplyseasons_version_range}"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="horticulture"
+    type="optional"
+    versionRange="${horticulture_version_range}"
+    ordering="AFTER" #Load after horticulture so that we override the time_unit for the sprinklers
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="penguinlib"
+    type="required"
+    versionRange="${penguinlib_version_range}"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="rhino"
+    type="required"
+    versionRange="${rhino_version_range}"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neo_version_range}"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+[[accessTransformers]]
+    file="META-INF/accesstransformer.cfg"
+[[mixins]]
+    config="${mod_id}.mixins.json"

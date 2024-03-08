@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/large_jungle_stump"
+      },
+      {
+        "model": "harvestfestival:block/large_jungle_stump",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/large_jungle_stump",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/large_jungle_stump",
+        "y": 180
+      }
+    ]
+  }
+}

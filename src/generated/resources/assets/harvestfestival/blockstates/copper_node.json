@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/copper_node"
+      },
+      {
+        "model": "harvestfestival:block/copper_node",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/copper_node",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/copper_node",
+        "y": 180
+      }
+    ]
+  }
+}

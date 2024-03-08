@@ -1,0 +1,16 @@
+{
+  "type": "harvestfestival:decorate_floor",
+  "config": {
+    "random": 2,
+    "state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:pink_petals",
+        "Properties": {
+          "facing": "north",
+          "flower_amount": "1"
+        }
+      }
+    }
+  }
+}

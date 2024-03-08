@@ -1,0 +1,7 @@
+{
+  "parent": "harvestfestival:block/small_stump",
+  "textures": {
+    "side": "minecraft:block/cherry_log",
+    "top": "minecraft:block/cherry_log_top"
+  }
+}

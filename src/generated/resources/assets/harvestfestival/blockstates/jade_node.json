@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/jade_node"
+      },
+      {
+        "model": "harvestfestival:block/jade_node",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/jade_node",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/jade_node",
+        "y": 180
+      }
+    ]
+  }
+}

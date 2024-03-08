@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/small_crimson_stump"
+      },
+      {
+        "model": "harvestfestival:block/small_crimson_stump",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/small_crimson_stump",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/small_crimson_stump",
+        "y": 180
+      }
+    ]
+  }
+}

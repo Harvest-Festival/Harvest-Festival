@@ -1,0 +1,7 @@
+{
+  "parent": "harvestfestival:block/large_stump",
+  "textures": {
+    "side": "minecraft:block/mangrove_log",
+    "top": "minecraft:block/mangrove_log_top"
+  }
+}

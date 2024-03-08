@@ -1,0 +1,33 @@
+{
+  "values": {
+    "minecraft:beetroots": {
+      "handler": "harvestfestival:four_days",
+      "requires_water": true
+    },
+    "minecraft:carrots": {
+      "handler": "harvestfestival:eight_days",
+      "requires_water": true
+    },
+    "minecraft:melon_stem": {
+      "handler": "harvestfestival:melon",
+      "requires_water": true
+    },
+    "minecraft:nether_wart": {
+      "handler": "harvestfestival:four_days"
+    },
+    "minecraft:potatoes": {
+      "handler": "harvestfestival:eight_days",
+      "requires_water": true
+    },
+    "minecraft:pumpkin_stem": {
+      "handler": "harvestfestival:pumpkin",
+      "requires_water": true
+    },
+    "minecraft:torchflower_crop": {
+      "handler": "harvestfestival:four_days"
+    },
+    "minecraft:wheat": {
+      "handler": "harvestfestival:wheat"
+    }
+  }
+}

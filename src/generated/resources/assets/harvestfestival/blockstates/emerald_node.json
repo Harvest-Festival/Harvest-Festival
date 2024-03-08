@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/emerald_node"
+      },
+      {
+        "model": "harvestfestival:block/emerald_node",
+        "y": 90
+      },
+      {
+        "model": "harvestfestival:block/emerald_node",
+        "y": -90
+      },
+      {
+        "model": "harvestfestival:block/emerald_node",
+        "y": 180
+      }
+    ]
+  }
+}

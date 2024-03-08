@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "harvestfestival:block/weeds_1"
+      },
+      {
+        "model": "harvestfestival:block/weeds_2"
+      },
+      {
+        "model": "harvestfestival:block/weeds_3"
+      },
+      {
+        "model": "harvestfestival:block/weeds_4"
+      }
+    ]
+  }
+}
