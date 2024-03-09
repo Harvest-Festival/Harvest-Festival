@@ -105,7 +105,7 @@ public class HFCreativeTabs {
                     output.accept(stack);
                 });
 
-                HFRegistries.SEEDS.stream().forEach(crop -> output.accept(HFItems.SEED_BAG.get().withCrop(crop)));
+                HFRegistries.SEEDS.stream().forEach(crop -> output.accept(HFItems.SEED_BAG.get().toStack(crop)));
                 HFRegistries.SEEDLINGS.stream().forEach(tree -> output.accept(HFItems.SEEDLING_BAG.get().withSeedling(tree)));
             }).build());
 

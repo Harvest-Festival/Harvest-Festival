@@ -104,7 +104,7 @@ public class HFClient {
         }, HFBlocks.WEEDS.get());
 
         event.register((stack, tintIndex) -> {
-            SeedData data = HFItems.SEED_BAG.get().getSeeds(stack);
+            SeedData data = HFItems.SEED_BAG.get().fromStack(stack);
             return data != null ? data.getColor() : -1;
         }, HFItems.SEED_BAG.get());
 

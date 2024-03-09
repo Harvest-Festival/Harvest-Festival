@@ -26,10 +26,11 @@ import uk.joshiejack.harvestfestival.world.level.ticker.crop.CropData;
 import uk.joshiejack.harvestfestival.world.level.ticker.crop.stage.StageHandler;
 import uk.joshiejack.penguinlib.util.PenguinTags;
 import uk.joshiejack.penguinlib.util.registry.ReloadableRegistry;
+import uk.joshiejack.penguinlib.world.item.PenguinRegistryItem;
 
 import static net.minecraft.network.chat.TextColor.parseColor;
 
-public record SeedData(@Nullable Component name, ItemStack seeds, Block block, String color, IPlantable plantable) implements ReloadableRegistry.PenguinRegistry<SeedData> {
+public record SeedData(@Nullable Component name, ItemStack seeds, Block block, String color, IPlantable plantable) implements ReloadableRegistry.PenguinRegistry<SeedData>, PenguinRegistryItem.Nameable {
     public static final SeedData EMPTY = new SeedData(Component.empty(), ItemStack.EMPTY, Blocks.AIR, "0", PlantType.CROP);
     public static Object2IntMap<SeedData> COLORS = new Object2IntOpenHashMap<>();
 

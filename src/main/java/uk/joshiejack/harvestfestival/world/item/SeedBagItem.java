@@ -5,7 +5,6 @@ import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -23,41 +22,19 @@ import uk.joshiejack.harvestfestival.HFConfig;
 import uk.joshiejack.harvestfestival.HFRegistries;
 import uk.joshiejack.harvestfestival.HarvestFestival;
 import uk.joshiejack.penguinlib.util.helper.FakePlayerHelper;
+import uk.joshiejack.penguinlib.world.item.PenguinRegistryItem;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class SeedBagItem extends Item {
+public class SeedBagItem extends PenguinRegistryItem<SeedData> {
     public SeedBagItem(Item.Properties properties)  {
-        super(properties);
-    }
-
-    public ItemStack withCrop(SeedData data) {
-        return withCrop(new ItemStack(this), data);
-    }
-
-    public ItemStack withCrop(ItemStack stack, SeedData data) {
-        stack.getOrCreateTag().putString("Crop", data.id().toString());
-        return stack;
-    }
-
-    @SuppressWarnings("ConstantConditions")
-    @Nullable
-    public SeedData getSeeds(ItemStack stack) {
-        return stack.hasTag() ? HFRegistries.SEEDS.get(new ResourceLocation(stack.getTag().getString("Crop"))) : null;
-    }
-
-    @Nonnull
-    @Override
-    public Component getName(@Nonnull ItemStack stack) {
-        SeedData data = getSeeds(stack);
-        return data != null ? data.getName() : super.getName(stack);
+        super(HFRegistries.SEEDS, "Crop", properties);
     }
 
     @Override
     public void appendHoverText(@NotNull ItemStack pStack, @Nullable Level pLevel, @NotNull List<Component> pTooltipComponents, @NotNull TooltipFlag pIsAdvanced) {
-        SeedData data = getSeeds(pStack);
+        SeedData data = fromStack(pStack);
         if (data != null) {
             if (data.requiresSickle()) pTooltipComponents.add(Component.translatable("info.%s.requires_sickle".formatted(HarvestFestival.MODID)).withStyle(ChatFormatting.AQUA, ChatFormatting.ITALIC));
             if (!data.requiresWater()) pTooltipComponents.add(Component.translatable("info.%s.no_water_required".formatted(HarvestFestival.MODID)).withStyle(ChatFormatting.BLUE, ChatFormatting.ITALIC));
@@ -80,7 +57,7 @@ public class SeedBagItem extends Item {
         Player player = context.getPlayer();
         if (player == null) return InteractionResult.PASS;
         InteractionHand hand = context.getHand();
-        SeedData seeds = getSeeds(player.getItemInHand(hand));
+        SeedData seeds = fromStack(player.getItemInHand(hand));
         if (seeds != null) {
             BlockPos pos = context.getClickedPos();
             ItemStack held = player.getItemInHand(hand).copy();
