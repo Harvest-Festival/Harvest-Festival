@@ -5,13 +5,10 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.resources.ResourceManager;
 import net.neoforged.neoforge.common.util.Lazy;
-import net.neoforged.neoforge.server.ServerLifecycleHooks;
 import uk.joshiejack.harvestfestival.HFRegistries;
-import uk.joshiejack.harvestfestival.scripting.HFScripting;
-import uk.joshiejack.penguinlib.PenguinLib;
-import uk.joshiejack.penguinlib.scripting.ScriptLoader;
+import uk.joshiejack.penguinlib.scripting.Interpreter;
+import uk.joshiejack.penguinlib.scripting.ScriptFactory;
 import uk.joshiejack.penguinlib.util.registry.ReloadableRegistry;
 
 import javax.annotation.Nullable;
@@ -26,12 +23,7 @@ public class TVChannel implements ReloadableRegistry.PenguinRegistry<TVChannel> 
     //The texture displayed in the menu selection and the coordinates, 62x46 pixels
     private final ResourceLocation scriptID;
     private final boolean selectable;
-    private final Lazy<Interpreter> script = Lazy.of(() -> {
-        if (getScriptID() == null) return null;
-        ResourceManager resourceManager = ServerLifecycleHooks.getCurrentServer().getResourceManager();
-        String javascript = HFScripting.getJavascriptFromResourceLocation(resourceManager, getScriptID());
-        return new Interpreter(id(), this, javascript);
-    });
+    private final Lazy<Interpreter<?>> script = Lazy.of(() -> ScriptFactory.getScript(getScriptID()));
 
     public TVChannel(@Nullable ResourceLocation script, boolean selectable) {
         this.scriptID = script;
@@ -47,7 +39,7 @@ public class TVChannel implements ReloadableRegistry.PenguinRegistry<TVChannel> 
     }
 
     @Nullable
-    public Interpreter getScript() {
+    public Interpreter<?> getScript() {
         return script.get();
     }
 
@@ -71,13 +63,5 @@ public class TVChannel implements ReloadableRegistry.PenguinRegistry<TVChannel> 
         if (scriptID != null)
             buf.writeResourceLocation(scriptID);
         buf.writeBoolean(selectable);
-    }
-
-    public static class Interpreter extends uk.joshiejack.penguinlib.scripting.Interpreter<TVChannel> {
-        private static final ScriptLoader.ScriptLocation TV_CHANNELS = new ScriptLoader.ScriptLocation(PenguinLib.MODID + "/scripts/tv_channels",
-                (rl) -> HFRegistries.TV_CHANNELS.get(rl).getScript());
-        public Interpreter(ResourceLocation id, TVChannel channel, String javascript) {
-            super(id, javascript, TV_CHANNELS, channel);
-        }
     }
 }

@@ -35,7 +35,7 @@ public class TelevisionBlockEntity extends PenguinBlockEntity {
         if (level == null) return;
         this.program = program;
         if (!level.isClientSide) {
-            PenguinNetwork.sendToNearby( new SetTVProgramPacket(getBlockPos(), program), this);
+            PenguinNetwork.sendToNearby(this, new SetTVProgramPacket(getBlockPos(), program));
         } else {
             requestModelDataUpdate();
             level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);

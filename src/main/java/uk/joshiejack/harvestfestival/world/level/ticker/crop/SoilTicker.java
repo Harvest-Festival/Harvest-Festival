@@ -82,9 +82,9 @@ public class SoilTicker implements DailyTicker<SoilTicker>, CanBeFertilized {
         if (level instanceof ServerLevel serverLevel) {
             level.getChunk(pos).setUnsaved(true);
             if (fertilizer != HFFarming.Fertilizers.NONE.get())
-                PenguinNetwork.sendToNearby(new AddFertilizerPacket(pos, fertilizer), serverLevel, pos.getX(), pos.getY(), pos.getZ(), 64);
+                PenguinNetwork.sendToNearby(serverLevel, pos.getX(), pos.getY(), pos.getZ(), 64, new AddFertilizerPacket(pos, fertilizer));
             else
-                PenguinNetwork.sendToNearby(new RemoveFertilizerPacket(pos, fertilizer), serverLevel, pos.getX(), pos.getY(), pos.getZ(), 64);
+                PenguinNetwork.sendToNearby(serverLevel, pos.getX(), pos.getY(), pos.getZ(), 64, new RemoveFertilizerPacket(pos, fertilizer));
         }
 
         return true; //We can only apply fertilizer when the soil is empty
