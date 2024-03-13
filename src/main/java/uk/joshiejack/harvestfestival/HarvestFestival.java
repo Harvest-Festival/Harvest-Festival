@@ -26,6 +26,8 @@ import org.slf4j.Logger;
 import uk.joshiejack.harvestfestival.client.HFClientConfig;
 import uk.joshiejack.harvestfestival.command.HFCommands;
 import uk.joshiejack.harvestfestival.data.*;
+import uk.joshiejack.harvestfestival.data.economy.HFDepartments;
+import uk.joshiejack.harvestfestival.data.economy.HFShops;
 import uk.joshiejack.harvestfestival.data.farming.HFDataMapProvider;
 import uk.joshiejack.harvestfestival.data.farming.HFSeedProvider;
 import uk.joshiejack.harvestfestival.data.farming.HFSeedlingProvider;
@@ -116,6 +118,10 @@ public class HarvestFestival {
         generator.addProvider(event.includeServer(), new HFDataMapProvider(output, event.getLookupProvider()));
         generator.addProvider(event.includeServer(), new HFTVPrograms(output));
         generator.addProvider(event.includeServer(), new HFTVChannels(output));
+
+        //Economy
+        generator.addProvider(event.includeServer(), new HFShops(output));
+        generator.addProvider(event.includeServer(), new HFDepartments(output));
 
         //PackMetadataGenerator
         generator.addProvider(true, new PackMetadataGenerator(output).add(PackMetadataSection.TYPE, new PackMetadataSection(

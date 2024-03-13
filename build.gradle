@@ -89,6 +89,7 @@ dependencies {
     implementation "uk.joshiejack.horticulture:Horticulture:${minecraft_version}-${horticulture_version}"
     implementation "uk.joshiejack.shopaholic:Shopaholic:${minecraft_version}-${shopaholic_version}"
     implementation "uk.joshiejack.simplyseasons:Simply-Seasons:${minecraft_version}-${simplyseasons_version}"
+    implementation("uk.joshiejack.settlements:Settlements:${minecraft_version}-${settlements_version}")
     // compile against the JEI API but do not include it at runtime
     compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
@@ -113,6 +114,7 @@ tasks.withType(ProcessResources).configureEach {
             simplyseasons_version: simplyseasons_version, simplyseasons_version_range: simplyseasons_version_range,
             horticulture_version: horticulture_version, horticulture_version_range: horticulture_version_range,
             shopaholic_version  : shopaholic_version, shopaholic_version_range: shopaholic_version_range,
+            settlements_version : settlements_version, settlements_version_range: settlements_version_range,
             loader_version_range: loader_version_range,
             mod_id              : mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
             mod_authors         : mod_authors, mod_description: mod_description,
@@ -127,7 +129,7 @@ tasks.withType(ProcessResources).configureEach {
 publishing {
     publications {
         register('mavenJava', MavenPublication) {
-            artifactId = "Harvest-Core"
+            artifactId = mod_name.replace(" ", "-")
             from components.java
         }
     }
