@@ -52,7 +52,7 @@
   ],
   "listings": [
     {
-      "stock_mechanic": "harvestfestival:limited_1",
+      "stock_mechanic": "shopaholic:limited_one",
       "sublistings": [
         {
           "gold": 1500,
@@ -68,7 +68,7 @@
       "unique_id": "miracle_potion"
     },
     {
-      "stock_mechanic": "harvestfestival:limited_4",
+      "stock_mechanic": "harvestfestival:limited_four",
       "sublistings": [
         {
           "gold": 250,
@@ -84,7 +84,7 @@
       "unique_id": "name_tag"
     },
     {
-      "stock_mechanic": "harvestfestival:limited_4",
+      "stock_mechanic": "harvestfestival:limited_four",
       "sublistings": [
         {
           "gold": 150,
@@ -100,7 +100,7 @@
       "unique_id": "lead"
     },
     {
-      "stock_mechanic": "harvestfestival:limited_1",
+      "stock_mechanic": "shopaholic:limited_one",
       "sublistings": [
         {
           "gold": 1000,
@@ -119,7 +119,7 @@
       "unique_id": "brush"
     },
     {
-      "stock_mechanic": "harvestfestival:limited_1",
+      "stock_mechanic": "shopaholic:limited_one",
       "sublistings": [
         {
           "gold": 2000,

@@ -16,7 +16,7 @@ public class HFClientConfig {
         enableHealthBar = builder.define("Enable health bar", true);
         builder.pop();
         builder.push("Rendering Effects");
-        blinkMaximum = builder.defineInRange("Blink Maximum", 18D, 0D, 24D);
+        blinkMaximum = builder.defineInRange("Blink Maximum", 0D, 0D, 24D);
         renderQuality = builder.define("Render the Quality of items", true);
     }
 

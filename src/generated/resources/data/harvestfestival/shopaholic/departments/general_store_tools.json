@@ -74,7 +74,7 @@
   },
   "listings": [
     {
-      "stock_mechanic": "harvestfestival:limited_1",
+      "stock_mechanic": "shopaholic:limited_one",
       "sublistings": [
         {
           "gold": 500,
@@ -93,7 +93,7 @@
       "unique_id": "hoe"
     },
     {
-      "stock_mechanic": "harvestfestival:limited_1",
+      "stock_mechanic": "shopaholic:limited_one",
       "sublistings": [
         {
           "gold": 500,
@@ -112,7 +112,7 @@
       "unique_id": "sickle"
     },
     {
-      "stock_mechanic": "harvestfestival:limited_1",
+      "stock_mechanic": "shopaholic:limited_one",
       "sublistings": [
         {
           "gold": 750,
@@ -128,7 +128,7 @@
       "unique_id": "watering_can"
     },
     {
-      "stock_mechanic": "harvestfestival:limited_1",
+      "stock_mechanic": "shopaholic:limited_one",
       "sublistings": [
         {
           "gold": 1000,
@@ -147,7 +147,7 @@
       "unique_id": "axe"
     },
     {
-      "stock_mechanic": "harvestfestival:limited_1",
+      "stock_mechanic": "shopaholic:limited_one",
       "sublistings": [
         {
           "gold": 1000,

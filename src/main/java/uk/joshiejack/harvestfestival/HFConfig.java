@@ -62,7 +62,7 @@ public class HFConfig {
         toolsRecoverable = builder.comment("With this enabled you will receive your upgradable tools back when you die. If this is disabled, you will lose them.")
                 .define("Tools recoverable", true);
         maxStackSize = builder.comment("This is the maximum stack size for items in the game. (Default is 999)")
-                .defineInRange("Max stack size", 999, 1, Short.MAX_VALUE);
+                .defineInRange("Max stack size", 512, 1, Short.MAX_VALUE);
         enableBagUpgrades = builder.comment("With this enabled, bag upgrades will be enabled. Disable it to prevent slot locking.")
                 .define("Enable bag upgrades", true);
         defaultBagSize = builder.comment("This is the default size of the bag, if bag upgrades are enabled. Value between 1 and 4.")

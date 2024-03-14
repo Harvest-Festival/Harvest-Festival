@@ -2,7 +2,6 @@ package uk.joshiejack.harvestfestival.data.town;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import uk.joshiejack.harvestfestival.HarvestFestival;
 import uk.joshiejack.penguinlib.data.generator.AbstractPenguinRegistryProvider;
 import uk.joshiejack.penguinlib.util.PenguinGroup;
 import uk.joshiejack.settlements.Settlements;
@@ -21,6 +20,6 @@ public class HFTownQuests extends AbstractPenguinRegistryProvider<Quest> {
 
     @Override
     protected void buildRegistry(Map<ResourceLocation, Quest> map) {
-        map.put(HarvestFestival.prefix("npcs/jenni/hearts/3"), new Quest(DEFAULT));
+        //map.put(HarvestFestival.prefix("npcs/jenni/hearts/3"), new Quest(DEFAULT));
     }
 }

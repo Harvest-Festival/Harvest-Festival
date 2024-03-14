@@ -61,12 +61,6 @@
   "giftItemOverrides": [
     {
       "item": {
-        "tag": "forge:crops/strawberry"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
         "tag": "forge:crops/pineapple"
       },
       "value": 500
@@ -76,6 +70,12 @@
         "item": "minecraft:rabbit_foot"
       },
       "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:crops/strawberry"
+      },
+      "value": 1000
     },
     {
       "item": {

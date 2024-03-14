@@ -18,6 +18,7 @@ import uk.joshiejack.penguinlib.util.icon.ItemIcon;
 import uk.joshiejack.settlements.world.entity.SettlementsEntities;
 import uk.joshiejack.shopaholic.Shopaholic;
 import uk.joshiejack.shopaholic.api.shop.Condition;
+import uk.joshiejack.shopaholic.data.ShopaholicStockMechanics;
 import uk.joshiejack.shopaholic.data.shop.DepartmentBuilder;
 import uk.joshiejack.shopaholic.data.shop.ShopBuilder;
 import uk.joshiejack.shopaholic.data.shop.Vendor;
@@ -79,12 +80,12 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
                 .condition(CompareCondition.compare(TeamStatusComparator.status("cow_tutorial_completed"),
                         false, true, false, NumberComparator.number(1)))
                 .department(DepartmentBuilder.of(ANIMAL_RANCH_TOOLS, ItemIcon.EMPTY, Component.translatable("department.harvestfestival.animal_ranch_tools"))
-                        .listing(ListingBuilder.of("miracle_potion").addSublisting(SublistingBuilder.item(HusbandryItems.MIRACLE_POTION.get()).cost(1500)).stockMechanic(HFStockMechanics.LIMITED_1))
-                        .listing(ListingBuilder.of("name_tag").addSublisting(SublistingBuilder.item(Items.NAME_TAG).cost(250)).stockMechanic(HFStockMechanics.LIMITED_4))
-                        .listing(ListingBuilder.of("lead").addSublisting(SublistingBuilder.item(Items.LEAD).cost(150)).stockMechanic(HFStockMechanics.LIMITED_4))
-                        .listing(ListingBuilder.of("brush").addSublisting(SublistingBuilder.item(HusbandryItems.BRUSH.get()).cost(1000)).stockMechanic(HFStockMechanics.LIMITED_1))
+                        .listing(ListingBuilder.of("miracle_potion").addSublisting(SublistingBuilder.item(HusbandryItems.MIRACLE_POTION.get()).cost(1500)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
+                        .listing(ListingBuilder.of("name_tag").addSublisting(SublistingBuilder.item(Items.NAME_TAG).cost(250)).stockMechanic(HFStockMechanics.LIMITED_FOUR))
+                        .listing(ListingBuilder.of("lead").addSublisting(SublistingBuilder.item(Items.LEAD).cost(150)).stockMechanic(HFStockMechanics.LIMITED_FOUR))
+                        .listing(ListingBuilder.of("brush").addSublisting(SublistingBuilder.item(HusbandryItems.BRUSH.get()).cost(1000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
                         //TODO? .listing(ListingBuilder.of("milker").addSublisting(SublistingBuilder.item(HusbandryItems.MILKER).cost(2000)).stockMechanic(HFStockMechanics.LIMITED_1))
-                        .listing(ListingBuilder.of("shears").addSublisting(SublistingBuilder.item(Items.SHEARS).cost(2000)).stockMechanic(HFStockMechanics.LIMITED_1)) //TODO: Has Medium Barn Condition
+                        .listing(ListingBuilder.of("shears").addSublisting(SublistingBuilder.item(Items.SHEARS).cost(2000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE)) //TODO: Has Medium Barn Condition
                 )
                 .department(DepartmentBuilder.of(ANIMAL_RANCH_ANIMALS, new ItemIcon(Items.EGG.getDefaultInstance()), Component.translatable("department.harvestfestival.animal_ranch_animals"))
                         .itemListing(HusbandryItems.FODDER.get(), 50)
@@ -225,11 +226,11 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
                         .itemListing("turbo_fertilizer", fertilizerOf("turbo"), 150) //TODO: Add year two town age condition
                 )
                 .department(DepartmentBuilder.of(GENERAL_STORE_TOOLS, new ItemIcon(HorticultureItems.WATERING_CAN.get().getDefaultInstance()), Component.translatable("department.harvestfestival.general_store_tools"))
-                                .listing(ListingBuilder.of("hoe").addSublisting(SublistingBuilder.item(HFItems.BASIC_HOE.asItem()).cost(500)).stockMechanic(HFStockMechanics.LIMITED_1))
-                                .listing(ListingBuilder.of("sickle").addSublisting(SublistingBuilder.item(HusbandryItems.SICKLE.get()).cost(500)).stockMechanic(HFStockMechanics.LIMITED_1))
-                                .listing(ListingBuilder.of("watering_can").addSublisting(SublistingBuilder.item(HorticultureItems.WATERING_CAN.get()).cost(750)).stockMechanic(HFStockMechanics.LIMITED_1))
-                                .listing(ListingBuilder.of("axe").addSublisting(SublistingBuilder.item(HFItems.BASIC_AXE.get()).cost(1000)).stockMechanic(HFStockMechanics.LIMITED_1))
-                                .listing(ListingBuilder.of("hammer").addSublisting(SublistingBuilder.item(HFItems.BASIC_HAMMER.get()).cost(1000)).stockMechanic(HFStockMechanics.LIMITED_1))
+                                .listing(ListingBuilder.of("hoe").addSublisting(SublistingBuilder.item(HFItems.BASIC_HOE.asItem()).cost(500)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
+                                .listing(ListingBuilder.of("sickle").addSublisting(SublistingBuilder.item(HusbandryItems.SICKLE.get()).cost(500)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
+                                .listing(ListingBuilder.of("watering_can").addSublisting(SublistingBuilder.item(HorticultureItems.WATERING_CAN.get()).cost(750)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
+                                .listing(ListingBuilder.of("axe").addSublisting(SublistingBuilder.item(HFItems.BASIC_AXE.get()).cost(1000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
+                                .listing(ListingBuilder.of("hammer").addSublisting(SublistingBuilder.item(HFItems.BASIC_HAMMER.get()).cost(1000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
                         //TODO: .listing(ListingBuilder.of("shovel").addSublisting(SublistingBuilder.item(HusbandryItems.BASIC_SHOVEL.get()).cost(1000)).stockMechanic(HFStockMechanics.LIMITED_1))
 
                 )
