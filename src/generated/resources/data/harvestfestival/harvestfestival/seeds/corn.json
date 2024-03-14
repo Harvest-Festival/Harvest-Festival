@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:corn",
+  "Color": "#D4BD45",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:corn_seeds"
+  },
+  "Type": "crop"
+}

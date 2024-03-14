@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:turnips",
+  "Color": "#FFFFFF",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:turnip_seeds"
+  },
+  "Type": "crop"
+}

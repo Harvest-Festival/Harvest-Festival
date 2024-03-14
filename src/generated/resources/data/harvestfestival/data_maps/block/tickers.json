@@ -48,6 +48,42 @@
     "harvestfestival:spruce_seedling": {
       "type": "harvestfestival:seedling"
     },
+    "horticulture:cabbages": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:corn": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:cucumbers": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:eggplants": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:green_peppers": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:onions": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:pineapples": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:spinach": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:strawberries": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:sweet_potatoes": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:tomatoes": {
+      "type": "harvestfestival:crop"
+    },
+    "horticulture:turnips": {
+      "type": "harvestfestival:crop"
+    },
     "minecraft:acacia_sapling": {
       "type": "harvestfestival:sapling"
     },

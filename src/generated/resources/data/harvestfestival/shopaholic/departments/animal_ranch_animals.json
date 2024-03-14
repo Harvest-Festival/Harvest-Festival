@@ -1,0 +1,210 @@
+{
+  "conditions": [
+    {
+      "type": "shopaholic:entity_has_nbt_tag",
+      "data_type": "string",
+      "key": "NPC",
+      "target": "entity",
+      "value": "harvestfestival:jim"
+    },
+    {
+      "type": "shopaholic:opening_hours",
+      "hours": {
+        "friday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "monday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "saturday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "thursday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "tuesday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "wednesday": {
+          "close": 15000,
+          "open": 10000
+        }
+      }
+    },
+    {
+      "type": "shopaholic:compare",
+      "comparator_1": {
+        "type": "shopaholic:team_status",
+        "key": "cow_tutorial_completed"
+      },
+      "comparator_2": {
+        "type": "shopaholic:number",
+        "value": 1
+      },
+      "equal_to": false,
+      "greater_than": false
+    }
+  ],
+  "icon": {
+    "type": "penguinlib:item",
+    "item": {
+      "Count": 1,
+      "id": "minecraft:egg"
+    }
+  },
+  "listings": [
+    {
+      "sublistings": [
+        {
+          "gold": 50,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "husbandry:fodder"
+            }
+          }
+        }
+      ],
+      "unique_id": "fodder"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 100,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "husbandry:slop"
+            }
+          }
+        }
+      ],
+      "unique_id": "slop"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 10,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "husbandry:generic_treat"
+            }
+          }
+        }
+      ],
+      "unique_id": "generic_treat"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 30,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "husbandry:cow_treat"
+            }
+          }
+        }
+      ],
+      "unique_id": "cow_treat"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 25,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "husbandry:sheep_treat"
+            }
+          }
+        }
+      ],
+      "unique_id": "sheep_treat"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 50,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "husbandry:pig_treat"
+            }
+          }
+        }
+      ],
+      "unique_id": "pig_treat"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 60,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "husbandry:llama_treat"
+            }
+          }
+        }
+      ],
+      "unique_id": "llama_treat"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 3000,
+          "listing": {
+            "type": "shopaholic:entity",
+            "stack": "minecraft:cow"
+          }
+        }
+      ],
+      "unique_id": "cow"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 2500,
+          "listing": {
+            "type": "shopaholic:entity",
+            "stack": "minecraft:sheep"
+          }
+        }
+      ],
+      "unique_id": "sheep"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 8000,
+          "listing": {
+            "type": "shopaholic:entity",
+            "stack": "minecraft:pig"
+          }
+        }
+      ],
+      "unique_id": "pig"
+    }
+  ],
+  "method": "right_click",
+  "name": {
+    "translate": "department.harvestfestival.animal_ranch_animals"
+  },
+  "shop": "harvestfestival:animal_ranch",
+  "vendor_data": "settlements:npc",
+  "vendor_type": "entity"
+}

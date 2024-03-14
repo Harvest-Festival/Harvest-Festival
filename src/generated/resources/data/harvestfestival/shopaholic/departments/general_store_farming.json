@@ -1,0 +1,860 @@
+{
+  "conditions": [
+    {
+      "type": "shopaholic:entity_has_nbt_tag",
+      "data_type": "string",
+      "key": "NPC",
+      "target": "entity",
+      "value": "harvestfestival:jenni"
+    },
+    {
+      "type": "shopaholic:or",
+      "conditions": [
+        {
+          "type": "shopaholic:opening_hours",
+          "hours": {
+            "friday": {
+              "close": 17000,
+              "open": 9000
+            },
+            "monday": {
+              "close": 17000,
+              "open": 9000
+            },
+            "saturday": {
+              "close": 15000,
+              "open": 11000
+            },
+            "thursday": {
+              "close": 17000,
+              "open": 9000
+            },
+            "tuesday": {
+              "close": 17000,
+              "open": 9000
+            }
+          }
+        },
+        {
+          "type": "shopaholic:and",
+          "conditions": [
+            {
+              "type": "shopaholic:opening_hours",
+              "hours": {
+                "wednesday": {
+                  "close": 18000,
+                  "open": 8000
+                }
+              }
+            },
+            {
+              "type": "shopaholic:compare",
+              "comparator_1": {
+                "type": "shopaholic:team_status",
+                "key": "general_store_wednesday"
+              },
+              "comparator_2": {
+                "type": "shopaholic:number",
+                "value": 1
+              },
+              "equal_to": false,
+              "greater_than": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "icon": {
+    "type": "penguinlib:item",
+    "item": {
+      "Count": 1,
+      "id": "horticulture:watering_can"
+    }
+  },
+  "listings": [
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:not",
+          "conditions": [
+            {
+              "type": "shopaholic:season",
+              "season": "winter"
+            }
+          ]
+        }
+      ],
+      "sublistings": [
+        {
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:grass_starter"
+            }
+          }
+        }
+      ],
+      "unique_id": "grass_starter"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "spring"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 35,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:turnip"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "turnip"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "spring"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 40,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:potato"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "potato"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "summer"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 45,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:cucumber"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "cucumber"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "spring"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 90,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:strawberry"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "strawberry"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "spring"
+        },
+        {
+          "type": "shopaholic:compare",
+          "comparator_1": {
+            "type": "shopaholic:shipped_count",
+            "ingredient": [
+              {
+                "tag": "harvestfestival:spring_crops"
+              }
+            ]
+          },
+          "comparator_2": {
+            "type": "shopaholic:number",
+            "value": 1000
+          },
+          "equal_to": false
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 165,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:cabbage"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "cabbage"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "summer"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 40,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:onion"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "onion"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "summer"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 50,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:pumpkin"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "pumpkin"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "summer"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 30,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:melon"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "melon"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "summer"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 55,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:tomato"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "tomato"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "summer"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 95,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:corn"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "corn"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "summer"
+        },
+        {
+          "type": "shopaholic:compare",
+          "comparator_1": {
+            "type": "shopaholic:shipped_count",
+            "ingredient": [
+              {
+                "tag": "harvestfestival:summer_crops"
+              }
+            ]
+          },
+          "comparator_2": {
+            "type": "shopaholic:number",
+            "value": 1000
+          },
+          "equal_to": false
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 220,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:pineapple"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "pineapple"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "autumn"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 40,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:spinach"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "spinach"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "autumn"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 55,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:carrot"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "carrot"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "autumn"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 60,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:beetroot"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "beetroot"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "autumn"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 65,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:eggplant"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "eggplant"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "autumn"
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 100,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:green_pepper"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "green_pepper"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "autumn"
+        },
+        {
+          "type": "shopaholic:compare",
+          "comparator_1": {
+            "type": "shopaholic:shipped_count",
+            "ingredient": [
+              {
+                "tag": "harvestfestival:autumn_crops"
+              }
+            ]
+          },
+          "comparator_2": {
+            "type": "shopaholic:number",
+            "value": 1000
+          },
+          "equal_to": false
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 110,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:sweet_potato"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "sweet_potato"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:not",
+          "conditions": [
+            {
+              "type": "shopaholic:season",
+              "season": "winter"
+            }
+          ]
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 15,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:wheat"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "wheat"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:not",
+          "conditions": [
+            {
+              "type": "shopaholic:season",
+              "season": "winter"
+            }
+          ]
+        },
+        {
+          "type": "shopaholic:compare",
+          "comparator_1": {
+            "type": "shopaholic:player_status",
+            "key": "visited_nether"
+          },
+          "comparator_2": {
+            "type": "shopaholic:number",
+            "value": 1
+          },
+          "equal_to": false,
+          "greater_than": false
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 55,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seed_bag",
+              "tag": {
+                "Crop": "harvestfestival:nether_wart"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "nether_wart"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:not",
+          "conditions": [
+            {
+              "type": "shopaholic:season",
+              "season": "winter"
+            }
+          ]
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 2800,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seedling_bag",
+              "tag": {
+                "Tree": "harvestfestival:orange"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "orange_tree"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:not",
+          "conditions": [
+            {
+              "type": "shopaholic:season",
+              "season": "winter"
+            }
+          ]
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 2500,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seedling_bag",
+              "tag": {
+                "Tree": "harvestfestival:banana"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "banana_tree"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:not",
+          "conditions": [
+            {
+              "type": "shopaholic:season",
+              "season": "winter"
+            }
+          ]
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 1500,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seedling_bag",
+              "tag": {
+                "Tree": "harvestfestival:apple"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "apple_tree"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:not",
+          "conditions": [
+            {
+              "type": "shopaholic:season",
+              "season": "winter"
+            }
+          ]
+        }
+      ],
+      "sublistings": [
+        {
+          "gold": 3000,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:seedling_bag",
+              "tag": {
+                "Tree": "harvestfestival:peach"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "peach_tree"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 100,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:fertilizer",
+              "tag": {
+                "Fertilizer": "harvestfestival:basic"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "basic_fertilizer"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 150,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:fertilizer",
+              "tag": {
+                "Fertilizer": "harvestfestival:quality"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "quality_fertilizer"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 100,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:fertilizer",
+              "tag": {
+                "Fertilizer": "harvestfestival:retention"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "retention_fertilizer"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 150,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:fertilizer",
+              "tag": {
+                "Fertilizer": "harvestfestival:aqua_guard"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "aqua_guard_fertilizer"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 100,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:fertilizer",
+              "tag": {
+                "Fertilizer": "harvestfestival:speed"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "speed_fertilizer"
+    },
+    {
+      "sublistings": [
+        {
+          "gold": 150,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "harvestfestival:fertilizer",
+              "tag": {
+                "Fertilizer": "harvestfestival:turbo"
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "turbo_fertilizer"
+    }
+  ],
+  "method": "right_click",
+  "name": {
+    "translate": "department.harvestfestival.general_store_farming"
+  },
+  "shop": "harvestfestival:general_store",
+  "vendor_data": "settlements:npc",
+  "vendor_type": "entity"
+}

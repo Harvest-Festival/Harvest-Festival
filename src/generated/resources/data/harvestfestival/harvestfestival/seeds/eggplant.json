@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:eggplants",
+  "Color": "#A25CC4",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:eggplant_seeds"
+  },
+  "Type": "crop"
+}

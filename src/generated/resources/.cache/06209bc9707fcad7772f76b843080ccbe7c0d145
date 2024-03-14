@@ -1,4 +1,4 @@
-// 1.20.4	2024-03-04T13:02:24.9985127	Item Models: harvestfestival
+// 1.20.4	2024-03-14T20:43:10.5498767	Item Models: harvestfestival
 cab9bf6a818f73225834c37ad10b21497d5673df assets/harvestfestival/models/item/acacia_mailbox.json
 c79c1548e3108a9525b00de301813136403e7be3 assets/harvestfestival/models/item/adamantite.json
 04d52bfd2a79d04cda8e1809d2ac83a42b012240 assets/harvestfestival/models/item/agate.json
@@ -27,6 +27,7 @@ b2ea16079ed81ec17b616bbc658eb1c62b7c4456 assets/harvestfestival/models/item/bles
 281d49e168d711321e6f734758a2b64b7bfe9291 assets/harvestfestival/models/item/blessed_sickle.json
 be365659181909962bdb2e8952965887c681d4c4 assets/harvestfestival/models/item/blessed_sword.json
 c4b34b1e19ed29d59d2d87e87cd62970b752c340 assets/harvestfestival/models/item/blessed_watering_can.json
+9dd05b39cb7c12d7822ae47f1b74bfe72e2bc417 assets/harvestfestival/models/item/blue_feather.json
 c08e61f725982a91c696ce04d54615ae0fbb7d36 assets/harvestfestival/models/item/blue_magic_flower.json
 be7620004bb052601ca7bedc5908caa06a24f35a assets/harvestfestival/models/item/bone_meal_fertilizer.json
 3ec354ea3267e830d34bd9e25540bb0087a51044 assets/harvestfestival/models/item/calendar.json

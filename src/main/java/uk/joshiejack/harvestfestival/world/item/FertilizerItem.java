@@ -29,6 +29,12 @@ public class FertilizerItem extends Item {
         return fertilizer == null ? HFFarming.Fertilizers.NONE.get() : fertilizer;
     }
 
+    public ItemStack withFertilizer(ResourceLocation id) {
+        ItemStack stack = new ItemStack(this);
+        stack.getOrCreateTag().putString("Fertilizer", id.toString());
+        return stack;
+    }
+
     @SuppressWarnings("all")
     @Override
     public Component getName(ItemStack pStack) {

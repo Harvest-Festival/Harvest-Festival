@@ -28,6 +28,7 @@ import uk.joshiejack.harvestfestival.command.HFCommands;
 import uk.joshiejack.harvestfestival.data.*;
 import uk.joshiejack.harvestfestival.data.economy.HFDepartments;
 import uk.joshiejack.harvestfestival.data.economy.HFShops;
+import uk.joshiejack.harvestfestival.data.economy.HFStockMechanics;
 import uk.joshiejack.harvestfestival.data.farming.HFDataMapProvider;
 import uk.joshiejack.harvestfestival.data.farming.HFSeedProvider;
 import uk.joshiejack.harvestfestival.data.farming.HFSeedlingProvider;
@@ -38,6 +39,9 @@ import uk.joshiejack.harvestfestival.data.tags.HFBiomeTags;
 import uk.joshiejack.harvestfestival.data.tags.HFBlockTags;
 import uk.joshiejack.harvestfestival.data.tags.HFEntityTags;
 import uk.joshiejack.harvestfestival.data.tags.HFItemTags;
+import uk.joshiejack.harvestfestival.data.town.HFGiftQualities;
+import uk.joshiejack.harvestfestival.data.town.HFNPCs;
+import uk.joshiejack.harvestfestival.data.town.HFTownQuests;
 import uk.joshiejack.harvestfestival.world.achievements.AchievementManager;
 import uk.joshiejack.harvestfestival.world.block.HFBlocks;
 import uk.joshiejack.harvestfestival.world.block.HFFluids;
@@ -66,7 +70,7 @@ public class HarvestFestival {
 
     public HarvestFestival(IEventBus eventBus) {
         HFLetters.register(eventBus);
-        HFData.ATTACHMENT_TYPES.register(eventBus);
+        HFData.register(eventBus);
         HFDailyTickTypes.register(eventBus);
         HFCommands.ARGUMENT_TYPES.register(eventBus);
         HFBlocks.BLOCKS.register(eventBus);
@@ -120,8 +124,14 @@ public class HarvestFestival {
         generator.addProvider(event.includeServer(), new HFTVChannels(output));
 
         //Economy
+        generator.addProvider(event.includeServer(), new HFStockMechanics(output));
         generator.addProvider(event.includeServer(), new HFShops(output));
         generator.addProvider(event.includeServer(), new HFDepartments(output));
+
+        //Town
+        generator.addProvider(event.includeServer(), new HFGiftQualities(output));
+        generator.addProvider(event.includeServer(), new HFNPCs(output));
+        generator.addProvider(event.includeServer(), new HFTownQuests(output));
 
         //PackMetadataGenerator
         generator.addProvider(true, new PackMetadataGenerator(output).add(PackMetadataSection.TYPE, new PackMetadataSection(

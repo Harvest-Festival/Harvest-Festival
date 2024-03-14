@@ -4,6 +4,7 @@ import com.mojang.serialization.Codec;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -44,7 +45,9 @@ public class HFData {
     public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, HarvestFestival.MODID);
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<HFPlayerData>> PLAYER_DATA = ATTACHMENT_TYPES.register("hf_player_data",() -> AttachmentType.serializable(HFPlayerData::new).copyOnDeath().build());
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<DailyTickData>> DAILY_TICKER_DATA = ATTACHMENT_TYPES.register("daily_ticker",() -> AttachmentType.serializable(DailyTickData::new).copyOnDeath().build());
-
+    public static void register(IEventBus bus) {
+        ATTACHMENT_TYPES.register(bus);
+    }
 
     @SubscribeEvent
     public static void onDataMap(RegisterDataMapTypesEvent event) {

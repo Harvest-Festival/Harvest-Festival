@@ -34,6 +34,12 @@ public class SeedlingBagItem extends BlockItem {
         return stack;
     }
 
+    public ItemStack withSeedling(ResourceLocation id) {
+        ItemStack stack = new ItemStack(this);
+        stack.getOrCreateTag().putString("Tree", id.toString());
+        return stack;
+    }
+
     @SuppressWarnings("ConstantConditions")
     @Nullable
     public SeedlingData getSeedling(ItemStack stack) {

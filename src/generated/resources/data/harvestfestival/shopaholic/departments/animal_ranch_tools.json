@@ -1,0 +1,148 @@
+{
+  "conditions": [
+    {
+      "type": "shopaholic:entity_has_nbt_tag",
+      "data_type": "string",
+      "key": "NPC",
+      "target": "entity",
+      "value": "harvestfestival:jim"
+    },
+    {
+      "type": "shopaholic:opening_hours",
+      "hours": {
+        "friday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "monday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "saturday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "thursday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "tuesday": {
+          "close": 15000,
+          "open": 10000
+        },
+        "wednesday": {
+          "close": 15000,
+          "open": 10000
+        }
+      }
+    },
+    {
+      "type": "shopaholic:compare",
+      "comparator_1": {
+        "type": "shopaholic:team_status",
+        "key": "cow_tutorial_completed"
+      },
+      "comparator_2": {
+        "type": "shopaholic:number",
+        "value": 1
+      },
+      "equal_to": false,
+      "greater_than": false
+    }
+  ],
+  "listings": [
+    {
+      "stock_mechanic": "harvestfestival:limited_1",
+      "sublistings": [
+        {
+          "gold": 1500,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "husbandry:miracle_potion"
+            }
+          }
+        }
+      ],
+      "unique_id": "miracle_potion"
+    },
+    {
+      "stock_mechanic": "harvestfestival:limited_4",
+      "sublistings": [
+        {
+          "gold": 250,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "minecraft:name_tag"
+            }
+          }
+        }
+      ],
+      "unique_id": "name_tag"
+    },
+    {
+      "stock_mechanic": "harvestfestival:limited_4",
+      "sublistings": [
+        {
+          "gold": 150,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "minecraft:lead"
+            }
+          }
+        }
+      ],
+      "unique_id": "lead"
+    },
+    {
+      "stock_mechanic": "harvestfestival:limited_1",
+      "sublistings": [
+        {
+          "gold": 1000,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "husbandry:brush",
+              "tag": {
+                "Damage": 0
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "brush"
+    },
+    {
+      "stock_mechanic": "harvestfestival:limited_1",
+      "sublistings": [
+        {
+          "gold": 2000,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "minecraft:shears",
+              "tag": {
+                "Damage": 0
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "shears"
+    }
+  ],
+  "method": "right_click",
+  "name": {
+    "translate": "department.harvestfestival.animal_ranch_tools"
+  },
+  "shop": "harvestfestival:animal_ranch",
+  "vendor_data": "settlements:npc",
+  "vendor_type": "entity"
+}

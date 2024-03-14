@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:onions",
+  "Color": "#DCC307",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:onion_seeds"
+  },
+  "Type": "crop"
+}

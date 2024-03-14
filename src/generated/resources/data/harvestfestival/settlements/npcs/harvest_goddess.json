@@ -1,0 +1,92 @@
+{
+  "class": {
+    "age": "ADULT",
+    "floats": true,
+    "height": 1.25,
+    "hideHearts": true,
+    "immovable": true,
+    "invitable": false,
+    "invulnerable": true,
+    "lifespan": 400,
+    "offset": 0.25,
+    "smallArms": false,
+    "underwater": true
+  },
+  "giftCategoryOverrides": [
+    {
+      "category": "plant",
+      "value": 200
+    },
+    {
+      "category": "gem",
+      "value": -200
+    },
+    {
+      "category": "art",
+      "value": -400
+    },
+    {
+      "category": "money",
+      "value": -400
+    },
+    {
+      "category": "mineral",
+      "value": -400
+    },
+    {
+      "category": "flower",
+      "value": 200
+    },
+    {
+      "category": "meat",
+      "value": -400
+    },
+    {
+      "category": "knowledge",
+      "value": -200
+    },
+    {
+      "category": "mushroom",
+      "value": -200
+    },
+    {
+      "category": "cooking",
+      "value": -200
+    },
+    {
+      "category": "fish",
+      "value": -400
+    }
+  ],
+  "giftItemOverrides": [
+    {
+      "item": {
+        "tag": "forge:crops/strawberry"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:crops/pineapple"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:bone"
+      },
+      "value": -800
+    }
+  ],
+  "insideColor": 9236179,
+  "lootTable": "harvestfestival:harvest_goddess",
+  "occupation": "goddess",
+  "outsideColor": 5162117,
+  "script": "harvestfestival:npcs/harvest_goddess"
+}

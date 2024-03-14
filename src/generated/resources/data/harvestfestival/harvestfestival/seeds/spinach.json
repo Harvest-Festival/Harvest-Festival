@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:spinach",
+  "Color": "#90AE15",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:spinach_seeds"
+  },
+  "Type": "crop"
+}

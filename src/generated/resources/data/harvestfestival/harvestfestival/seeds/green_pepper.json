@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:green_peppers",
+  "Color": "#56D213",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:green_pepper_seeds"
+  },
+  "Type": "crop"
+}

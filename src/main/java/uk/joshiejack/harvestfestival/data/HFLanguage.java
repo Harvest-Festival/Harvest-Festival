@@ -2,10 +2,12 @@ package uk.joshiejack.harvestfestival.data;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import org.apache.commons.lang3.text.WordUtils;
 import uk.joshiejack.harvestfestival.HarvestFestival;
+import uk.joshiejack.harvestfestival.data.economy.HFDepartments;
 import uk.joshiejack.harvestfestival.world.block.HFBlocks;
 import uk.joshiejack.harvestfestival.world.effect.HFEffects;
 import uk.joshiejack.harvestfestival.world.entity.HFEntities;
@@ -67,7 +69,14 @@ public class HFLanguage extends LanguageProvider {
 
         addGuiTranslations();
         addTVTranslations();
+        addDepartmentTranslations();
     }
+
+    private void addDepartmentTranslations() {
+        addDepartment(HFDepartments.ANIMAL_RANCH_TOOLS, "Tools");
+        addDepartment(HFDepartments.ANIMAL_RANCH_ANIMALS, "Animals");
+    }
+
 
     private void addGuiTranslations() {
         addGui("collections", "Collections");
@@ -109,6 +118,11 @@ public class HFLanguage extends LanguageProvider {
         addTVProgram("weather", "fog", "Tomorrow is looking to be a foggy day with mist all around!");
 
     }
+
+    private void addDepartment(ResourceLocation id, String name) {
+        add("department." + id.getNamespace() + "." + id.getPath(), name);
+    }
+
 
     //Translate achievements
     private void addAchievement(String key, String value) {

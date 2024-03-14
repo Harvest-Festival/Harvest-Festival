@@ -1,0 +1,7 @@
+{
+  "settings": {
+    "type": "team",
+    "isDefault": true,
+    "triggers": "onRightClickNPC"
+  }
+}

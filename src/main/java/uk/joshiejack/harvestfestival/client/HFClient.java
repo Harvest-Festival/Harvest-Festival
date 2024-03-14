@@ -59,7 +59,7 @@ public class HFClient {
         //Use the hashcode id for the fertilizer texture
         ClampedItemPropertyFunction function = (stack, world, entity, seed) -> stack.hasTag() && Objects.requireNonNull(stack.getTag()).contains("Fertilizer")
                 ? FertilizerItem.getFertilizerFromStack(stack).itemModelIndex() : 0F;
-        event.enqueueWork(() -> ItemProperties.register(HFItems.FERTILIZER.asItem(), new ResourceLocation(HarvestFestival.MODID, "fertilizer"), function));
+        event.enqueueWork(() -> ItemProperties.register(HFItems.FERTILIZER.get(), new ResourceLocation(HarvestFestival.MODID, "fertilizer"), function));
     }
 
     @SubscribeEvent

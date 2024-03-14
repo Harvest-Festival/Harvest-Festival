@@ -22,6 +22,7 @@ import uk.joshiejack.harvestfestival.world.level.ticker.tree.JuvenileTicker;
 import uk.joshiejack.harvestfestival.world.level.ticker.tree.SaplingTicker;
 import uk.joshiejack.harvestfestival.world.level.ticker.tree.SeedlingTicker;
 import uk.joshiejack.harvestfestival.world.level.ticker.tree.TreeData;
+import uk.joshiejack.horticulture.world.block.HorticultureBlocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -65,6 +66,20 @@ public class HFDataMapProvider extends DataMapProvider {
         addCrop(tickers, cropData, Blocks.PUMPKIN_STEM, HFDailyTickTypes.PUMPKIN, true);
         addCrop(tickers, cropData, Blocks.NETHER_WART, HFDailyTickTypes.FOUR_DAYS, false);
         addCrop(tickers, cropData, Blocks.TORCHFLOWER_CROP, HFDailyTickTypes.FOUR_DAYS, false);
+
+        //Horticulture Crops
+        addCrop(tickers, cropData, HorticultureBlocks.TURNIPS.get(), HFDailyTickTypes.TEXTURE_3_DAYS_5, true);
+        addCrop(tickers, cropData, HorticultureBlocks.CUCUMBERS.get(), HFDailyTickTypes.TEXTURE_4_DAYS_10, true);
+        addCrop(tickers, cropData, HorticultureBlocks.STRAWBERRIES.get(), HFDailyTickTypes.TEXTURE_4_DAYS_9, true);
+        addCrop(tickers, cropData, HorticultureBlocks.CABBAGES.get(), HFDailyTickTypes.CABBAGE, true);
+        addCrop(tickers, cropData, HorticultureBlocks.ONIONS.get(), HFDailyTickTypes.ONION, true);
+        addCrop(tickers, cropData, HorticultureBlocks.TOMATOES.get(), HFDailyTickTypes.TOMATO, true);
+        addCrop(tickers, cropData, HorticultureBlocks.CORN.get(), HFDailyTickTypes.CORN, true);
+        addCrop(tickers, cropData, HorticultureBlocks.PINEAPPLES.get(), HFDailyTickTypes.PINEAPPLE, true);
+        addCrop(tickers, cropData, HorticultureBlocks.SPINACH.get(), HFDailyTickTypes.SPINACH, true);
+        addCrop(tickers, cropData, HorticultureBlocks.EGGPLANTS.get(), HFDailyTickTypes.TEXTURE_4_DAYS_10, true);
+        addCrop(tickers, cropData, HorticultureBlocks.SWEET_POTATOES.get(), HFDailyTickTypes.SWEET_POTATO, true);
+        addCrop(tickers, cropData, HorticultureBlocks.GREEN_PEPPERS.get(), HFDailyTickTypes.GREEN_PEPPER, true);
 
         addTree(tickers, treeData, HFBlocks.OAK_SEEDLING.get(), Blocks.OAK_SAPLING, HFBlocks.OAK_JUVENILE.get(), 5, 5, 10);
         addTree(tickers, treeData, HFBlocks.BIRCH_SEEDLING.get(), Blocks.BIRCH_SAPLING, HFBlocks.BIRCH_JUVENILE.get(), 5, 10, 15);

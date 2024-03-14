@@ -43,6 +43,17 @@ public class HFDailyTickTypes {
     public static final ResourceLocation PUMPKIN = new ResourceLocation(HarvestFestival.MODID, "pumpkin");
     public static final ResourceLocation MELON = new ResourceLocation(HarvestFestival.MODID, "melon");
     public static final ResourceLocation TORCH_FLOWER = new ResourceLocation(HarvestFestival.MODID, "torch_flower");
+    public static final ResourceLocation TEXTURE_3_DAYS_5 = new ResourceLocation(HarvestFestival.MODID, "texture_3_days_5");
+    public static final ResourceLocation ONION = new ResourceLocation(HarvestFestival.MODID, "onion");
+    public static final ResourceLocation TEXTURE_4_DAYS_9 = new ResourceLocation(HarvestFestival.MODID, "texture_4_days_9");
+    public static final ResourceLocation TEXTURE_4_DAYS_10 = new ResourceLocation(HarvestFestival.MODID, "texture_4_days_10");
+    public static final ResourceLocation CABBAGE = new ResourceLocation(HarvestFestival.MODID, "cabbage");
+    public static final ResourceLocation TOMATO = new ResourceLocation(HarvestFestival.MODID, "tomato");
+    public static final ResourceLocation PINEAPPLE = new ResourceLocation(HarvestFestival.MODID, "pineapple");
+    public static final ResourceLocation CORN = new ResourceLocation(HarvestFestival.MODID, "corn");
+    public static final ResourceLocation SPINACH = new ResourceLocation(HarvestFestival.MODID, "spinach");
+    public static final ResourceLocation SWEET_POTATO = new ResourceLocation(HarvestFestival.MODID, "sweet_potato");
+    public static final ResourceLocation GREEN_PEPPER = new ResourceLocation(HarvestFestival.MODID, "green_pepper");
     public static void register(IEventBus eventBus) {
         DAILY_TICKER_TYPES.register(eventBus);
         STAGE_HANDLER_TYPES.register(eventBus);

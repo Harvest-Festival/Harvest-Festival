@@ -1,5 +1,53 @@
 {
   "values": {
+    "horticulture:cabbages": {
+      "handler": "harvestfestival:cabbage",
+      "requires_water": true
+    },
+    "horticulture:corn": {
+      "handler": "harvestfestival:corn",
+      "requires_water": true
+    },
+    "horticulture:cucumbers": {
+      "handler": "harvestfestival:texture_4_days_10",
+      "requires_water": true
+    },
+    "horticulture:eggplants": {
+      "handler": "harvestfestival:texture_4_days_10",
+      "requires_water": true
+    },
+    "horticulture:green_peppers": {
+      "handler": "harvestfestival:green_pepper",
+      "requires_water": true
+    },
+    "horticulture:onions": {
+      "handler": "harvestfestival:onion",
+      "requires_water": true
+    },
+    "horticulture:pineapples": {
+      "handler": "harvestfestival:pineapple",
+      "requires_water": true
+    },
+    "horticulture:spinach": {
+      "handler": "harvestfestival:spinach",
+      "requires_water": true
+    },
+    "horticulture:strawberries": {
+      "handler": "harvestfestival:texture_4_days_9",
+      "requires_water": true
+    },
+    "horticulture:sweet_potatoes": {
+      "handler": "harvestfestival:sweet_potato",
+      "requires_water": true
+    },
+    "horticulture:tomatoes": {
+      "handler": "harvestfestival:tomato",
+      "requires_water": true
+    },
+    "horticulture:turnips": {
+      "handler": "harvestfestival:texture_3_days_5",
+      "requires_water": true
+    },
     "minecraft:beetroots": {
       "handler": "harvestfestival:four_days",
       "requires_water": true

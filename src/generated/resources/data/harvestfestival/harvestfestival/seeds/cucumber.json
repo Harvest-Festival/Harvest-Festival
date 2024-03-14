@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:cucumbers",
+  "Color": "#36B313",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:cucumber_seeds"
+  },
+  "Type": "crop"
+}

@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:tomatoes",
+  "Color": "#E60820",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:tomato_seeds"
+  },
+  "Type": "crop"
+}

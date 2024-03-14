@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:strawberries",
+  "Color": "#FF7BEA",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:strawberry_seeds"
+  },
+  "Type": "crop"
+}

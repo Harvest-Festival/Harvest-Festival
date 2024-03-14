@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:sweet_potatoes",
+  "Color": "#D82AAC",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:sweet_potato_seeds"
+  },
+  "Type": "crop"
+}

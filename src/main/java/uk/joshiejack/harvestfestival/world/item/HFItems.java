@@ -115,11 +115,12 @@ public class HFItems {
     public static final DeferredItem<Item> MAIL = ITEMS.register("mail", () -> new MailItem(new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item, SeedBagItem> SEED_BAG = ITEMS.register("seed_bag", () -> new SeedBagItem(new Item.Properties()));
     public static final DeferredHolder<Item, SeedlingBagItem> SEEDLING_BAG = ITEMS.register("seedling_bag", () -> new SeedlingBagItem(new Item.Properties()));
-    public static final DeferredItem<Item> FERTILIZER = ITEMS.register("fertilizer", () -> new FertilizerItem(new Item.Properties()));
+    public static final DeferredHolder<Item, FertilizerItem> FERTILIZER = ITEMS.register("fertilizer", () -> new FertilizerItem(new Item.Properties()));
     public static final DeferredItem<Item> GRASS_STARTER = ITEMS.register("grass_starter", () -> new StarterBlockItem(Blocks.SHORT_GRASS, new Item.Properties()));
     public static final DeferredItem<Item> CURSED_BOOTS = ITEMS.register("cursed_boots", () -> new SpeedBootsItem("harvestfestival:cursed", new Item.Properties().stacksTo(1), 0, -0.025D));
     public static final DeferredItem<Item> BLESSED_BOOTS = ITEMS.register("blessed_boots", () -> new SpeedBootsItem("harvestfestival:blessed", new Item.Properties().stacksTo(1), 25, 0.1D));
     public static final DeferredItem<Item> CALENDAR = ITEMS.register("calendar", () -> new CalendarItem(new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BLUE_FEATHER = ITEMS.register("blue_feather", () -> new Item(new Item.Properties().stacksTo(1)));
     private static BiConsumer<ItemStack, LivingEntity> clearEffects() {
         return (stack, entity) -> {
             if (entity instanceof ServerPlayer player) {

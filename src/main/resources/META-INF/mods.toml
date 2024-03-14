@@ -8,6 +8,18 @@ displayName="${mod_name}"
 authors="${mod_authors}"
 description='''${mod_description}'''
 [[dependencies.${mod_id}]]
+    modId="gastronomy"
+    type="optional"
+    versionRange="${gastronomy_version_range}"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="husbandry"
+    type="optional"
+    versionRange="${husbandry_version_range}"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.${mod_id}]]
     modId="settlements"
     type="optional"
     versionRange="${settlements_version_range}"

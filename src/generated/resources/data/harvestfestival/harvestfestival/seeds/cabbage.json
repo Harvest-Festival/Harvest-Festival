@@ -1,0 +1,9 @@
+{
+  "Block": "horticulture:cabbages",
+  "Color": "#8FFF40",
+  "Seeds": {
+    "Count": 1,
+    "id": "horticulture:cabbage_seeds"
+  },
+  "Type": "crop"
+}

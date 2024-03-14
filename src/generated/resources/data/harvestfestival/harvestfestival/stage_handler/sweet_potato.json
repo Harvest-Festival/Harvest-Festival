@@ -1,0 +1,8 @@
+{
+  "type": "harvestfestival:numbered",
+  "maximum_stage": 2,
+  "valid_stages": [
+    3,
+    5
+  ]
+}

@@ -7,7 +7,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import uk.joshiejack.harvestfestival.HarvestFestival;
 import uk.joshiejack.horticulture.world.item.HorticultureTags;
 import uk.joshiejack.penguinlib.data.generator.AbstractPenguinRegistryProvider;
-import uk.joshiejack.penguinlib.util.registry.ReloadableRegistry;
+import uk.joshiejack.settlements.Settlements;
 import uk.joshiejack.settlements.world.entity.npc.Age;
 import uk.joshiejack.settlements.world.entity.npc.NPC;
 import uk.joshiejack.settlements.world.entity.npc.NPCClass;
@@ -16,8 +16,8 @@ import java.util.List;
 import java.util.Map;
 
 public class HFNPCs extends AbstractPenguinRegistryProvider<NPC> {
-    public HFNPCs(PackOutput output, ReloadableRegistry<NPC> registry) {
-        super(output, registry);
+    public HFNPCs(PackOutput output) {
+        super(output, Settlements.Registries.NPCS);
     }
 
     /*
@@ -46,6 +46,8 @@ boot,terrible
     protected void buildRegistry(Map<ResourceLocation, NPC> map) {
         NPCClass goddess = new NPCClass(Age.ADULT, false, 1.25F, 0.25F, true, true, true, true, false, 400, true);
         NPCClass dwarf = new NPCClass(Age.ADULT, false, 0.75F, 05F, false, false, true, false, true, 0, true);
+        NPCClass adult = NPCClass.ADULT;
+        NPCClass child = NPCClass.CHILD;
         map.put(HarvestFestival.prefix("harvest_goddess"), new NPC(
                 HarvestFestival.prefix("harvest_goddess"), //Loot Table
                 HarvestFestival.prefix("npcs/harvest_goddess"), //Custom Script
@@ -64,18 +66,18 @@ boot,terrible
                         //TODO: Can
                         //TODO: Boot
                         ), //Item Gift Overrides
-                List.of() //Category Gift Overrides
-                //TODO: Gift Category Flower
-                //TODO: Gift Category Plant
-                //TODO: Gift Category Mushroom
-                //TODO: Gift Category Cooking
-                //TODO: Gift Category Knowledge
-                //TODO: Gift Category Gem
-                //TODO: Gift Category Mineral
-                //TODO: Gift Category Meat
-                //TODO: Gift Category Fish
-                //TODO: Gift Category Art
-                //TODO: Gift Category Money
+                List.of(new NPC.CategoryData("flower", HFGiftQualities.DECENT.value()),
+                        new NPC.CategoryData("plant", HFGiftQualities.DECENT.value()),
+                        new NPC.CategoryData("mushroom", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("cooking", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("knowledge", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("gem", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("mineral", HFGiftQualities.BAD.value()),
+                        new NPC.CategoryData("meat", HFGiftQualities.BAD.value()),
+                        new NPC.CategoryData("fish", HFGiftQualities.BAD.value()),
+                        new NPC.CategoryData("art", HFGiftQualities.BAD.value()),
+                        new NPC.CategoryData("money", HFGiftQualities.BAD.value())
+                        ) //Category Gift Overrides
                 )
         );
     }

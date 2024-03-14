@@ -1,5 +1,6 @@
 package uk.joshiejack.harvestfestival.world.item;
 
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -30,7 +31,7 @@ public class HFCreativeTabs {
     private static final List<Class<?>> GATHERING_BLOCKS = Arrays.asList(StoneBlock.class, HFBushBlock.class, SmallBranchBlock.class, MediumBranchBlock.class, LargeBranchBlock.class, SmallStumpBlock.class, MediumStumpBlock.class, LargeStumpBlock.class);
     private static final List<DeferredItem<Item>> GATHERING_ITEMS = Arrays.asList(HFItems.BASIC_AXE, HFItems.COPPER_AXE, HFItems.SILVER_AXE, HFItems.GOLD_AXE, HFItems.MYSTRIL_AXE, HFItems.CURSED_AXE, HFItems.BLESSED_AXE, HFItems.MYTHIC_AXE);
     private static final List<DeferredItem<Item>> CHEAT_ITEMS = Arrays.asList(HFItems.NOTE, HFItems.MAIL);
-    private static final List<DeferredItem<Item>> FARMING_ITEMS = Arrays.asList(HFItems.FERTILIZER);
+    private static final List<Holder<Item>> FARMING_ITEMS = Arrays.asList(HFItems.FERTILIZER);
 
     private static ItemStack modifyItem(Item item) {
         if (BuiltInRegistries.ITEM.getKey(item).getPath().toLowerCase(Locale.ENGLISH).contains("cursed")) {
@@ -49,7 +50,7 @@ public class HFCreativeTabs {
                         .filter(item -> !(item instanceof BlockItem) ||
                                 GATHERING_BLOCKS.stream().noneMatch(blockClass ->
                                         blockClass.isInstance(((BlockItem) item).getBlock())))
-                        .filter(item -> FARMING_ITEMS.stream().noneMatch(farming -> farming.asItem() == item.asItem()))
+                        .filter(item -> FARMING_ITEMS.stream().noneMatch(farming -> farming.value() == item.asItem()))
                         .filter(item -> CHEAT_ITEMS.stream().noneMatch(cheat -> cheat.asItem() == item.asItem()))
                         .filter(item -> GATHERING_ITEMS.stream().noneMatch(gather -> gather.asItem() == item.asItem()))
                         .forEach(item -> output.accept(modifyItem(item.asItem())));
@@ -95,10 +96,10 @@ public class HFCreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> FARMING = CREATIVE_MODE_TABS.register("farming", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + HarvestFestival.MODID + ".farming"))
-            .icon(HFItems.FERTILIZER::toStack)
+            .icon(() -> HFItems.FERTILIZER.get().withFertilizer(HarvestFestival.prefix("quality")))
             .displayItems((params, output) -> {
                 HFRegistries.FERTILIZER.stream().forEach(fertilizer -> {
-                    ItemStack stack = HFItems.FERTILIZER.toStack();
+                    ItemStack stack = HFItems.FERTILIZER.get().getDefaultInstance();
                     CompoundTag tag = new CompoundTag();
                     tag.putString("Fertilizer", Objects.requireNonNull(HFRegistries.FERTILIZER.getKey(fertilizer)).toString());
                     stack.setTag(tag);
