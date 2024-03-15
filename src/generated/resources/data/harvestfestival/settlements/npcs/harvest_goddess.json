@@ -59,31 +59,13 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "horticulture:strawberry_milk"
-      },
-      "value": 200
-    },
-    {
-      "item": {
         "tag": "forge:crops/pineapple"
       },
       "value": 500
     },
     {
       "item": {
-        "item": "minecraft:rabbit_foot"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "tag": "forge:crops/strawberry"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "piscary:old_boot"
+        "item": "piscary:empty_can"
       },
       "value": -800
     },
@@ -95,15 +77,33 @@
     },
     {
       "item": {
+        "item": "horticulture:strawberry_milk"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "tag": "forge:crops/strawberry"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
         "item": "harvestfestival:strawberry_jam"
       },
       "value": 200
     },
     {
       "item": {
-        "item": "piscary:empty_can"
+        "item": "piscary:old_boot"
       },
       "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": -400
     }
   ],
   "inside_color": "#8CEED3",

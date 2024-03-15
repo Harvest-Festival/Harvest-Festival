@@ -23,27 +23,15 @@
     },
     {
       "item": {
-        "item": "minecraft:golden_apple"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:crops/strawberry"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/tomato"
-      },
-      "value": 200
-    },
-    {
-      "item": {
         "item": "minecraft:milk_bucket"
       },
       "value": 1000
+    },
+    {
+      "item": {
+        "item": "harvestfestival:jam_bun"
+      },
+      "value": 200
     },
     {
       "item": {
@@ -53,9 +41,21 @@
     },
     {
       "item": {
-        "item": "harvestfestival:jam_bun"
+        "tag": "forge:crops/tomato"
       },
       "value": 200
+    },
+    {
+      "item": {
+        "tag": "forge:crops/strawberry"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:golden_apple"
+      },
+      "value": -800
     }
   ],
   "inside_color": "#F65FAB",

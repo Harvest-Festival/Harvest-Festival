@@ -53,6 +53,7 @@ public class HFItems {
     public static final DeferredItem<Item> COPPER_COIN = ITEMS.register("copper_coin", () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
     public static final DeferredItem<Item> SILVER_COIN = ITEMS.register("silver_coin", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<Item> GOLD_COIN = ITEMS.register("gold_coin", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+    //TODO: Remove Copper Ore, Gold Ore and Iron Ore
     public static final DeferredItem<Item> COPPER_ORE = ITEMS.register("copper_ore", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GOLD_ORE = ITEMS.register("gold_ore", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IRON_ORE = ITEMS.register("iron_ore", () -> new Item(new Item.Properties()));

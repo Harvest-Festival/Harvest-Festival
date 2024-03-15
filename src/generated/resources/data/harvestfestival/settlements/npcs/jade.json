@@ -37,19 +37,13 @@
     },
     {
       "item": {
-        "item": "minecraft:flower_pot"
-      },
-      "value": 500
-    },
-    {
-      "item": {
         "item": "minecraft:allium"
       },
       "value": 1000
     },
     {
       "item": {
-        "item": "minecraft:rabbit_foot"
+        "item": "minecraft:flower_pot"
       },
       "value": 500
     },
@@ -58,6 +52,12 @@
         "tag": "minecraft:logs"
       },
       "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": 500
     }
   ],
   "inside_color": "#653081",

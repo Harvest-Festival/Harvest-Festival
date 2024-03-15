@@ -33,9 +33,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:crops/carrot"
+        "tag": "forge:ingots/gold"
       },
-      "value": 1000
+      "value": -800
     },
     {
       "item": {
@@ -45,9 +45,9 @@
     },
     {
       "item": {
-        "tag": "forge:ingots/gold"
+        "tag": "forge:crops/peach"
       },
-      "value": -800
+      "value": 500
     },
     {
       "item": {
@@ -57,13 +57,13 @@
     },
     {
       "item": {
-        "tag": "minecraft:wool"
+        "item": "minecraft:flint"
       },
-      "value": 500
+      "value": -800
     },
     {
       "item": {
-        "tag": "forge:crops/peach"
+        "tag": "minecraft:wool"
       },
       "value": 500
     },
@@ -87,9 +87,9 @@
     },
     {
       "item": {
-        "item": "minecraft:flint"
+        "tag": "forge:crops/carrot"
       },
-      "value": -800
+      "value": 1000
     }
   ],
   "inside_color": "#DDD0AD",

@@ -27,6 +27,7 @@ import uk.joshiejack.harvestfestival.client.HFClientConfig;
 import uk.joshiejack.harvestfestival.command.HFCommands;
 import uk.joshiejack.harvestfestival.data.*;
 import uk.joshiejack.harvestfestival.data.economy.HFDepartments;
+import uk.joshiejack.harvestfestival.data.economy.HFShipping;
 import uk.joshiejack.harvestfestival.data.economy.HFShops;
 import uk.joshiejack.harvestfestival.data.economy.HFStockMechanics;
 import uk.joshiejack.harvestfestival.data.farming.HFDataMapProvider;
@@ -127,6 +128,7 @@ public class HarvestFestival {
         generator.addProvider(event.includeServer(), new HFStockMechanics(output));
         generator.addProvider(event.includeServer(), new HFShops(output));
         generator.addProvider(event.includeServer(), new HFDepartments(output));
+        generator.addProvider(event.includeServer(), new HFShipping(output, event.getLookupProvider()));
 
         //Town
         generator.addProvider(event.includeServer(), new HFGiftQualities(output));
