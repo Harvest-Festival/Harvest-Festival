@@ -21,9 +21,15 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "horticulture:strawberry_milk"
+        "item": "minecraft:baked_potato"
       },
-      "value": -400
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "husbandry:boiled_egg"
+      },
+      "value": -200
     },
     {
       "item": {
@@ -39,27 +45,9 @@
     },
     {
       "item": {
-        "item": "minecraft:pumpkin_pie"
+        "item": "husbandry:hot_milk"
       },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "husbandry:boiled_egg"
-      },
-      "value": -200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/tomato"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:baked_potato"
-      },
-      "value": 1000
+      "value": -400
     },
     {
       "item": {
@@ -69,9 +57,21 @@
     },
     {
       "item": {
-        "item": "husbandry:hot_milk"
+        "item": "horticulture:strawberry_milk"
       },
       "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:crops/tomato"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "minecraft:pumpkin_pie"
+      },
+      "value": -800
     }
   ],
   "outside_color": "#C60C30"

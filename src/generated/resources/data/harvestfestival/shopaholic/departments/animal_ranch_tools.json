@@ -50,6 +50,13 @@
       "greater_than": false
     }
   ],
+  "icon": {
+    "type": "penguinlib:item",
+    "item": {
+      "Count": 1,
+      "id": "minecraft:lead"
+    }
+  },
   "listings": [
     {
       "stock_mechanic": "shopaholic:limited_one",

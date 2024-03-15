@@ -7,7 +7,7 @@
     },
     {
       "category": "mineral",
-      "value": 500
+      "value": 1000
     },
     {
       "category": "magic",
@@ -21,9 +21,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:ender_eye"
+        "item": "minecraft:cooked_salmon"
       },
-      "value": 1000
+      "value": -800
     },
     {
       "item": {
@@ -33,13 +33,13 @@
     },
     {
       "item": {
-        "item": "minecraft:dragon_egg"
+        "item": "minecraft:ender_pearl"
       },
       "value": 1000
     },
     {
       "item": {
-        "item": "minecraft:ender_pearl"
+        "item": "minecraft:dragon_breath"
       },
       "value": 1000
     },
@@ -51,15 +51,15 @@
     },
     {
       "item": {
-        "item": "minecraft:dragon_breath"
+        "item": "minecraft:dragon_egg"
       },
       "value": 1000
     },
     {
       "item": {
-        "item": "minecraft:cooked_salmon"
+        "item": "minecraft:ender_eye"
       },
-      "value": -800
+      "value": 1000
     },
     {
       "item": {

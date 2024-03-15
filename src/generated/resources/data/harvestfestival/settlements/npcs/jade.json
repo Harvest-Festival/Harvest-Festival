@@ -25,15 +25,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:stone"
+        "item": "minecraft:allium"
       },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "minecraft:rabbit_foot"
-      },
-      "value": 500
+      "value": 1000
     },
     {
       "item": {
@@ -49,15 +43,21 @@
     },
     {
       "item": {
-        "item": "minecraft:allium"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
         "tag": "minecraft:logs"
       },
       "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:stone"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": 500
     }
   ],
   "inside_color": "#653081",

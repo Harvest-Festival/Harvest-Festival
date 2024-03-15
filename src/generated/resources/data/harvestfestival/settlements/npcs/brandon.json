@@ -16,7 +16,7 @@
     },
     {
       "category": "mineral",
-      "value": 500
+      "value": 1000
     },
     {
       "category": "flower",
@@ -28,7 +28,7 @@
     },
     {
       "category": "mushroom",
-      "value": 500
+      "value": 1000
     },
     {
       "category": "fish",
@@ -38,21 +38,33 @@
   "gift_item_overrides": [
     {
       "item": {
+        "item": "horticulture:pickled_cucumber"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:torchflower"
+      },
+      "value": 500
+    },
+    {
+      "item": {
         "item": "horticulture:orange_juice"
       },
       "value": 200
     },
     {
       "item": {
-        "item": "horticulture:pineapple_juice"
+        "tag": "forge:ingots/mystril"
       },
-      "value": 200
+      "value": 1000
     },
     {
       "item": {
-        "item": "horticulture:apple_juice"
+        "tag": "harvestfestival:mythic_stone"
       },
-      "value": 200
+      "value": 1000
     },
     {
       "item": {
@@ -62,25 +74,7 @@
     },
     {
       "item": {
-        "item": "horticulture:banana_juice"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "item": "minecraft:torch"
-      },
-      "value": 500
-    },
-    {
-      "item": {
         "item": "minecraft:nether_star"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "tag": "minecraft:saplings"
       },
       "value": -800
     },
@@ -92,21 +86,27 @@
     },
     {
       "item": {
-        "item": "horticulture:pickled_cucumber"
-      },
-      "value": -200
-    },
-    {
-      "item": {
-        "item": "minecraft:torchflower"
+        "item": "minecraft:torch"
       },
       "value": 500
     },
     {
       "item": {
-        "tag": "forge:ingots/mystril"
+        "item": "horticulture:pineapple_juice"
       },
-      "value": 1000
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:banana_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:apple_juice"
+      },
+      "value": 200
     },
     {
       "item": {
@@ -116,9 +116,9 @@
     },
     {
       "item": {
-        "tag": "harvestfestival:mythic_stone"
+        "tag": "minecraft:saplings"
       },
-      "value": 1000
+      "value": -800
     }
   ],
   "inside_color": "#C28D48",

@@ -90,7 +90,7 @@
           }
         }
       ],
-      "unique_id": "hoe"
+      "unique_id": "basic_hoe"
     },
     {
       "stock_mechanic": "shopaholic:limited_one",
@@ -144,7 +144,7 @@
           }
         }
       ],
-      "unique_id": "axe"
+      "unique_id": "basic_axe"
     },
     {
       "stock_mechanic": "shopaholic:limited_one",
@@ -163,7 +163,7 @@
           }
         }
       ],
-      "unique_id": "hammer"
+      "unique_id": "basic_hammer"
     }
   ],
   "method": "right_click",

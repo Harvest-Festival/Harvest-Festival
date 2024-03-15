@@ -33,25 +33,25 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:ingots/gold"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:crops/carrot"
+        "item": "minecraft:golden_carrot"
       },
       "value": 1000
     },
     {
       "item": {
-        "tag": "forge:crops/orange"
+        "item": "minecraft:flint"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:crops/peach"
       },
       "value": 500
     },
     {
       "item": {
-        "item": "minecraft:carrot_on_a_stick"
+        "tag": "forge:crops/carrot"
       },
       "value": 1000
     },
@@ -63,15 +63,9 @@
     },
     {
       "item": {
-        "tag": "forge:crops/peach"
+        "item": "minecraft:carrot_on_a_stick"
       },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/iron"
-      },
-      "value": -800
+      "value": 1000
     },
     {
       "item": {
@@ -81,13 +75,19 @@
     },
     {
       "item": {
-        "item": "minecraft:golden_carrot"
+        "tag": "forge:ingots/gold"
       },
-      "value": 1000
+      "value": -800
     },
     {
       "item": {
-        "item": "minecraft:flint"
+        "tag": "forge:crops/orange"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
       },
       "value": -800
     }

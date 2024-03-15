@@ -87,6 +87,7 @@
       ],
       "sublistings": [
         {
+          "gold": 100,
           "listing": {
             "type": "shopaholic:item",
             "stack": {

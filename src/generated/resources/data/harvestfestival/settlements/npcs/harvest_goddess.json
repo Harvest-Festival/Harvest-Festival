@@ -59,39 +59,21 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "piscary:empty_can"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "piscary:fish_bones"
-      },
-      "value": -800
-    },
-    {
-      "item": {
         "item": "minecraft:rabbit_foot"
       },
       "value": -400
     },
     {
       "item": {
-        "tag": "forge:crops/pineapple"
+        "item": "horticulture:strawberry_milk"
       },
       "value": 500
     },
     {
       "item": {
-        "tag": "forge:crops/strawberry"
+        "tag": "forge:crops/pineapple"
       },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "horticulture:strawberry_milk"
-      },
-      "value": 200
+      "value": 500
     },
     {
       "item": {
@@ -103,7 +85,25 @@
       "item": {
         "item": "harvestfestival:strawberry_jam"
       },
-      "value": 200
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:crops/strawberry"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "piscary:empty_can"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "piscary:fish_bones"
+      },
+      "value": -800
     }
   ],
   "inside_color": "#8CEED3",

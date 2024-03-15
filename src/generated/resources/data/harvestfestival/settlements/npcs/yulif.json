@@ -29,13 +29,61 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "horticulture:baked_corn"
+        "tag": "forge:crops/green_pepper"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:tomato_juice"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "tag": "forge:crops/corn"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:crops/beetroot"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:crops/melon"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "horticulture:boiled_spinach"
       },
       "value": -200
     },
     {
       "item": {
         "tag": "forge:crops/potato"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "horticulture:salad"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:melon"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:crops/carrot"
       },
       "value": -800
     },
@@ -53,63 +101,15 @@
     },
     {
       "item": {
-        "tag": "forge:crops/corn"
+        "item": "horticulture:baked_corn"
       },
-      "value": 500
+      "value": -200
     },
     {
       "item": {
         "tag": "forge:crops/pineapple"
       },
       "value": 500
-    },
-    {
-      "item": {
-        "item": "horticulture:boiled_spinach"
-      },
-      "value": -200
-    },
-    {
-      "item": {
-        "item": "horticulture:tomato_juice"
-      },
-      "value": -200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/green_pepper"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/carrot"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:crops/melon"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "tag": "forge:crops/beetroot"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "minecraft:melon"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "horticulture:salad"
-      },
-      "value": 200
     }
   ],
   "inside_color": "#313857",
