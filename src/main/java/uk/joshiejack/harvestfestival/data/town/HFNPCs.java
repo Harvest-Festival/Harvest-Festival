@@ -3,8 +3,11 @@ package uk.joshiejack.harvestfestival.data.town;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.Tags;
 import uk.joshiejack.harvestfestival.HFTags;
 import uk.joshiejack.harvestfestival.HarvestFestival;
@@ -65,7 +68,82 @@ harvestfestival:benjii,villager,adult,,0xFFFF99,0xB2B200,,,
 harvestfestival:cloe,villager,adult,,0xFFFF99,0xB2B200,,,
 harvestfestival:abii,villager,child,,0xFF99FF,0xFF20FF,,,
 harvestfestival:zephyr,villager,adult,,0x300040,0x000000,,,
+
      */
+
+    private NPC.ItemData awesome(TagKey<Item> tag) {
+        return new NPC.ItemData(Ingredient.of(tag), HFGiftQualities.AWESOME.value());
+    }
+
+    private NPC.ItemData good(TagKey<Item> tag) {
+        return new NPC.ItemData(Ingredient.of(tag), HFGiftQualities.GOOD.value());
+    }
+
+    private NPC.ItemData decent(TagKey<Item> tag) {
+        return new NPC.ItemData(Ingredient.of(tag), HFGiftQualities.DECENT.value());
+    }
+
+    private NPC.ItemData dislike(TagKey<Item> tag) {
+        return new NPC.ItemData(Ingredient.of(tag), HFGiftQualities.DISLIKE.value());
+    }
+
+    private NPC.ItemData bad(TagKey<Item> tag) {
+        return new NPC.ItemData(Ingredient.of(tag), HFGiftQualities.BAD.value());
+    }
+
+    private NPC.ItemData terrible(TagKey<Item> tag) {
+        return new NPC.ItemData(Ingredient.of(tag), HFGiftQualities.TERRIBLE.value());
+    }
+
+    private NPC.ItemData awesome(ItemLike item) {
+        return new NPC.ItemData(Ingredient.of(item), HFGiftQualities.AWESOME.value());
+    }
+
+    private NPC.ItemData good(ItemLike item) {
+        return new NPC.ItemData(Ingredient.of(item), HFGiftQualities.GOOD.value());
+    }
+
+    private NPC.ItemData decent(ItemLike item) {
+        return new NPC.ItemData(Ingredient.of(item), HFGiftQualities.DECENT.value());
+    }
+
+    private NPC.ItemData dislike(ItemLike item) {
+        return new NPC.ItemData(Ingredient.of(item), HFGiftQualities.DISLIKE.value());
+    }
+
+    private NPC.ItemData bad(ItemLike item) {
+        return new NPC.ItemData(Ingredient.of(item), HFGiftQualities.BAD.value());
+    }
+
+    private NPC.ItemData terrible(ItemLike item) {
+        return new NPC.ItemData(Ingredient.of(item), HFGiftQualities.TERRIBLE.value());
+    }
+
+    private NPC.CategoryData awesome(String category) {
+        return new NPC.CategoryData(category, HFGiftQualities.AWESOME.value());
+    }
+
+    private NPC.CategoryData good(String category) {
+        return new NPC.CategoryData(category, HFGiftQualities.GOOD.value());
+    }
+
+    private NPC.CategoryData decent(String category) {
+        return new NPC.CategoryData(category, HFGiftQualities.DECENT.value());
+    }
+
+    private NPC.CategoryData dislike(String category) {
+        return new NPC.CategoryData(category, HFGiftQualities.DISLIKE.value());
+    }
+
+    private NPC.CategoryData bad(String category) {
+        return new NPC.CategoryData(category, HFGiftQualities.BAD.value());
+    }
+
+    private NPC.CategoryData terrible(String category) {
+        return new NPC.CategoryData(category, HFGiftQualities.TERRIBLE.value());
+    }
+
+
     @Override
     protected void buildRegistry(Map<ResourceLocation, NPC> map) {
         NPCClass goddess = new NPCClass(Age.ADULT, false, 1.25F, 0.25F, true, true, true, true, false, 400, true);
@@ -82,27 +160,27 @@ harvestfestival:zephyr,villager,adult,,0x300040,0x000000,,,
                         goddess, //Class
                         "#8CEED3", //Inside Color
                         "#4EC485", //Outside Color
-                        List.of(new NPC.ItemData(Ingredient.of(HorticultureTags.STRAWBERRY), HFGiftQualities.AWESOME.value()),
-                                new NPC.ItemData(Ingredient.of(HorticultureTags.PINEAPPLE), HFGiftQualities.GOOD.value()),
-                                new NPC.ItemData(Ingredient.of(HFItems.STRAWBERRY_JAM), HFGiftQualities.DECENT.value()),
-                                new NPC.ItemData(Ingredient.of(HorticultureItems.STRAWBERRY_MILK), HFGiftQualities.DECENT.value()),
-                                new NPC.ItemData(Ingredient.of(Items.RABBIT_FOOT), HFGiftQualities.BAD.value()),
+                        List.of(awesome(HorticultureTags.STRAWBERRY),
+                                good(HorticultureTags.PINEAPPLE),
+                                awesome(HFItems.STRAWBERRY_JAM),
+                                good(HorticultureItems.STRAWBERRY_MILK),
+                                bad(Items.RABBIT_FOOT),
                                 //TODO: WINE @Gastronomy
-                                new NPC.ItemData(Ingredient.of(PiscaryItems.FISH_BONES), HFGiftQualities.TERRIBLE.value()),
-                                new NPC.ItemData(Ingredient.of(PiscaryItems.EMPTY_CAN), HFGiftQualities.TERRIBLE.value()),
-                                new NPC.ItemData(Ingredient.of(PiscaryItems.OLD_BOOT), HFGiftQualities.TERRIBLE.value())
+                                terrible(PiscaryItems.FISH_BONES),
+                                terrible(PiscaryItems.EMPTY_CAN),
+                                terrible(PiscaryItems.OLD_BOOT)
                         ), //Item Gift Overrides
-                        List.of(new NPC.CategoryData("flower", HFGiftQualities.DECENT.value()),
-                                new NPC.CategoryData("plant", HFGiftQualities.DECENT.value()),
-                                new NPC.CategoryData("mushroom", HFGiftQualities.DISLIKE.value()),
-                                new NPC.CategoryData("cooking", HFGiftQualities.DISLIKE.value()),
-                                new NPC.CategoryData("knowledge", HFGiftQualities.DISLIKE.value()),
-                                new NPC.CategoryData("gem", HFGiftQualities.DISLIKE.value()),
-                                new NPC.CategoryData("mineral", HFGiftQualities.BAD.value()),
-                                new NPC.CategoryData("meat", HFGiftQualities.BAD.value()),
-                                new NPC.CategoryData("fish", HFGiftQualities.BAD.value()),
-                                new NPC.CategoryData("art", HFGiftQualities.BAD.value()),
-                                new NPC.CategoryData("money", HFGiftQualities.BAD.value())
+                        List.of(decent("flower"),
+                                decent("plant"),
+                                dislike("mushroom"),
+                                dislike("cooking"),
+                                dislike("knowledge"),
+                                dislike("gem"),
+                                bad("mineral"),
+                                bad("meat"),
+                                bad("fish"),
+                                bad("art"),
+                                bad("money")
                         ) //Category Gift Overrides
                 )
         );
@@ -110,30 +188,30 @@ harvestfestival:zephyr,villager,adult,,0x300040,0x000000,,,
         //Yulif
         map.put(HarvestFestival.prefix("yulif"), new NPC(
                 null, null, null, "builder", adult, "#313857", "#121421",
-                List.of(new NPC.ItemData(Ingredient.of(Items.MELON), HFGiftQualities.AWESOME.value()),
-                        new NPC.ItemData(Ingredient.of(PenguinTags.CROPS_MELON), HFGiftQualities.AWESOME.value()),
-                        new NPC.ItemData(Ingredient.of(Tags.Items.GEMS_QUARTZ), HFGiftQualities.GOOD.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureTags.CORN), HFGiftQualities.GOOD.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureTags.PINEAPPLE), HFGiftQualities.GOOD.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureItems.SALAD), HFGiftQualities.DECENT.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureTags.GREEN_PEPPER), HFGiftQualities.DECENT.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureItems.PICKLED_TURNIP), HFGiftQualities.DISLIKE.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureItems.BOILED_SPINACH), HFGiftQualities.DISLIKE.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureItems.BAKED_CORN), HFGiftQualities.DISLIKE.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureItems.TOMATO_JUICE), HFGiftQualities.DISLIKE.value()),
+                List.of(awesome(Items.MELON),
+                        awesome(PenguinTags.CROPS_MELON),
+                        good(Tags.Items.GEMS_QUARTZ),
+                        good(HorticultureTags.CORN),
+                        good(HorticultureTags.PINEAPPLE),
+                        decent(HorticultureItems.SALAD),
+                        decent(HorticultureTags.GREEN_PEPPER),
+                        dislike(HorticultureItems.PICKLED_TURNIP),
+                        dislike(HorticultureItems.BOILED_SPINACH),
+                        dislike(HorticultureItems.BAKED_CORN),
+                        dislike(HorticultureItems.TOMATO_JUICE),
                         //TODO: Gastronomy Vegetable Juice
                         //TODO: Gastronomy Vegetable Latte
                         //TODO: Gastronomy Mix Juice
-                        new NPC.ItemData(Ingredient.of(Tags.Items.CROPS_CARROT), HFGiftQualities.TERRIBLE.value()),
-                        new NPC.ItemData(Ingredient.of(Tags.Items.CROPS_POTATO), HFGiftQualities.TERRIBLE.value()),
-                        new NPC.ItemData(Ingredient.of(Tags.Items.CROPS_BEETROOT), HFGiftQualities.TERRIBLE.value())
+                        terrible(Tags.Items.CROPS_CARROT),
+                        terrible(Tags.Items.CROPS_POTATO),
+                        terrible(Tags.Items.CROPS_BEETROOT)
                 ),
-                List.of(new NPC.CategoryData("building", HFGiftQualities.GOOD.value()),
-                        new NPC.CategoryData("flower", HFGiftQualities.DECENT.value()),
-                        new NPC.CategoryData("mineral", HFGiftQualities.DECENT.value()),
-                        new NPC.CategoryData("monster", HFGiftQualities.DISLIKE.value()),
-                        new NPC.CategoryData("vegetable", HFGiftQualities.BAD.value()),
-                        new NPC.CategoryData("plant", HFGiftQualities.BAD.value())
+                List.of(good("building"),
+                        decent("flower"),
+                        decent("mineral"),
+                        dislike("monster"),
+                        bad("vegetable"),
+                        bad("plant")
                 )
         ));
 
@@ -141,72 +219,73 @@ harvestfestival:zephyr,villager,adult,,0x300040,0x000000,,,
         map.put(HarvestFestival.prefix("jade"), new NPC(
                 null, null, null, "villager", adult, "#653081", "#361840",
                 List.of(//TODO: Grapes Tag new NPC.ItemData(Ingredient.of(HorticultureTags.GRAPE), HFGiftQualities.AWESOME.value()),
-                        new NPC.ItemData(Ingredient.of(Items.ALLIUM), HFGiftQualities.AWESOME.value()),
+                        awesome(Items.ALLIUM),
                         //TODO: Gastronomy Lavender (Awesome)
-                        new NPC.ItemData(Ingredient.of(Tags.Items.GEMS_AMETHYST), HFGiftQualities.AWESOME.value()),
-                        new NPC.ItemData(Ingredient.of(Items.RABBIT_FOOT), HFGiftQualities.GOOD.value()),
-                        new NPC.ItemData(Ingredient.of(Items.FLOWER_POT), HFGiftQualities.GOOD.value()),
-                        new NPC.ItemData(Ingredient.of(Tags.Items.STONE), HFGiftQualities.TERRIBLE.value()),
-                        new NPC.ItemData(Ingredient.of(ItemTags.LOGS), HFGiftQualities.TERRIBLE.value())
+                        awesome(Tags.Items.GEMS_AMETHYST),
+                        good(Items.RABBIT_FOOT),
+                        good(Items.FLOWER_POT),
+                        terrible(Tags.Items.STONE),
+                        terrible(ItemTags.LOGS)
                 ),
-                List.of(new NPC.CategoryData("flower", HFGiftQualities.GOOD.value()),
-                        new NPC.CategoryData("plant", HFGiftQualities.GOOD.value()),
-                        new NPC.CategoryData("herb", HFGiftQualities.GOOD.value()),
-                        new NPC.CategoryData("money", HFGiftQualities.DECENT.value()),
-                        new NPC.CategoryData("mineral", HFGiftQualities.BAD.value()))));
+                List.of(good("flower"),
+                        good("plant"),
+                        good("herb"),
+                        decent("money"),
+                        bad("mineral"))));
 
         //Johan
         map.put(HarvestFestival.prefix("johan"), new NPC(
                         null, null, null, "villager", adult, "#FFFFFF", "#C60C30",
-                        List.of(new NPC.ItemData(Ingredient.of(Tags.Items.CROPS_POTATO), HFGiftQualities.AWESOME.value()),
-                                new NPC.ItemData(Ingredient.of(Items.BAKED_POTATO), HFGiftQualities.AWESOME.value()),
-                                //TODO Gastro Fries? new NPC.ItemData(Ingredient.of(HorticultureItems.FRIES), HFGiftQualities.AWESOME.value()),
-                                new NPC.ItemData(Ingredient.of(HorticultureTags.TOMATO), HFGiftQualities.GOOD.value()),
-                                //new NPC.ItemData(Ingredient.of(ItemTags.WOOL), HFGiftQualities.GOOD.value()),
-                                //new NPC.ItemData(Ingredient.of(Items.ALLIUM), HFGiftQualities.DECENT.value()),
-                                //new NPC.ItemData(Ingredient.of(Items.EGG), HFGiftQualities.DISLIKE.value()),
-                                new NPC.ItemData(Ingredient.of(HusbandryItems.BOILED_EGG), HFGiftQualities.DISLIKE.value()),
-                                //TODO new NPC.ItemData(Ingredient.of(GastronomyItems.SCRAMBLED_EGG), HFGiftQualities.DISLIKE.value()),
-                                //TODO new NPC.ItemData(Ingredient.of(HorticultureItems.EGG_OVER_RICE), HFGiftQualities.DISLIKE.value()),
-                                //TODO: ? new NPC.ItemData(Ingredient.of(HusbandryItems.MAYONNAISE), HFGiftQualities.DISLIKE.value()),
-//                        new NPC.ItemData(Ingredient.of(HorticultureItems.CHOCOLATE), HFGiftQualities.BAD.value()),
-//                        new NPC.ItemData(Ingredient.of(HorticultureItems.CHOCOLATE_CAKE), HFGiftQualities.BAD.value()),
-//                        new NPC.ItemData(Ingredient.of(HorticultureItems.CHOCOLATE_COOKIES), HFGiftQualities.BAD.value()),
-//                        new NPC.ItemData(Ingredient.of(HorticultureItems.HOT_CHOCOLATE), HFGiftQualities.BAD.value()),
-                                new NPC.ItemData(Ingredient.of(HusbandryItems.HOT_MILK), HFGiftQualities.BAD.value()),
-                                new NPC.ItemData(Ingredient.of(HorticultureItems.STRAWBERRY_MILK), HFGiftQualities.BAD.value()),
-                                new NPC.ItemData(Ingredient.of(PenguinTags.CROPS_PUMPKIN), HFGiftQualities.TERRIBLE.value()),
-                                new NPC.ItemData(Ingredient.of(Items.PUMPKIN_PIE), HFGiftQualities.TERRIBLE.value()),
-                                new NPC.ItemData(Ingredient.of(HorticultureItems.PUMPKIN_STEW), HFGiftQualities.TERRIBLE.value())
+                        List.of(awesome(Tags.Items.CROPS_POTATO),
+                                awesome(Items.BAKED_POTATO),
+                                //TODO Gastro Fries? awesome(HorticultureItems.FRIES),
+                                good(HorticultureTags.TOMATO),
+                                //good(ItemTags.WOOL),
+                                //decent(Items.ALLIUM),
+                                //dislike(Items.EGG),
+                                dislike(HusbandryItems.BOILED_EGG),
+                                //TODO dislike(GastronomyItems.SCRAMBLED_EGG),
+                                //TODO dislike(HorticultureItems.EGG_OVER_RICE),
+                                //TODO: ? dislike(HusbandryItems.MAYONNAISE),
+                                //bad(HorticultureItems.CHOCOLATE),
+                                //bad(HorticultureItems.CHOCOLATE_CAKE),
+                                //bad(HorticultureItems.CHOCOLATE_COOKIES),
+                                //bad(HorticultureItems.HOT_CHOCOLATE),
+                                bad(HusbandryItems.HOT_MILK),
+                                bad(HorticultureItems.STRAWBERRY_MILK),
+                                terrible(PenguinTags.CROPS_PUMPKIN),
+                                terrible(Items.PUMPKIN_PIE),
+                                terrible(HorticultureItems.PUMPKIN_STEW)
                         ),
-                        List.of(new NPC.CategoryData("wool", HFGiftQualities.GOOD.value()),
-                                new NPC.CategoryData("flower", HFGiftQualities.DECENT.value()),
-                                new NPC.CategoryData("egg", HFGiftQualities.DISLIKE.value()),
-                                new NPC.CategoryData("milk", HFGiftQualities.BAD.value()))
+                        List.of(good("wool"),
+                                decent("flower"),
+                                dislike("egg"),
+                                bad("milk"))
                 )
         );
 
         //Jenni
         map.put(HarvestFestival.prefix("jenni"), new NPC(
                 null, null, null, "villager", adult, "#DDD0AD", "#E79043",
-                List.of(new NPC.ItemData(Ingredient.of(Items.CARROT_ON_A_STICK), HFGiftQualities.AWESOME.value()),
-                        new NPC.ItemData(Ingredient.of(Tags.Items.CROPS_CARROT), HFGiftQualities.AWESOME.value()),
-                        new NPC.ItemData(Ingredient.of(Items.GOLDEN_CARROT), HFGiftQualities.AWESOME.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureTags.ORANGE), HFGiftQualities.GOOD.value()),
-                        new NPC.ItemData(Ingredient.of(HorticultureTags.PEACH), HFGiftQualities.GOOD.value()),
-                        new NPC.ItemData(Ingredient.of(Items.RABBIT_FOOT), HFGiftQualities.GOOD.value()),
-                        new NPC.ItemData(Ingredient.of(ItemTags.WOOL), HFGiftQualities.GOOD.value()),
-                        new NPC.ItemData(Ingredient.of(Items.FLINT), HFGiftQualities.TERRIBLE.value()),
-                        new NPC.ItemData(Ingredient.of(Tags.Items.INGOTS_IRON), HFGiftQualities.TERRIBLE.value()),
-                        new NPC.ItemData(Ingredient.of(Tags.Items.INGOTS_GOLD), HFGiftQualities.TERRIBLE.value())
+                List.of(awesome(Items.CARROT_ON_A_STICK),
+                        awesome(Tags.Items.CROPS_CARROT),
+                        awesome(Items.GOLDEN_CARROT),
+                        good(HorticultureTags.ORANGE),
+                        good(HorticultureTags.PEACH),
+                        good(Items.RABBIT_FOOT),
+                        good(ItemTags.WOOL),
+                        terrible(Items.FLINT),
+                        terrible(Tags.Items.INGOTS_IRON),
+                        terrible(Tags.Items.INGOTS_GOLD)
                 ),
-                List.of(new NPC.CategoryData("art", HFGiftQualities.GOOD.value()),
-                        new NPC.CategoryData("wool", HFGiftQualities.GOOD.value()),
-                        new NPC.CategoryData("vegetable", HFGiftQualities.GOOD.value()),
-                        new NPC.CategoryData("money", HFGiftQualities.DECENT.value()),
-                        new NPC.CategoryData("junk", HFGiftQualities.DISLIKE.value()),
-                        new NPC.CategoryData("building", HFGiftQualities.DISLIKE.value()),
-                        new NPC.CategoryData("mineral", HFGiftQualities.BAD.value()))
+                List.of(good("art"),
+                        good("wool"),
+                        good("vegetable"),
+                        decent("money"),
+                        dislike("junk"),
+                        dislike("building"),
+                        bad("mineral")
+                ))
         ));
 
         //Candice
