@@ -39,15 +39,9 @@
     },
     {
       "item": {
-        "item": "minecraft:golden_carrot"
+        "tag": "forge:crops/carrot"
       },
       "value": 1000
-    },
-    {
-      "item": {
-        "tag": "forge:crops/peach"
-      },
-      "value": 500
     },
     {
       "item": {
@@ -57,13 +51,19 @@
     },
     {
       "item": {
-        "item": "minecraft:flint"
+        "item": "minecraft:carrot_on_a_stick"
       },
-      "value": -800
+      "value": 1000
     },
     {
       "item": {
         "tag": "minecraft:wool"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:crops/peach"
       },
       "value": 500
     },
@@ -81,15 +81,15 @@
     },
     {
       "item": {
-        "item": "minecraft:carrot_on_a_stick"
+        "item": "minecraft:golden_carrot"
       },
       "value": 1000
     },
     {
       "item": {
-        "tag": "forge:crops/carrot"
+        "item": "minecraft:flint"
       },
-      "value": 1000
+      "value": -800
     }
   ],
   "inside_color": "#DDD0AD",

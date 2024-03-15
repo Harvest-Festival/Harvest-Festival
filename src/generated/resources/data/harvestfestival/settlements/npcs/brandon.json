@@ -1,0 +1,126 @@
+{
+  "class": {
+    "height": 0.75,
+    "hide_hearts": true,
+    "offset": 5.0,
+    "underwater": true
+  },
+  "gift_category_overrides": [
+    {
+      "category": "plant",
+      "value": -200
+    },
+    {
+      "category": "art",
+      "value": -200
+    },
+    {
+      "category": "mineral",
+      "value": 500
+    },
+    {
+      "category": "flower",
+      "value": -200
+    },
+    {
+      "category": "fruit",
+      "value": -200
+    },
+    {
+      "category": "mushroom",
+      "value": 500
+    },
+    {
+      "category": "fish",
+      "value": -400
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "item": "horticulture:orange_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:pineapple_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:apple_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:ladder"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "horticulture:banana_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:torch"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "minecraft:nether_star"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "minecraft:saplings"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "horticulture:peach_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:pickled_cucumber"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "minecraft:torchflower"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/mystril"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:dandelion"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "harvestfestival:mythic_stone"
+      },
+      "value": 1000
+    }
+  ],
+  "inside_color": "#C28D48",
+  "outside_color": "#5F5247"
+}

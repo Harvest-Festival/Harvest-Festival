@@ -6,10 +6,13 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
+import uk.joshiejack.harvestfestival.HFTags;
 import uk.joshiejack.harvestfestival.HarvestFestival;
+import uk.joshiejack.harvestfestival.world.block.HFBlocks;
 import uk.joshiejack.harvestfestival.world.item.HFItems;
 import uk.joshiejack.horticulture.world.item.HorticultureItems;
 import uk.joshiejack.horticulture.world.item.HorticultureTags;
+import uk.joshiejack.husbandry.world.entity.traits.food.EatsRabbitFoodTrait;
 import uk.joshiejack.husbandry.world.item.HusbandryItems;
 import uk.joshiejack.penguinlib.data.generator.AbstractPenguinRegistryProvider;
 import uk.joshiejack.penguinlib.util.PenguinTags;
@@ -227,5 +230,165 @@ harvestfestival:zephyr,villager,adult,,0x300040,0x000000,,,
                         new NPC.CategoryData("flower", HFGiftQualities.DECENT.value()),
                         new NPC.CategoryData("fruit", HFGiftQualities.BAD.value()))));
 
+        //Trent
+        map.put(HarvestFestival.prefix("trent"), new NPC(
+                null, null, null, "villager", adult, "#F65FAB", "#F21985",
+                List.of(new NPC.ItemData(Ingredient.of(Items.SUNFLOWER), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(HFItems.CHEESE), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.MILK_BUCKET), HFGiftQualities.GOOD.value()),
+                        new NPC.ItemData(Ingredient.of(Items.COOKED_MUTTON), HFGiftQualities.GOOD.value()),
+                        new NPC.ItemData(Ingredient.of(Items.COOKED_PORKCHOP), HFGiftQualities.GOOD.value()),
+                        new NPC.ItemData(Ingredient.of(Items.COOKED_BEEF), HFGiftQualities.GOOD.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.TOPAZ), HFGiftQualities.GOOD.value()),
+                        new NPC.ItemData(Ingredient.of(ItemTags.BOOKSHELF_BOOKS), HFGiftQualities.DISLIKE.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.AGATE), HFGiftQualities.DECENT.value()),
+                        new NPC.ItemData(Ingredient.of(Tags.Items.GEMS_EMERALD), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.FLUORITE), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.JADE), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.PERIDOT), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.SAPPHIRE), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(Tags.Items.SLIMEBALLS), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.ADAMANTITE), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(PiscaryItems.PIRATE_TREASURE), HFGiftQualities.TERRIBLE.value())),
+                List.of(new NPC.CategoryData("milk", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("monster", HFGiftQualities.DECENT.value()),
+                        new NPC.CategoryData("gem", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("money", HFGiftQualities.BAD.value())
+                )));
+
+        //Ashlee
+        map.put(HarvestFestival.prefix("ashlee"), new NPC(
+                null, null, null, "villager", adult, "#C62D2D", "#571111",
+                List.of(new NPC.ItemData(Ingredient.of(HorticultureTags.BANANA), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureTags.CORN), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.BAKED_CORN), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(HusbandryItems.BIRD_FEED), HFGiftQualities.DECENT.value()),
+                        //TODO GASTRO new NPC.ItemData(Ingredient.of(HorticultureItems.KETCHUP), HFGiftQualities.BAD.value()),
+                        //TODO GASTRO new NPC.ItemData(Ingredient.of(HorticultureItems.FRIES), HFGiftQualities.BAD.value()),
+                        //TODO GASTRO new NPC.ItemData(Ingredient.of(HorticultureItems.DOUGHNUT), HFGiftQualities.BAD.value()),
+                        //TODO GASTRO  new NPC.ItemData(Ingredient.of(HorticultureItems.POPCORN), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(HusbandryItems.ICE_CREAM), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(EatsRabbitFoodTrait.RABBIT_FOOD), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(Items.BEEF), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(Items.PORKCHOP), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(Items.RABBIT), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(Items.MUTTON), HFGiftQualities.TERRIBLE.value())
+                ),
+                List.of(new NPC.CategoryData("egg", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("fruit", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("meat", HFGiftQualities.BAD.value()))));
+
+        //Alicia
+        //When a list starts with cat# it means it is a category, if it is in camel case, it is an itemtag e.g. gemMoonStone > HFTags.Items.MOONSTONE (using vanilla and forge tags when available)
+        map.put(HarvestFestival.prefix("alicia"), new NPC(
+                null, null, null, "villager", adult, "#C62D2D", "#571111",
+                List.of(new NPC.ItemData(Ingredient.of(HFTags.Items.MOONSTONE), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(HFBlocks.RED_MAGIC_FLOWER.asItem()), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(HFBlocks.BLUE_MAGIC_FLOWER.asItem()), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.BONE), HFGiftQualities.DECENT.value()),
+                        new NPC.ItemData(Ingredient.of(PiscaryItems.FISH_BONES), HFGiftQualities.DECENT.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureTags.GREEN_PEPPER), HFGiftQualities.DISLIKE.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureTags.CORN), HFGiftQualities.DISLIKE.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.ONION), HFGiftQualities.DISLIKE.value()),
+                        //TODO GASTRO new NPC.ItemData(Ingredient.of(HorticultureItems.POPCORN), HFGiftQualities.DISLIKE.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.CORNFLAKES), HFGiftQualities.DISLIKE.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.BAKED_CORN), HFGiftQualities.DISLIKE.value()),
+//TODO GASTRO
+//                        new NPC.ItemData(Ingredient.of(HorticultureItems.DORIA), HFGiftQualities.BAD.value()),
+//                        new NPC.ItemData(Ingredient.of(HorticultureItems.NOODLES), HFGiftQualities.BAD.value()),
+//                        new NPC.ItemData(Ingredient.of(HorticultureItems.CURRY_NOODLES), HFGiftQualities.BAD.value()),
+//                        new NPC.ItemData(Ingredient.of(HorticultureItems.TEMPURA_NOODLES), HFGiftQualities.BAD.value()),
+//                        new NPC.ItemData(Ingredient.of(HorticultureItems.THICK_FRIED_NOODLES), HFGiftQualities.BAD.value()),
+//                        new NPC.ItemData(Ingredient.of(HorticultureItems.PORRIDGE), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(HFBlocks.MOONDROP_FLOWER.asItem()), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(HFBlocks.TOY_FLOWER.asItem()), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(HFBlocks.PINK_CAT_FLOWER.asItem()), HFGiftQualities.TERRIBLE.value())),
+                List.of(new NPC.CategoryData("magic", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("herb", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("mineral", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("monster", HFGiftQualities.DECENT.value()),
+                        new NPC.CategoryData("cooking", HFGiftQualities.DECENT.value()),
+                        new NPC.CategoryData("money", HFGiftQualities.BAD.value()),
+                        new NPC.CategoryData("flower", HFGiftQualities.BAD.value()))));
+
+        //Jim
+        map.put(HarvestFestival.prefix("jim"), new NPC(
+                null, null, null, "villager", adult, "#DE7245", "#722B19",
+                List.of(new NPC.ItemData(Ingredient.of(Items.SADDLE), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.LEAD), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.NAME_TAG), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.RABBIT_FOOT), HFGiftQualities.GOOD.value()),
+                        new NPC.ItemData(Ingredient.of(Tags.Items.CROPS_WHEAT), HFGiftQualities.GOOD.value()),
+                        new NPC.ItemData(Ingredient.of(HusbandryItems.BOILED_EGG), HFGiftQualities.DECENT.value()),
+                        //TODO: GASTROnew NPC.ItemData(Ingredient.of(HusbandryItems.SCRAMBLED_EGG), HFGiftQualities.DECENT.value()),
+                        //TODO: GASTRO new NPC.ItemData(Ingredient.of(HusbandryItems.EGG_OVER_RICE), HFGiftQualities.DECENT.value()),
+                        new NPC.ItemData(Ingredient.of(HFItems.MAYONNAISE), HFGiftQualities.DISLIKE.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.ALEXANDRITE), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.PINK_DIAMOND), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(Tags.Items.GEMS_DIAMOND), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(Tags.Items.GEMS_EMERALD), HFGiftQualities.TERRIBLE.value())
+                ),
+                List.of(new NPC.CategoryData("milk", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("wool", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("meat", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("junk", HFGiftQualities.DECENT.value()),
+                        new NPC.CategoryData("money", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("magic", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("egg", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("fish", HFGiftQualities.BAD.value()),
+                        new NPC.CategoryData("gem", HFGiftQualities.BAD.value())
+                )));
+
+        //Daniel
+        map.put(HarvestFestival.prefix("daniel"), new NPC(
+                null, null, null, "villager", adult, "#613827", "#23150E",
+                List.of(new NPC.ItemData(Ingredient.of(Items.ENDER_PEARL), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.ENDER_EYE), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.CHORUS_FRUIT), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.DRAGON_BREATH), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.DRAGON_EGG), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.COOKED_COD), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(Items.COOKED_SALMON), HFGiftQualities.TERRIBLE.value()),
+                        //TODO: GASTRO new NPC.ItemData(Ingredient.of(HusbandryItems.GRILLED_FISH), HFGiftQualities.TERRIBLE.value()),
+                        //TODO: GASTRO new NPC.ItemData(Ingredient.of(HusbandryItems.FISHSTICKS), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(PiscaryItems.FISH_STEW), HFGiftQualities.TERRIBLE.value())),
+                List.of(new NPC.CategoryData("mineral", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("monster", HFGiftQualities.DECENT.value()),
+                        new NPC.CategoryData("magic", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("fish", HFGiftQualities.BAD.value())
+                )));
+
+        //Brandon
+        map.put(HarvestFestival.prefix("brandon"), new NPC(
+                null, null, null, "villager", dwarf, "#C28D48", "#5F5247",
+                List.of(new NPC.ItemData(Ingredient.of(HFTags.Items.INGOTS_MYSTRIL), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(HFTags.Items.MYTHIC_STONE), HFGiftQualities.AWESOME.value()),
+                        //TODO GASTRO new NPC.ItemData(Ingredient.of(HorticultureItems.FRIED_RICE), HFGiftQualities.AWESOME.value()),
+                        new NPC.ItemData(Ingredient.of(Items.TORCH), HFGiftQualities.GOOD.value()),
+                        new NPC.ItemData(Ingredient.of(Items.TORCHFLOWER), HFGiftQualities.GOOD.value()),
+                        new NPC.ItemData(Ingredient.of(Items.LADDER), HFGiftQualities.GOOD.value()),
+                        //TODO GASTRO new NPC.ItemData(Ingredient.of(HorticultureItems.RICEBALL), HFGiftQualities.DECENT.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.PINEAPPLE_JUICE), HFGiftQualities.DECENT.value()),
+                        //TODO new NPC.ItemData(Ingredient.of(HorticultureItems.GRAPE_JUICE), HFGiftQualities.DECENT.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.PEACH_JUICE), HFGiftQualities.DECENT.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.BANANA_JUICE), HFGiftQualities.DECENT.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.ORANGE_JUICE), HFGiftQualities.DECENT.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.APPLE_JUICE), HFGiftQualities.DECENT.value()),
+                        //TODO GASTRO  new NPC.ItemData(Ingredient.of(HorticultureItems.FRUIT_JUICE), HFGiftQualities.DECENT.value()),
+                        //TODO GASTRO new NPC.ItemData(Ingredient.of(HorticultureItems.FRUIT_SANDWICH), HFGiftQualities.DISLIKE.value()),
+                        new NPC.ItemData(Ingredient.of(HorticultureItems.PICKLED_CUCUMBER), HFGiftQualities.DISLIKE.value()),
+                        //TODO GASTRO new NPC.ItemData(Ingredient.of(HorticultureItems.PANCAKE), HFGiftQualities.DISLIKE.value()),
+                        new NPC.ItemData(Ingredient.of(Items.NETHER_STAR), HFGiftQualities.BAD.value()),
+                        //TODO GASTRO new NPC.ItemData(Ingredient.of(HorticultureItems.WINE), HFGiftQualities.BAD.value()),
+                        new NPC.ItemData(Ingredient.of(Items.DANDELION), HFGiftQualities.TERRIBLE.value()),
+                        new NPC.ItemData(Ingredient.of(ItemTags.SAPLINGS), HFGiftQualities.TERRIBLE.value())),
+                List.of(new NPC.CategoryData("mineral", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("mushroom", HFGiftQualities.GOOD.value()),
+                        new NPC.CategoryData("art", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("plant", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("flower", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("fruit", HFGiftQualities.DISLIKE.value()),
+                        new NPC.CategoryData("fish", HFGiftQualities.BAD.value())
+                )));
     }
 }

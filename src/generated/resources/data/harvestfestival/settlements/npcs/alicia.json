@@ -1,0 +1,115 @@
+{
+  "class": {},
+  "gift_category_overrides": [
+    {
+      "category": "monster",
+      "value": 200
+    },
+    {
+      "category": "money",
+      "value": -400
+    },
+    {
+      "category": "mineral",
+      "value": 500
+    },
+    {
+      "category": "flower",
+      "value": -400
+    },
+    {
+      "category": "magic",
+      "value": 500
+    },
+    {
+      "category": "cooking",
+      "value": 200
+    },
+    {
+      "category": "herb",
+      "value": 500
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "item": "horticulture:onion"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "tag": "forge:crops/corn"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "harvestfestival:toy_flower"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:crops/green_pepper"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "harvestfestival:pink_cat_flower"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "harvestfestival:red_magic_flower"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "horticulture:baked_corn"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "harvestfestival:moondrop_flower"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:gems/moonstone"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "harvestfestival:blue_magic_flower"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "piscary:fish_bones"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:cornflakes"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "minecraft:bone"
+      },
+      "value": 200
+    }
+  ],
+  "inside_color": "#C62D2D",
+  "outside_color": "#571111"
+}

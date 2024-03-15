@@ -122,7 +122,8 @@ public class HFItems {
     public static final DeferredItem<Item> BLESSED_BOOTS = ITEMS.register("blessed_boots", () -> new SpeedBootsItem("harvestfestival:blessed", new Item.Properties().stacksTo(1), 25, 0.1D));
     public static final DeferredItem<Item> CALENDAR = ITEMS.register("calendar", () -> new CalendarItem(new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> BLUE_FEATHER = ITEMS.register("blue_feather", () -> new Item(new Item.Properties().stacksTo(1)));
-
+    public static final DeferredItem<Item> CHEESE = ITEMS.register("cheese", () -> new PenguinItem(new PenguinItem.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build())));
+    public static final DeferredItem<Item> MAYONNAISE = ITEMS.register("mayonnaise", () -> new PenguinItem(new PenguinItem.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build())));
     //Jams
     public static final DeferredItem<Item> APPLE_JAM = ITEMS.register("apple_jam", () -> new PenguinItem(new PenguinItem.Properties().useDuration(12).food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build())));
     public static final DeferredItem<Item> GRAPE_JAM = ITEMS.register("grape_jam", () -> new PenguinItem(new PenguinItem.Properties().useDuration(12).food(new FoodProperties.Builder().nutrition(4).saturationMod(0.6F).build())));

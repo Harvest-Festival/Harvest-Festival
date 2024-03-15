@@ -1,0 +1,127 @@
+{
+  "class": {},
+  "gift_category_overrides": [
+    {
+      "category": "gem",
+      "value": -200
+    },
+    {
+      "category": "monster",
+      "value": 200
+    },
+    {
+      "category": "money",
+      "value": -400
+    },
+    {
+      "category": "milk",
+      "value": 500
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "item": "minecraft:milk_bucket"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:gems/topaz"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:gems/agate"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "tag": "forge:gems/adamantite"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:gems/emerald"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_porkchop"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "minecraft:bookshelf_books"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "minecraft:sunflower"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "harvestfestival:cheese"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_mutton"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:gems/peridot"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_beef"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:gems/fluorite"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:gems/sapphire"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:slimeballs"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "piscary:pirate_treasure"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:gems/jade"
+      },
+      "value": -400
+    }
+  ],
+  "inside_color": "#F65FAB",
+  "outside_color": "#F21985"
+}

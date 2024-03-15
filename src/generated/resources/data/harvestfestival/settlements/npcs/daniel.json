@@ -1,0 +1,73 @@
+{
+  "class": {},
+  "gift_category_overrides": [
+    {
+      "category": "monster",
+      "value": 200
+    },
+    {
+      "category": "mineral",
+      "value": 500
+    },
+    {
+      "category": "magic",
+      "value": -200
+    },
+    {
+      "category": "fish",
+      "value": -400
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "item": "minecraft:ender_eye"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_cod"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:dragon_egg"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:ender_pearl"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "piscary:fish_stew"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:dragon_breath"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_salmon"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:chorus_fruit"
+      },
+      "value": 1000
+    }
+  ],
+  "inside_color": "#613827",
+  "outside_color": "#23150E"
+}

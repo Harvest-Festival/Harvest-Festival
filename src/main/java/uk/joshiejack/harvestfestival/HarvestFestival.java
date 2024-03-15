@@ -34,6 +34,7 @@ import uk.joshiejack.harvestfestival.data.farming.HFDataMapProvider;
 import uk.joshiejack.harvestfestival.data.farming.HFSeedProvider;
 import uk.joshiejack.harvestfestival.data.farming.HFSeedlingProvider;
 import uk.joshiejack.harvestfestival.data.farming.HFStageHandlers;
+import uk.joshiejack.harvestfestival.data.gifting.VanillaGiftCategories;
 import uk.joshiejack.harvestfestival.data.loot.HFLootModifier;
 import uk.joshiejack.harvestfestival.data.loot.HFLootTables;
 import uk.joshiejack.harvestfestival.data.tags.HFBiomeTags;
@@ -131,6 +132,7 @@ public class HarvestFestival {
         generator.addProvider(event.includeServer(), new HFShipping(output, event.getLookupProvider()));
 
         //Town
+        generator.addProvider(event.includeServer(), new VanillaGiftCategories(output, event.getLookupProvider()));
         generator.addProvider(event.includeServer(), new HFGiftQualities(output));
         generator.addProvider(event.includeServer(), new HFNPCs(output));
         generator.addProvider(event.includeServer(), new HFTownQuests(output));

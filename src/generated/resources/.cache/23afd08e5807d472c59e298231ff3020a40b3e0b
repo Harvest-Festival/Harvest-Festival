@@ -1,7 +1,13 @@
-// 1.20.4	2024-03-15T01:48:49.7994368	Npcs
-69d7a8f8211f9b9801d3a1a12cb2538672e5337b data/harvestfestival/settlements/npcs/candice.json
-8221d062f83cf867caf3515e666481ba1b59f4f7 data/harvestfestival/settlements/npcs/harvest_goddess.json
-84bb732d81eb43f4dfff38668c2cc9c487b2b65f data/harvestfestival/settlements/npcs/jade.json
-bbd6a361a07a3368df8e0cb4b7916e76926b7996 data/harvestfestival/settlements/npcs/jenni.json
-82c20e7d4cc5763cfe2a65de848d8ee1eeac91f9 data/harvestfestival/settlements/npcs/johan.json
-7a8eef3f71a174e1fe937b480717c44dc7007720 data/harvestfestival/settlements/npcs/yulif.json
+// 1.20.4	2024-03-15T04:48:18.2811815	Npcs
+de8409ea70e49eff4ca674cd50dbd4f462ae26f5 data/harvestfestival/settlements/npcs/alicia.json
+d662faf823a5ede53008f2943bdb245c61ef0db5 data/harvestfestival/settlements/npcs/ashlee.json
+fdc4577f022bdc24ae02a6df5550829be2dbfc39 data/harvestfestival/settlements/npcs/brandon.json
+a8a355421f342f95c0bb575acd7cb6bd761c3872 data/harvestfestival/settlements/npcs/candice.json
+ac7b58ac6e6e92300344b2d93f2b51a8fa0f79b9 data/harvestfestival/settlements/npcs/daniel.json
+5215e670831195eb218028d742ef631dbde3d9a9 data/harvestfestival/settlements/npcs/harvest_goddess.json
+a5f26aa46e29d6e31e3e8bbe359acafac97d2115 data/harvestfestival/settlements/npcs/jade.json
+ae5df33f0b35b41d2494051778868734c27c6cef data/harvestfestival/settlements/npcs/jenni.json
+6aafc0a40f04315472145d6d2d02263328001311 data/harvestfestival/settlements/npcs/jim.json
+1b6949b13bd7c945aa5d940f2010545633679f6e data/harvestfestival/settlements/npcs/johan.json
+b79ed3fb7f4b12837de6815c25f3465f1cdf52c3 data/harvestfestival/settlements/npcs/trent.json
+9017e0090bdc7e88d731100b493a05d01dc62ad3 data/harvestfestival/settlements/npcs/yulif.json

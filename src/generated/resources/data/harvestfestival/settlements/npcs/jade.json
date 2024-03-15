@@ -31,13 +31,13 @@
     },
     {
       "item": {
-        "tag": "forge:gems/amethyst"
+        "item": "minecraft:rabbit_foot"
       },
-      "value": 1000
+      "value": 500
     },
     {
       "item": {
-        "item": "minecraft:allium"
+        "tag": "forge:gems/amethyst"
       },
       "value": 1000
     },
@@ -49,15 +49,15 @@
     },
     {
       "item": {
-        "tag": "minecraft:logs"
+        "item": "minecraft:allium"
       },
-      "value": -800
+      "value": 1000
     },
     {
       "item": {
-        "item": "minecraft:rabbit_foot"
+        "tag": "minecraft:logs"
       },
-      "value": 500
+      "value": -800
     }
   ],
   "inside_color": "#653081",
