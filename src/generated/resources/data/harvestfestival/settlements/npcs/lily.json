@@ -29,15 +29,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:cake"
+        "item": "minecraft:sugar"
       },
-      "value": -400
-    },
-    {
-      "item": {
-        "item": "minecraft:cookie"
-      },
-      "value": -800
+      "value": -200
     },
     {
       "item": {
@@ -53,15 +47,21 @@
     },
     {
       "item": {
-        "item": "minecraft:sugar"
+        "item": "minecraft:cake"
       },
-      "value": -200
+      "value": -400
     },
     {
       "item": {
         "item": "horticulture:cornflakes"
       },
       "value": -200
+    },
+    {
+      "item": {
+        "item": "minecraft:cookie"
+      },
+      "value": -800
     }
   ],
   "inside_color": "#DFE0E2",

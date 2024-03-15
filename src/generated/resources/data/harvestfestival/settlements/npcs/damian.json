@@ -1,0 +1,93 @@
+{
+  "class": {},
+  "gift_category_overrides": [
+    {
+      "category": "egg",
+      "value": -200
+    },
+    {
+      "category": "vegetable",
+      "value": 500
+    },
+    {
+      "category": "milk",
+      "value": -200
+    },
+    {
+      "category": "meat",
+      "value": -200
+    },
+    {
+      "category": "knowledge",
+      "value": 500
+    },
+    {
+      "category": "herb",
+      "value": 500
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "tag": "forge:dusts/prismarine"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:golden_apple"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:golden_carrot"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "harvestfestival:gold_coin"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "piscary:silver_stripe_blaasop"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "piscary:fish_fossil"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:gems/prismarine"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "harvestfestival:silver_coin"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/silver"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "piscary:goldfish"
+      },
+      "value": -400
+    }
+  ],
+  "inside_color": "#939594",
+  "outside_color": "#4F4F51"
+}

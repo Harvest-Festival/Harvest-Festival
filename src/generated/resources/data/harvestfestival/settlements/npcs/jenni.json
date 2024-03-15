@@ -39,21 +39,9 @@
     },
     {
       "item": {
-        "tag": "forge:crops/carrot"
+        "item": "minecraft:carrot_on_a_stick"
       },
       "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:rabbit_foot"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/iron"
-      },
-      "value": -800
     },
     {
       "item": {
@@ -69,13 +57,25 @@
     },
     {
       "item": {
+        "tag": "forge:crops/carrot"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
         "tag": "forge:crops/orange"
       },
       "value": 500
     },
     {
       "item": {
-        "item": "minecraft:carrot_on_a_stick"
+        "tag": "forge:ingots/iron"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:golden_carrot"
       },
       "value": 1000
     },
@@ -87,9 +87,9 @@
     },
     {
       "item": {
-        "item": "minecraft:golden_carrot"
+        "item": "minecraft:rabbit_foot"
       },
-      "value": 1000
+      "value": 500
     }
   ],
   "inside_color": "#DDD0AD",

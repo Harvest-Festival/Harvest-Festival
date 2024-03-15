@@ -17,49 +17,7 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:crops/eggplant"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:crops/banana"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:bread"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:crops/cucumber"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:sugar"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "harvestfestival:apple_jam"
-      },
-      "value": -200
-    },
-    {
-      "item": {
-        "item": "harvestfestival:jam_bun"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "item": "harvestfestival:strawberry_jam"
+        "item": "harvestfestival:marmalade"
       },
       "value": -200
     },
@@ -71,9 +29,27 @@
     },
     {
       "item": {
-        "item": "harvestfestival:marmalade"
+        "tag": "forge:crops/eggplant"
       },
-      "value": -200
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "harvestfestival:weeds"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:bread"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:sugar"
+      },
+      "value": 1000
     },
     {
       "item": {
@@ -83,9 +59,33 @@
     },
     {
       "item": {
-        "item": "harvestfestival:weeds"
+        "item": "harvestfestival:jam_bun"
       },
-      "value": 1000
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:crops/cucumber"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "harvestfestival:strawberry_jam"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "tag": "forge:crops/banana"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "harvestfestival:apple_jam"
+      },
+      "value": -200
     }
   ],
   "inside_color": "#C62D2D",

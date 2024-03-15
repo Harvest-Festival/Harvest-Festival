@@ -29,15 +29,21 @@
   "gift_item_overrides": [
     {
       "item": {
+        "item": "minecraft:coal"
+      },
+      "value": -800
+    },
+    {
+      "item": {
         "tag": "minecraft:wool"
       },
       "value": 1000
     },
     {
       "item": {
-        "tag": "forge:gems/quartz"
+        "tag": "forge:string"
       },
-      "value": -800
+      "value": 1000
     },
     {
       "item": {
@@ -47,15 +53,9 @@
     },
     {
       "item": {
-        "item": "minecraft:coal"
+        "tag": "forge:gems/quartz"
       },
       "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:string"
-      },
-      "value": 1000
     },
     {
       "item": {

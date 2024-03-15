@@ -25,49 +25,7 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:gems/sand_rose"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/gold"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:crops/cabbage"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "item": "minecraft:clock"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:bamboo"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "tag": "forge:dusts/redstone"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:crops/spinach"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "tag": "forge:dyes"
+        "item": "harvestfestival:pink_cat_flower"
       },
       "value": -800
     },
@@ -79,15 +37,57 @@
     },
     {
       "item": {
+        "item": "minecraft:bamboo"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:clock"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:dyes"
+      },
+      "value": -800
+    },
+    {
+      "item": {
         "item": "minecraft:rabbit_foot"
       },
       "value": 500
     },
     {
       "item": {
-        "item": "harvestfestival:pink_cat_flower"
+        "tag": "forge:crops/cabbage"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:crops/spinach"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:gems/sand_rose"
       },
       "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "value": 500
     }
   ],
   "inside_color": "#305A2E",

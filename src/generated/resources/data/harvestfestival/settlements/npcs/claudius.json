@@ -1,0 +1,115 @@
+{
+  "class": {},
+  "gift_category_overrides": [
+    {
+      "category": "plant",
+      "value": 200
+    },
+    {
+      "category": "art",
+      "value": -200
+    },
+    {
+      "category": "money",
+      "value": -400
+    },
+    {
+      "category": "vegetable",
+      "value": -200
+    },
+    {
+      "category": "mineral",
+      "value": 200
+    },
+    {
+      "category": "building",
+      "value": 500
+    },
+    {
+      "category": "fruit",
+      "value": -200
+    },
+    {
+      "category": "wool",
+      "value": -400
+    },
+    {
+      "category": "meat",
+      "value": 500
+    },
+    {
+      "category": "knowledge",
+      "value": -400
+    },
+    {
+      "category": "fish",
+      "value": 200
+    },
+    {
+      "category": "magic",
+      "value": -200
+    },
+    {
+      "category": "herb",
+      "value": -200
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "item": "minecraft:rabbit_hide"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "harvestfestival:tea"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "minecraft:writable_book"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_porkchop"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "harvestfestival:coffee"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_mutton"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:map"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:leather"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_beef"
+      },
+      "value": 1000
+    }
+  ],
+  "inside_color": "#663300",
+  "outside_color": "#351B00"
+}

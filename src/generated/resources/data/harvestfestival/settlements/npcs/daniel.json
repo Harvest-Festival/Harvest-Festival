@@ -21,7 +21,13 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:dragon_breath"
+        "item": "piscary:fish_stew"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:chorus_fruit"
       },
       "value": 1000
     },
@@ -33,21 +39,15 @@
     },
     {
       "item": {
-        "item": "minecraft:ender_pearl"
+        "item": "minecraft:ender_eye"
       },
       "value": 1000
     },
     {
       "item": {
-        "item": "minecraft:chorus_fruit"
+        "item": "minecraft:dragon_breath"
       },
       "value": 1000
-    },
-    {
-      "item": {
-        "item": "piscary:fish_stew"
-      },
-      "value": -800
     },
     {
       "item": {
@@ -57,13 +57,13 @@
     },
     {
       "item": {
-        "item": "minecraft:dragon_egg"
+        "item": "minecraft:ender_pearl"
       },
       "value": 1000
     },
     {
       "item": {
-        "item": "minecraft:ender_eye"
+        "item": "minecraft:dragon_egg"
       },
       "value": 1000
     }

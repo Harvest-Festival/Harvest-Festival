@@ -29,9 +29,21 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:ingots/iron"
+        "tag": "forge:nuggets/iron"
       },
       "value": 500
+    },
+    {
+      "item": {
+        "item": "harvestfestival:orichalc"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "minecraft:cake"
+      },
+      "value": 200
     },
     {
       "item": {
@@ -41,15 +53,15 @@
     },
     {
       "item": {
-        "item": "husbandry:ice_cream"
+        "tag": "forge:ingots/iron"
       },
-      "value": -800
+      "value": 500
     },
     {
       "item": {
-        "tag": "forge:nuggets/iron"
+        "item": "husbandry:ice_cream"
       },
-      "value": 500
+      "value": -800
     },
     {
       "item": {
@@ -59,7 +71,7 @@
     },
     {
       "item": {
-        "item": "minecraft:painting"
+        "tag": "forge:gems/adamantite"
       },
       "value": 1000
     },
@@ -71,15 +83,15 @@
     },
     {
       "item": {
-        "item": "harvestfestival:orichalc"
+        "item": "minecraft:rabbit_stew"
       },
-      "value": 500
+      "value": -400
     },
     {
       "item": {
-        "item": "minecraft:mushroom_stew"
+        "item": "minecraft:painting"
       },
-      "value": -400
+      "value": 1000
     },
     {
       "item": {
@@ -89,19 +101,7 @@
     },
     {
       "item": {
-        "item": "minecraft:cake"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "tag": "forge:gems/adamantite"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:rabbit_stew"
+        "item": "minecraft:mushroom_stew"
       },
       "value": -400
     }

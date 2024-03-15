@@ -29,13 +29,7 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:crops/pineapple"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "horticulture:pickled_turnip"
+        "item": "horticulture:boiled_spinach"
       },
       "value": -200
     },
@@ -47,13 +41,25 @@
     },
     {
       "item": {
-        "tag": "forge:crops/beetroot"
+        "item": "horticulture:salad"
       },
-      "value": -800
+      "value": 200
+    },
+    {
+      "item": {
+        "tag": "forge:crops/corn"
+      },
+      "value": 500
     },
     {
       "item": {
         "item": "horticulture:tomato_juice"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "horticulture:pickled_turnip"
       },
       "value": -200
     },
@@ -65,27 +71,15 @@
     },
     {
       "item": {
-        "tag": "forge:crops/corn"
+        "tag": "forge:crops/beetroot"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:crops/pineapple"
       },
       "value": 500
-    },
-    {
-      "item": {
-        "item": "horticulture:salad"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/melon"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "tag": "forge:crops/green_pepper"
-      },
-      "value": 200
     },
     {
       "item": {
@@ -95,21 +89,27 @@
     },
     {
       "item": {
-        "tag": "forge:crops/carrot"
+        "tag": "forge:crops/melon"
       },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "horticulture:boiled_spinach"
-      },
-      "value": -200
+      "value": 1000
     },
     {
       "item": {
         "item": "minecraft:melon"
       },
       "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:crops/carrot"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:crops/green_pepper"
+      },
+      "value": 200
     }
   ],
   "inside_color": "#313857",

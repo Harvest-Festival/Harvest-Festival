@@ -1,0 +1,124 @@
+{
+  "class": {
+    "age": "child"
+  },
+  "gift_category_overrides": [
+    {
+      "category": "art",
+      "value": 500
+    },
+    {
+      "category": "flower",
+      "value": 200
+    },
+    {
+      "category": "knowledge",
+      "value": 500
+    },
+    {
+      "category": "mushroom",
+      "value": -200
+    },
+    {
+      "category": "fish",
+      "value": -400
+    },
+    {
+      "category": "herb",
+      "value": -200
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "tag": "forge:crops/sweet_potato"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:crops/peach"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "horticulture:orange_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:apple_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:candied_potato"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:crops/apple"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:crops/orange"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "horticulture:pineapple_juice"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "horticulture:banana_juice"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "horticulture:tomato_juice"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "horticulture:salad"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:crops/turnip"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "horticulture:pickled_turnip"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "horticulture:stir_fry"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "horticulture:boiled_spinach"
+      },
+      "value": -400
+    }
+  ],
+  "outside_color": "#73FFFF"
+}

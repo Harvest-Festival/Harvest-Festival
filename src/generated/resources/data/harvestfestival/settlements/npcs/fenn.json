@@ -35,13 +35,13 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "horticulture:salad"
+        "item": "harvestfestival:grape_jam"
       },
-      "value": 1000
+      "value": -400
     },
     {
       "item": {
-        "item": "horticulture:boiled_spinach"
+        "item": "horticulture:salad"
       },
       "value": 1000
     },
@@ -53,13 +53,13 @@
     },
     {
       "item": {
-        "item": "harvestfestival:grape_jam"
+        "item": "horticulture:boiled_spinach"
       },
-      "value": -400
+      "value": 1000
     },
     {
       "item": {
-        "tag": "forge:crops/cucumber"
+        "tag": "forge:crops/spinach"
       },
       "value": 500
     },
@@ -71,15 +71,15 @@
     },
     {
       "item": {
-        "tag": "forge:crops/spinach"
-      },
-      "value": 500
-    },
-    {
-      "item": {
         "item": "harvestfestival:wild_grapes"
       },
       "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:crops/cucumber"
+      },
+      "value": 500
     },
     {
       "item": {

@@ -1,0 +1,117 @@
+{
+  "class": {},
+  "gift_category_overrides": [
+    {
+      "category": "art",
+      "value": -200
+    },
+    {
+      "category": "fruit",
+      "value": 500
+    },
+    {
+      "category": "milk",
+      "value": 500
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "item": "minecraft:saddle"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "husbandry:horse_treat"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "husbandry:dog_treat"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "husbandry:cat_treat"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_stew"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:lead"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "husbandry:rabbit_treat"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "piscary:catfish"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "husbandry:parrot_treat"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:golden_carrot"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "harvestfestival:pink_cat_flower"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "piscary:carp"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_rabbit"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:crops/carrot"
+      },
+      "value": -200
+    }
+  ],
+  "inside_color": "#939594",
+  "outside_color": "#4F4F51"
+}
