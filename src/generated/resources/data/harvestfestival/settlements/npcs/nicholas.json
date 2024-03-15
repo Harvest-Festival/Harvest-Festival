@@ -21,21 +21,15 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:bone"
-      },
-      "value": -800
-    },
-    {
-      "item": {
         "item": "minecraft:pufferfish"
       },
       "value": -400
     },
     {
       "item": {
-        "item": "harvestfestival:mayonnaise"
+        "item": "minecraft:honeycomb"
       },
-      "value": -400
+      "value": 1000
     },
     {
       "item": {
@@ -45,7 +39,13 @@
     },
     {
       "item": {
-        "tag": "forge:crops/apple"
+        "item": "husbandry:boiled_egg"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:honey_bottle"
       },
       "value": 1000
     },
@@ -57,21 +57,21 @@
     },
     {
       "item": {
-        "item": "minecraft:honey_bottle"
+        "item": "harvestfestival:mayonnaise"
       },
-      "value": 1000
+      "value": -400
     },
     {
       "item": {
-        "item": "minecraft:honeycomb"
+        "item": "minecraft:bone"
       },
-      "value": 1000
+      "value": -800
     },
     {
       "item": {
-        "item": "husbandry:boiled_egg"
+        "tag": "forge:crops/apple"
       },
-      "value": 200
+      "value": 1000
     }
   ],
   "inside_color": "#DD9C0C",

@@ -1,0 +1,95 @@
+{
+  "class": {
+    "age": "child",
+    "floats": true,
+    "small_arms": true
+  },
+  "gift_category_overrides": [
+    {
+      "category": "plant",
+      "value": 200
+    },
+    {
+      "category": "gem",
+      "value": -200
+    },
+    {
+      "category": "money",
+      "value": 200
+    },
+    {
+      "category": "monster",
+      "value": -200
+    },
+    {
+      "category": "machine",
+      "value": -400
+    },
+    {
+      "category": "mushroom",
+      "value": 500
+    },
+    {
+      "category": "herb",
+      "value": 500
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "item": "horticulture:boiled_spinach"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:cactus"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:lily_pad"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "harvestfestival:wild_grapes"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "horticulture:salad"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:vine"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "harvestfestival:grape_jam"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:crops/cucumber"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:crops/spinach"
+      },
+      "value": 500
+    }
+  ],
+  "inside_color": "#228C00",
+  "outside_color": "#003F00"
+}

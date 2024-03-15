@@ -33,7 +33,31 @@
   "gift_item_overrides": [
     {
       "item": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": 500
+    },
+    {
+      "item": {
         "item": "minecraft:golden_carrot"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "minecraft:wool"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:carrot_on_a_stick"
       },
       "value": 1000
     },
@@ -57,25 +81,7 @@
     },
     {
       "item": {
-        "tag": "minecraft:wool"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:carrot_on_a_stick"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:rabbit_foot"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/gold"
+        "tag": "forge:ingots/iron"
       },
       "value": -800
     },
@@ -84,12 +90,6 @@
         "tag": "forge:crops/orange"
       },
       "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/iron"
-      },
-      "value": -800
     }
   ],
   "inside_color": "#DDD0AD",

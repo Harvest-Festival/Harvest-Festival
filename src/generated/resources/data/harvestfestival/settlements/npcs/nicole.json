@@ -41,25 +41,19 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:chicken"
+        "tag": "forge:crops/beetroot"
       },
       "value": -800
     },
     {
       "item": {
-        "item": "minecraft:beetroot_soup"
+        "item": "harvestfestival:apple_jam"
       },
-      "value": -800
+      "value": -200
     },
     {
       "item": {
-        "item": "minecraft:mushroom_stew"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:golden_apple"
+        "tag": "forge:crops/apple"
       },
       "value": -400
     },
@@ -71,21 +65,27 @@
     },
     {
       "item": {
-        "tag": "forge:crops/apple"
+        "item": "minecraft:golden_apple"
       },
       "value": -400
     },
     {
       "item": {
-        "tag": "forge:crops/beetroot"
+        "item": "minecraft:mushroom_stew"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:chicken"
       },
       "value": -800
     },
     {
       "item": {
-        "item": "harvestfestival:apple_jam"
+        "item": "minecraft:beetroot_soup"
       },
-      "value": -200
+      "value": -800
     }
   ],
   "inside_color": "#DD9C0C",

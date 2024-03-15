@@ -38,19 +38,19 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "horticulture:pickled_cucumber"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "item": "minecraft:torchflower"
+        "item": "minecraft:ladder"
       },
       "value": 500
     },
     {
       "item": {
-        "item": "horticulture:orange_juice"
+        "tag": "harvestfestival:mythic_stone"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "horticulture:pineapple_juice"
       },
       "value": 200
     },
@@ -62,39 +62,9 @@
     },
     {
       "item": {
-        "tag": "harvestfestival:mythic_stone"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:ladder"
+        "item": "minecraft:torchflower"
       },
       "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:nether_star"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "horticulture:peach_juice"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "item": "minecraft:torch"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "horticulture:pineapple_juice"
-      },
-      "value": 200
     },
     {
       "item": {
@@ -104,19 +74,49 @@
     },
     {
       "item": {
+        "item": "horticulture:pickled_cucumber"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:nether_star"
+      },
+      "value": -800
+    },
+    {
+      "item": {
         "item": "horticulture:apple_juice"
       },
       "value": 200
     },
     {
       "item": {
-        "item": "minecraft:dandelion"
+        "tag": "minecraft:saplings"
       },
       "value": -800
     },
     {
       "item": {
-        "tag": "minecraft:saplings"
+        "item": "minecraft:torch"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "horticulture:peach_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "horticulture:orange_juice"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:dandelion"
       },
       "value": -800
     }

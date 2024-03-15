@@ -47,27 +47,9 @@
     },
     {
       "item": {
-        "item": "minecraft:rabbit_foot"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "husbandry:boiled_egg"
-      },
-      "value": 200
-    },
-    {
-      "item": {
         "item": "minecraft:saddle"
       },
       "value": 1000
-    },
-    {
-      "item": {
-        "tag": "forge:gems/emerald"
-      },
-      "value": -800
     },
     {
       "item": {
@@ -83,15 +65,15 @@
     },
     {
       "item": {
-        "item": "harvestfestival:mayonnaise"
+        "item": "husbandry:boiled_egg"
       },
-      "value": -200
+      "value": 200
     },
     {
       "item": {
-        "tag": "forge:crops/wheat"
+        "item": "harvestfestival:mayonnaise"
       },
-      "value": 500
+      "value": -200
     },
     {
       "item": {
@@ -101,9 +83,27 @@
     },
     {
       "item": {
+        "tag": "forge:crops/wheat"
+      },
+      "value": 500
+    },
+    {
+      "item": {
         "tag": "forge:gems/diamond"
       },
       "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:gems/emerald"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": 500
     }
   ],
   "inside_color": "#DE7245",

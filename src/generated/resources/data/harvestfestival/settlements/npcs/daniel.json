@@ -21,15 +21,21 @@
   "gift_item_overrides": [
     {
       "item": {
+        "item": "minecraft:dragon_egg"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
         "item": "minecraft:cooked_salmon"
       },
       "value": -800
     },
     {
       "item": {
-        "item": "minecraft:cooked_cod"
+        "item": "minecraft:ender_eye"
       },
-      "value": -800
+      "value": 1000
     },
     {
       "item": {
@@ -51,15 +57,9 @@
     },
     {
       "item": {
-        "item": "minecraft:dragon_egg"
+        "item": "minecraft:cooked_cod"
       },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:ender_eye"
-      },
-      "value": 1000
+      "value": -800
     },
     {
       "item": {

@@ -2,20 +2,24 @@
   "class": {},
   "gift_category_overrides": [
     {
-      "category": "plant",
-      "value": 500
-    },
-    {
       "category": "money",
-      "value": 200
+      "value": -200
     },
     {
       "category": "mineral",
       "value": -400
     },
     {
-      "category": "flower",
+      "category": "wool",
       "value": 500
+    },
+    {
+      "category": "mushroom",
+      "value": 500
+    },
+    {
+      "category": "magic",
+      "value": -200
     },
     {
       "category": "herb",
@@ -25,41 +29,41 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:flower_pot"
+        "tag": "forge:crops/beetroot"
       },
       "value": 500
     },
     {
       "item": {
-        "item": "minecraft:allium"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "tag": "minecraft:logs"
+        "tag": "forge:gems/quartz"
       },
       "value": -800
     },
     {
       "item": {
-        "item": "minecraft:rabbit_foot"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:stone"
+        "tag": "forge:dusts/redstone"
       },
       "value": -800
     },
     {
       "item": {
-        "tag": "forge:gems/amethyst"
+        "tag": "minecraft:wool"
       },
       "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:string"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:coal"
+      },
+      "value": -800
     }
   ],
-  "inside_color": "#653081",
-  "outside_color": "#361840"
+  "inside_color": "#DDDDDD",
+  "outside_color": "#777777"
 }

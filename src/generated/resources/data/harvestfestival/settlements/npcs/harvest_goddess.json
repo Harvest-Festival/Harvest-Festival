@@ -59,15 +59,15 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:rabbit_foot"
+        "item": "harvestfestival:strawberry_jam"
       },
-      "value": -400
+      "value": 1000
     },
     {
       "item": {
-        "item": "horticulture:strawberry_milk"
+        "item": "piscary:empty_can"
       },
-      "value": 500
+      "value": -800
     },
     {
       "item": {
@@ -77,27 +77,27 @@
     },
     {
       "item": {
-        "item": "piscary:old_boot"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "harvestfestival:strawberry_jam"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
         "tag": "forge:crops/strawberry"
       },
       "value": 1000
     },
     {
       "item": {
-        "item": "piscary:empty_can"
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "piscary:old_boot"
       },
       "value": -800
+    },
+    {
+      "item": {
+        "item": "horticulture:strawberry_milk"
+      },
+      "value": 500
     },
     {
       "item": {

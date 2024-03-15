@@ -25,9 +25,33 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:gems/prismarine"
+        "tag": "forge:dusts/prismarine"
       },
       "value": 500
+    },
+    {
+      "item": {
+        "item": "piscary:stingray"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:gems/moonstone"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "horticulture:happy_eggplant"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "piscary:manta_ray"
+      },
+      "value": 1000
     },
     {
       "item": {
@@ -43,25 +67,7 @@
     },
     {
       "item": {
-        "item": "horticulture:happy_eggplant"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "item": "piscary:stingray"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "piscary:manta_ray"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "tag": "forge:dusts/prismarine"
+        "tag": "forge:gems/prismarine"
       },
       "value": 500
     },
@@ -70,12 +76,6 @@
         "tag": "forge:crops/eggplant"
       },
       "value": -400
-    },
-    {
-      "item": {
-        "tag": "forge:gems/moonstone"
-      },
-      "value": -800
     }
   ],
   "inside_color": "#7396FF",

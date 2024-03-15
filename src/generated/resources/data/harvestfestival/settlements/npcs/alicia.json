@@ -33,15 +33,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "harvestfestival:red_magic_flower"
+        "item": "minecraft:bone"
       },
-      "value": 1000
-    },
-    {
-      "item": {
-        "tag": "forge:gems/moonstone"
-      },
-      "value": 1000
+      "value": 500
     },
     {
       "item": {
@@ -51,15 +45,27 @@
     },
     {
       "item": {
-        "item": "minecraft:bone"
+        "item": "harvestfestival:pink_cat_flower"
       },
-      "value": 500
+      "value": -800
     },
     {
       "item": {
-        "item": "piscary:fish_bones"
+        "item": "horticulture:onion"
       },
-      "value": 500
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "harvestfestival:toy_flower"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "harvestfestival:red_magic_flower"
+      },
+      "value": 1000
     },
     {
       "item": {
@@ -75,7 +81,7 @@
     },
     {
       "item": {
-        "item": "horticulture:onion"
+        "tag": "forge:crops/green_pepper"
       },
       "value": -200
     },
@@ -87,27 +93,21 @@
     },
     {
       "item": {
+        "tag": "forge:gems/moonstone"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "piscary:fish_bones"
+      },
+      "value": 500
+    },
+    {
+      "item": {
         "item": "horticulture:baked_corn"
       },
       "value": 200
-    },
-    {
-      "item": {
-        "item": "harvestfestival:pink_cat_flower"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "harvestfestival:toy_flower"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:crops/green_pepper"
-      },
-      "value": -200
     }
   ],
   "inside_color": "#C62D2D",

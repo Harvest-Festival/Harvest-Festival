@@ -27,21 +27,15 @@
     },
     {
       "item": {
+        "tag": "forge:crops/tomato"
+      },
+      "value": 500
+    },
+    {
+      "item": {
         "item": "husbandry:boiled_egg"
       },
       "value": -200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/potato"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "tag": "forge:crops/pumpkin"
-      },
-      "value": -800
     },
     {
       "item": {
@@ -51,7 +45,25 @@
     },
     {
       "item": {
+        "tag": "forge:crops/pumpkin"
+      },
+      "value": -800
+    },
+    {
+      "item": {
         "item": "horticulture:pumpkin_stew"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:crops/potato"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:pumpkin_pie"
       },
       "value": -800
     },
@@ -60,18 +72,6 @@
         "item": "horticulture:strawberry_milk"
       },
       "value": -400
-    },
-    {
-      "item": {
-        "tag": "forge:crops/tomato"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:pumpkin_pie"
-      },
-      "value": -800
     }
   ],
   "outside_color": "#C60C30"

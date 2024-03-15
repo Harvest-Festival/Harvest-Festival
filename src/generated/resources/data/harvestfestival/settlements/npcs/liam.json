@@ -1,0 +1,111 @@
+{
+  "class": {},
+  "gift_category_overrides": [
+    {
+      "category": "art",
+      "value": 500
+    },
+    {
+      "category": "money",
+      "value": 200
+    },
+    {
+      "category": "flower",
+      "value": -400
+    },
+    {
+      "category": "milk",
+      "value": -400
+    },
+    {
+      "category": "knowledge",
+      "value": 500
+    },
+    {
+      "category": "magic",
+      "value": 500
+    }
+  ],
+  "gift_item_overrides": [
+    {
+      "item": {
+        "tag": "forge:nuggets/iron"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "husbandry:hot_milk"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:cake"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "piscary:fish_stew"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "harvestfestival:coffee"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "husbandry:ice_cream"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:painting"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_stew"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:gems/adamantite"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:mushroom_stew"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "harvestfestival:orichalc"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "horticulture:pumpkin_stew"
+      },
+      "value": -400
+    }
+  ],
+  "inside_color": "#228C00",
+  "outside_color": "#003F00"
+}

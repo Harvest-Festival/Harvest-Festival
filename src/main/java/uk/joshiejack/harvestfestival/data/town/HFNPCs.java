@@ -538,6 +538,194 @@ harvestfestival:zephyr,villager,adult,,0x300040,0x000000,,,
                         decent("building"),
                         bad("meat")
                 )));
-        
+
+        //Nathan
+        map.put(HarvestFestival.prefix("nathan"), new NPC(
+                null, null, null, "villager", adult, "#C62D2D", "#571111",
+                List.of(awesome(HFBlocks.WEEDS.asItem()),
+                        awesome(Items.SUGAR),
+                        good(HorticultureTags.CUCUMBER),
+                        good(HorticultureTags.EGGPLANT),
+                        good(HorticultureTags.BANANA),
+//TODO: GASTRO
+//                        decent(HorticultureItems.PANCAKE),
+//                        decent(HorticultureItems.SAVOURY_PANCAKE),
+//                        dislike(HorticultureItems.DOUGHNUT),
+//                        dislike(HorticultureItems.FRENCH_TOAST),
+//                        dislike(HorticultureItems.TOAST),
+                        dislike(HFItems.APPLE_JAM),
+                        dislike(HFItems.GRAPE_JAM),
+                        dislike(HFItems.STRAWBERRY_JAM),
+                        dislike(HFItems.MARMALADE),
+//TODO: GASTRO
+//                        bad(HorticultureItems.DINNERROLL),
+//                        bad(HorticultureItems.RAISIN_BREAD),
+//                        bad(HorticultureItems.CURRY_BREAD),
+                        bad(HFItems.JAM_BUN),
+                        terrible(Items.BREAD),
+                        terrible(Tags.Items.CROPS_WHEAT)
+                        //TODO GASTRO                   terrible(HorticultureItems.FLOUR)
+                ),
+                List.of(good("herb"),
+                        decent("plant"),
+                        decent("flower")
+                )));
+
+        //Liara
+        map.put(HarvestFestival.prefix("liara"), new NPC(
+                null, null, null, "villager", adult, "#BEC8EE", "#8091D0",
+                List.of(//TODO GASTRROawesome(HorticultureItems.CHOCOLATE),
+//                        awesome(HorticultureItems.CHOCOLATE_CAKE),
+//                        awesome(HorticultureItems.HOT_CHOCOLATE),
+//                        awesome(HorticultureItems.CHOCOLATE_COOKIES),
+                        good(Items.COCOA_BEANS),
+                        terrible(Items.STRING),
+                        terrible(Items.SPIDER_EYE),
+                        terrible(Items.FERMENTED_SPIDER_EYE)
+                ),
+                List.of(good("herb"),
+                        good("fruit"),
+                        good("vegetable"),
+                        good("mushroom"),
+                        good("meat"),
+                        good("egg"),
+                        good("milk"),
+                        decent("money"),
+                        decent("flower"),
+                        dislike("gem"),
+                        bad("wool")
+                )));
+
+        //Katlin
+        map.put(HarvestFestival.prefix("katlin"), new NPC(
+                null, null, null, "villager", adult, "#DDDDDD", "#777777",
+                List.of(awesome(Tags.Items.STRING),
+                        awesome(ItemTags.WOOL),
+                        good(Tags.Items.CROPS_BEETROOT),
+                        terrible(Items.COAL),
+                        terrible(Tags.Items.DUSTS_REDSTONE),
+                        terrible(Tags.Items.GEMS_QUARTZ)
+                ),
+                List.of(good("wool"),
+                        good("herb"),
+                        good("mushroom"),
+                        dislike("magic"),
+                        bad("mineral"),
+                        dislike("money")
+                )));
+
+        //Tiberius
+        map.put(HarvestFestival.prefix("tiberius"), new NPC(
+                null, null, null, "villager", adult, "#305A2E", "#142419",
+                List.of(awesome(Items.CLOCK),
+                       //TODO GASTRO  awesome(HorticultureItems.DOUGHNUT),
+                        good(Tags.Items.DUSTS_REDSTONE),
+                        good(Tags.Items.INGOTS_GOLD),
+                        good(Items.RABBIT_FOOT),
+                        //TODO GASTRO dislike(HorticultureItems.BAMBOO_RICE),
+                        dislike(HorticultureItems.BOILED_SPINACH),
+//TODO GASTRO
+//                        dislike(HorticultureItems.HERB_SOUP),
+//                        dislike(HorticultureItems.HERB_SALAD),
+                        bad(Items.BAMBOO),
+                        bad(HorticultureTags.SPINACH),
+                        bad(HorticultureTags.CABBAGE),
+                        terrible(Tags.Items.DYES),
+                        terrible(HFTags.Items.SAND_ROSE),
+                        terrible(HFBlocks.PINK_CAT_FLOWER.asItem())
+                ),
+                List.of(awesome("magic"),
+                        awesome("knowledge"),
+                        awesome("monster"),
+                        decent("machine"),
+                        bad("flower")
+                )));
+
+        //Lily
+        map.put(HarvestFestival.prefix("lily"), new NPC(
+                null, null, null, "villager", adult, "#DFE0E2", "#BFC297",
+                List.of(awesome(HFItems.TEA),
+                        //TODO GASTROawesome(HorticultureItems.DINNERROLL),
+//                        decent(HorticultureItems.PANCAKE),
+//                        decent(HorticultureItems.APPLE_PIE),
+//                        decent(HorticultureItems.FRUIT_SANDWICH),
+//                        decent(HorticultureItems.APPLE_SOUFFLE),
+                        dislike(HorticultureItems.CORNFLAKES),
+                        dislike(HusbandryItems.ICE_CREAM),
+                        dislike(Items.SUGAR),
+                        bad(Items.CAKE),
+                  //TODO GASTRO      bad(HorticultureItems.CAKE),
+                      //  bad(HorticultureItems.CHOCOLATE_CAKE),
+                      //  terrible(GastronomyItems.COOKIE),
+                        terrible(Items.COOKIE)
+                       //TODO GASTRR terrible(HorticultureItems.CHOCOLATE_COOKIES)
+                ),
+                List.of(good("mushroom"),
+                        good("herb"),
+                        dislike("money"),
+                        dislike("fruit"),
+                        bad("magic"),
+                        bad("machine")
+                )));
+
+        //Liam
+        map.put(HarvestFestival.prefix("liam"), new NPC(
+                null, null, null, "villager", adult, "#228C00", "#003F00",
+                List.of(awesome(Items.PAINTING),
+                        awesome(HFItems.COFFEE),
+                        awesome(HFTags.Items.ADAMANTITE),
+                        good(HFItems.ORICHALC),
+                        good(Tags.Items.INGOTS_IRON),
+                        good(Tags.Items.NUGGETS_IRON),
+                        decent(Items.CAKE),
+                        //TODO GASTRO decent(Items.CHOCOLATE_CAKE),
+//                        dislike(HorticultureItems.TEMPURA),
+//                        dislike(HorticultureItems.POTSTICKER),
+//                        dislike(HorticultureItems.FRENCH_TOAST),
+//                        dislike(HorticultureItems.TOAST),
+                        bad(Items.MUSHROOM_STEW),
+                        bad(Items.RABBIT_STEW),
+//TODO GASTRO
+//                        bad(Items.STEW),
+//                        bad(Items.MOUNTAIN_STEW),
+                        bad(HorticultureItems.PUMPKIN_STEW),
+                        bad(PiscaryItems.FISH_STEW),
+                        terrible(HusbandryItems.HOT_MILK),
+                        terrible(HusbandryItems.ICE_CREAM)
+                ),
+                List.of(good("art"),
+                        good("knowledge"),
+                        good("magic"),
+                        decent("money"),
+                        bad("flower"),
+                        bad("milk")
+                )));
+
+        //Fenn
+        map.put(HarvestFestival.prefix("fenn"), new NPC(
+                null, null, null, "villager", child, "#228C00", "#003F00",
+                List.of(awesome(HorticultureItems.SALAD),
+                        awesome(HorticultureItems.BOILED_SPINACH),
+                        awesome(Items.CACTUS),
+                        good(HorticultureTags.SPINACH),
+                        good(HorticultureTags.CUCUMBER),
+                        good(Items.VINE),
+                        good(Items.LILY_PAD),
+                        //TODO GASTRO bad(HorticultureItems.CHOCOLATE),
+                        bad(HFItems.GRAPE_JAM),
+                        //TODO GASTRO bad(HorticultureItems.GRAPE_JUICE),
+                        //TODO: Raisin Bread @Gastronomy
+                        //TODO terrible(HorticultureTags.GRAPE),
+                        terrible(HFBlocks.WILD_GRAPES.get())
+                        //TODO GASTRO terrible(HFItems.WINE)
+                ),
+                List.of(good("mushroom"),
+                        good("herb"),
+                        decent("plant"),
+                        decent("money"),
+                        dislike("gem"),
+                        dislike("monster"),
+                        bad("machine")
+                )));
     }
 }
