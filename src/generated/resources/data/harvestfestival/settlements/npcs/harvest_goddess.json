@@ -1,18 +1,16 @@
 {
   "class": {
-    "age": "ADULT",
     "floats": true,
     "height": 1.25,
-    "hideHearts": true,
+    "hide_hearts": true,
     "immovable": true,
     "invitable": false,
     "invulnerable": true,
     "lifespan": 400,
     "offset": 0.25,
-    "smallArms": false,
     "underwater": true
   },
-  "giftCategoryOverrides": [
+  "gift_category_overrides": [
     {
       "category": "plant",
       "value": 200
@@ -58,7 +56,13 @@
       "value": -400
     }
   ],
-  "giftItemOverrides": [
+  "gift_item_overrides": [
+    {
+      "item": {
+        "item": "horticulture:strawberry_milk"
+      },
+      "value": 200
+    },
     {
       "item": {
         "tag": "forge:crops/pineapple"
@@ -79,14 +83,32 @@
     },
     {
       "item": {
-        "item": "minecraft:bone"
+        "item": "piscary:old_boot"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "piscary:fish_bones"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "harvestfestival:strawberry_jam"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "piscary:empty_can"
       },
       "value": -800
     }
   ],
-  "insideColor": 9236179,
-  "lootTable": "harvestfestival:harvest_goddess",
+  "inside_color": "#8CEED3",
+  "loot_table": "harvestfestival:harvest_goddess",
   "occupation": "goddess",
-  "outsideColor": 5162117,
+  "outside_color": "#4EC485",
   "script": "harvestfestival:npcs/harvest_goddess"
 }

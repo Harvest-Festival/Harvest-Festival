@@ -1,9 +1,10 @@
-// 1.20.4	2024-03-14T20:43:10.5498767	Item Models: harvestfestival
+// 1.20.4	2024-03-15T00:33:50.3389198	Item Models: harvestfestival
 cab9bf6a818f73225834c37ad10b21497d5673df assets/harvestfestival/models/item/acacia_mailbox.json
 c79c1548e3108a9525b00de301813136403e7be3 assets/harvestfestival/models/item/adamantite.json
 04d52bfd2a79d04cda8e1809d2ac83a42b012240 assets/harvestfestival/models/item/agate.json
 ee49ffd8c1b136b36c4b670c5f6855655fb3b970 assets/harvestfestival/models/item/alexandrite.json
 ffae749d5decd06df6ecf685f0418610270cafcf assets/harvestfestival/models/item/amethyst_node.json
+aa3181ee36f83510215913c305e09f890c14892b assets/harvestfestival/models/item/apple_jam.json
 104be6033f519357e852794cc3c81023aa39973f assets/harvestfestival/models/item/aqua_guard_fertilizer.json
 8ed7a35180ab01742a70bc95a3a1bbb8a01d935b assets/harvestfestival/models/item/bamboo_mailbox.json
 7ee29005c9c67acd3b6d7b2f3b0c6e2a26727911 assets/harvestfestival/models/item/barrel.json
@@ -92,6 +93,7 @@ e7a4e133975af38aa5e9b3c2f7eecf5a6067ae39 assets/harvestfestival/models/item/gold
 f2b151b8c828ab80af86c4c5cb4401d8f4e62278 assets/harvestfestival/models/item/gold_sickle.json
 b34fae28664fab970ad699f04002818b3d957e21 assets/harvestfestival/models/item/gold_sword.json
 1c3897ac1038d03c7dd486ea7972d8c341cf50d7 assets/harvestfestival/models/item/gold_watering_can.json
+2b8313111333ba31392a61e991e5c205c5f2c862 assets/harvestfestival/models/item/grape_jam.json
 727b02cd14969c0e6494e56ef244e919ee0b5588 assets/harvestfestival/models/item/grass_starter.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/harvestfestival/models/item/hell_bat_spawn_egg.json
 4f9404439c1571424be4011354b09cfca6ac0c20 assets/harvestfestival/models/item/hell_chest.json
@@ -112,6 +114,7 @@ e7f8762bcdccbe7d9ae2124611329acaf5eb3c0a assets/harvestfestival/models/item/iron
 529c066ace913edae1640eefa0e97898cf97762d assets/harvestfestival/models/item/iron_ore.json
 74e8af7a586c3764a44facc799b265d8413b53c5 assets/harvestfestival/models/item/jade.json
 0be0aab3b673fb4f843240b4404b749317f07b8d assets/harvestfestival/models/item/jade_node.json
+57d0aa4963b56062f494b49b45378721ed6f935b assets/harvestfestival/models/item/jam_bun.json
 58a08612c7137b992e215a5618c5420a2938f832 assets/harvestfestival/models/item/jungle_mailbox.json
 c01ce93b74668d5d0574c377b6138e8ff08ada25 assets/harvestfestival/models/item/junk_ore.json
 c467496611e585b4e3e10500ad446945fb35252f assets/harvestfestival/models/item/large_acacia_branch.json
@@ -140,6 +143,7 @@ d49734a5c704eb245571e4aece059983fc5c8f21 assets/harvestfestival/models/item/larg
 114256e1d69ba7eeaf427f5cf9b4cf7419c4c512 assets/harvestfestival/models/item/mail.json
 98424544468aac9602ac65e9e9e457bb838941c7 assets/harvestfestival/models/item/mailbox.json
 f348d7e2f80646aa83228f644d9d3d1c97a0b149 assets/harvestfestival/models/item/mangrove_mailbox.json
+7742eb263218f6edaad01a44b3257cfa652a3043 assets/harvestfestival/models/item/marmalade.json
 1b1d9065943d21a1e62181d91aed8dc8518a7c0b assets/harvestfestival/models/item/medium_acacia_branch.json
 a34c0e65904ad1e76413f7ef1fbbcf1fce763c39 assets/harvestfestival/models/item/medium_acacia_stump.json
 b30b2f4500ebc69d83737d1dbe9b0d3894c5a925 assets/harvestfestival/models/item/medium_birch_branch.json
@@ -243,6 +247,7 @@ afadb37437fa956642383804d68cebea42dbf3ca assets/harvestfestival/models/item/smal
 e30d37c9cf3ebe8c8966dcf734787f242469d030 assets/harvestfestival/models/item/small_warped_stump.json
 e60423059d162b3cd7f207de03b21f06336f6296 assets/harvestfestival/models/item/speed_fertilizer.json
 b2f6b0ba4fa9968f812d271ab77dbf008b43204d assets/harvestfestival/models/item/spruce_mailbox.json
+0b9ea99612dacd871a22dc83c00e2dafac92d438 assets/harvestfestival/models/item/strawberry_jam.json
 a6e95d929984bd229d261bd06efc5ffb6f67d102 assets/harvestfestival/models/item/tea.json
 8a28bcf66c09aeb5587435d520f57b39dd4f7c35 assets/harvestfestival/models/item/television.json
 d2c50ecca50c9ddfbd23ea69ce5b87d8ac99da1e assets/harvestfestival/models/item/toadstool.json

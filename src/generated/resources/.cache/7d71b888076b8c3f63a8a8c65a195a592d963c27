@@ -1,4 +1,4 @@
-// 1.20.4	2024-02-25T20:29:04.6994069	Tags for minecraft:item mod id harvestfestival
+// 1.20.4	2024-03-14T23:43:08.8908452	Tags for minecraft:item mod id harvestfestival
 0bdc999a7f653eecbb3c513a0baf1b963a2587ab data/forge/tags/items/bread.json
 adc7188f8dbae7d38353274c7ba2c11dd87a2270 data/forge/tags/items/coin.json
 b33dde3cf95c3f821d49bc84b8c46f9fd65289e8 data/forge/tags/items/crops.json
@@ -32,7 +32,7 @@ f757bdaeeb8df54d6c24262bffe78227d0691d50 data/harvestfestival/tags/items/farming
 536e133215a8c17818a0ca9dc139e4dd3adb4a81 data/harvestfestival/tags/items/fishing_collection.json
 f757bdaeeb8df54d6c24262bffe78227d0691d50 data/harvestfestival/tags/items/has_quality_levels.json
 0a6c414b47b47b16343de80710804745c85ac8b5 data/harvestfestival/tags/items/mineral_collection.json
-8c9266d43422ce6d09e331b4fb3723125e2c0424 data/harvestfestival/tags/items/requires_energy.json
+9697f0f017062a55bd16791ff9a47d3c37c03cce data/harvestfestival/tags/items/requires_energy.json
 e6756cdd6fb03cf772eba210ae3f93335e83dcd6 data/harvestfestival/tags/items/tools/combat.json
 1feebc4d4dfb8dd4b39ea79e961a1b31359e0ff3 data/harvestfestival/tags/items/tools/farming.json
 1e8fbc038f14ef6522da48d6fb216cd8d855d68d data/harvestfestival/tags/items/tools/fishing.json

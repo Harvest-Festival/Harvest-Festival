@@ -44,7 +44,8 @@ public class HFItemModels extends ItemModelProvider {
         if (MINING.stream().map(DeferredItem::asItem).collect(Collectors.toSet()).contains(item)) return "mining/";
         if (GEMS.stream().map(DeferredItem::asItem).collect(Collectors.toSet()).contains(item)) return "mining/gems/";
         if (MATERIALS.stream().map(DeferredItem::asItem).collect(Collectors.toSet()).contains(item)) return "mining/materials/";
-        return item instanceof PenguinItem pi && pi.getUseAnimation(new ItemStack(item)) == UseAnim.DRINK ? "drinks/" : "";
+        if (item instanceof PenguinItem pi && pi.getUseAnimation(new ItemStack(item)) == UseAnim.DRINK) return "drinks/";
+        return item instanceof PenguinItem pi && pi.getUseAnimation(new ItemStack(item)) == UseAnim.EAT ? "food/" : "";
     }
 
     @Override

@@ -15,6 +15,7 @@ import uk.joshiejack.horticulture.world.item.HorticultureItems;
 import uk.joshiejack.husbandry.world.item.HusbandryItems;
 import uk.joshiejack.penguinlib.data.generator.AbstractPenguinRegistryProvider;
 import uk.joshiejack.penguinlib.util.icon.ItemIcon;
+import uk.joshiejack.piscary.world.item.PiscaryItems;
 import uk.joshiejack.settlements.world.entity.SettlementsEntities;
 import uk.joshiejack.shopaholic.Shopaholic;
 import uk.joshiejack.shopaholic.api.shop.Condition;
@@ -41,6 +42,7 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
     public static final ResourceLocation GENERAL_STORE_TOOLS = HarvestFestival.prefix("general_store_tools");
     public static final ResourceLocation GENERAL_STORE_FARMING = HarvestFestival.prefix("general_store_farming");
     public static final ResourceLocation GENERAL_STORE_GENERAL = HarvestFestival.prefix("general_store_general");
+    public static final ResourceLocation TACKLE_SHOP = HarvestFestival.prefix("tackle_shop");
 
     public HFDepartments(PackOutput output) {
         super(output, Shopaholic.ShopaholicRegistries.DEPARTMENTS);
@@ -60,8 +62,8 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
         buildGeneralStore(map);
 //        buildMarketStall(map);
 //        buildPetShop(map);
-//        buildPoultryFarm(map);
-//        buildTackleShop(map);
+        buildPoultryFarm(map);
+        buildTackleShop(map);
 //        buildWitchingWares(map);
     }
 
@@ -262,12 +264,51 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
 
     private void buildPoultryFarm(Map<ResourceLocation, Department> map) {
         ShopBuilder.of(HFShops.POULTRY_FARM)
-
+                .vendor(Vendor.entity(SettlementsEntities.NPC.get()))
+                .condition(EntityHasNBTTagCondition.entityHasNBTTag("NPC", "harvestfestival:ashlee"))
+                .condition(OpeningHoursCondition.openingHours()
+                        .withHours(DayOfWeek.MONDAY, 6000, 12000)
+                        .withHours(DayOfWeek.TUESDAY, 6000, 12000)
+                        .withHours(DayOfWeek.WEDNESDAY, 6000, 12000)
+                        .withHours(DayOfWeek.THURSDAY, 6000, 12000)
+                        .withHours(DayOfWeek.FRIDAY, 6000, 12000)
+                        .withHours(DayOfWeek.SATURDAY, 6000, 12000)
+                        .build())
+                .department(DepartmentBuilder.of(HFShops.POULTRY_FARM, new ItemIcon(HusbandryItems.BIRD_FEED.get().getDefaultInstance()), Component.translatable("department.harvestfestival.poultry_farm"))
+                        .itemListing(HusbandryItems.BIRD_FEED.get(), 25)
+                       //TODO? .itemListing(HusbandryItems.RABBIT_FOOD.get(), 50)
+                        .itemListing(HusbandryItems.GENERIC_TREAT.get(), 10)
+                        .itemListing(HusbandryItems.CHICKEN_TREAT.get(), 25)
+                       //TODO?  .itemListing(HusbandryItems.DUCK_TREAT.get(), 20)
+                        .itemListing(HusbandryItems.RABBIT_TREAT.get(), 40)
+                        .listing(ListingBuilder.of("chicken").addSublisting(SublistingBuilder.entity(EntityType.CHICKEN).cost(1500)).stockMechanic(HFStockMechanics.LIMITED_FOUR)) //Add Condition for Space in Coop
+                        //TODO?. listing(ListingBuilder.of("duck").addSublisting(SublistingBuilder.entity(HusbandryEntities.DUCK.get()).cost(2000)).stockMechanic(HFStockMechanics.LIMITED_FOUR)) //Add Condition for Space in Coop and Medium Coop
+                        .listing(ListingBuilder.of("rabbit").addSublisting(SublistingBuilder.entity(EntityType.RABBIT).cost(5000)).stockMechanic(HFStockMechanics.LIMITED_FOUR)) //Add Condition for Space in Coop and Large Coop
+                        .listing(ListingBuilder.of("name_tag").addSublisting(SublistingBuilder.item(Items.NAME_TAG).cost(250)).stockMechanic(HFStockMechanics.LIMITED_FOUR)))
                 .save(map);
     }
 
     private void buildTackleShop(Map<ResourceLocation, Department> map) {
         ShopBuilder.of(HFShops.TACKLE_SHOP)
+                .vendor(Vendor.entity(SettlementsEntities.NPC.get()))
+                .condition(EntityHasNBTTagCondition.entityHasNBTTag("NPC", "harvestfestival:jakob"))
+                .condition(OpeningHoursCondition.openingHours()
+                        .withHours(DayOfWeek.TUESDAY, 13000, 19000)
+                        .withHours(DayOfWeek.WEDNESDAY, 13000, 19000)
+                        .withHours(DayOfWeek.THURSDAY, 13000, 19000)
+                        .withHours(DayOfWeek.FRIDAY, 13000, 19000)
+                        .build())
+                .condition(CompareCondition.compare(TeamStatusComparator.status("helped_yulif"),
+                        false, true, false, NumberComparator.number(1)))
+                .department(DepartmentBuilder.of(TACKLE_SHOP, new ItemIcon(Items.FISHING_ROD.getDefaultInstance()), Component.translatable("department.harvestfestival.tackle_shop"))
+                                .itemListing(PiscaryItems.BAIT.get(), 5)
+                                .listing(ListingBuilder.of("fishing_rod").addSublisting(SublistingBuilder.item(Items.FISHING_ROD).cost(1000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
+                                .listing(ListingBuilder.of("fish_trap").addSublisting(SublistingBuilder.item(PiscaryItems.FISH_TRAP.asItem()).cost(200)).stockMechanic(HFStockMechanics.LIMITED_FIVE))
+                                .listing(ListingBuilder.of("hatchery").addSublisting(SublistingBuilder.item(PiscaryItems.HATCHERY.asItem()).cost(500)).stockMechanic(HFStockMechanics.LIMITED_THREE).condition(SeasonCondition.inSeason("summer")))
+                        //TODO: Fish Trap Blueprint, One Per Player
+                        //TODO: Hatchery Blueprint, One Per Player
+                )
+
 
                 .save(map);
     }

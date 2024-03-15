@@ -1,0 +1,136 @@
+{
+  "conditions": [
+    {
+      "type": "shopaholic:entity_has_nbt_tag",
+      "data_type": "string",
+      "key": "NPC",
+      "target": "entity",
+      "value": "harvestfestival:jakob"
+    },
+    {
+      "type": "shopaholic:opening_hours",
+      "hours": {
+        "friday": {
+          "close": 19000,
+          "open": 13000
+        },
+        "thursday": {
+          "close": 19000,
+          "open": 13000
+        },
+        "tuesday": {
+          "close": 19000,
+          "open": 13000
+        },
+        "wednesday": {
+          "close": 19000,
+          "open": 13000
+        }
+      }
+    },
+    {
+      "type": "shopaholic:compare",
+      "comparator_1": {
+        "type": "shopaholic:team_status",
+        "key": "helped_yulif"
+      },
+      "comparator_2": {
+        "type": "shopaholic:number",
+        "value": 1
+      },
+      "equal_to": false,
+      "greater_than": false
+    }
+  ],
+  "icon": {
+    "type": "penguinlib:item",
+    "item": {
+      "Count": 1,
+      "id": "minecraft:fishing_rod",
+      "tag": {
+        "Damage": 0
+      }
+    }
+  },
+  "listings": [
+    {
+      "sublistings": [
+        {
+          "gold": 5,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "piscary:bait"
+            }
+          }
+        }
+      ],
+      "unique_id": "bait"
+    },
+    {
+      "stock_mechanic": "shopaholic:limited_one",
+      "sublistings": [
+        {
+          "gold": 1000,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "minecraft:fishing_rod",
+              "tag": {
+                "Damage": 0
+              }
+            }
+          }
+        }
+      ],
+      "unique_id": "fishing_rod"
+    },
+    {
+      "stock_mechanic": "harvestfestival:limited_five",
+      "sublistings": [
+        {
+          "gold": 200,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "piscary:fish_trap"
+            }
+          }
+        }
+      ],
+      "unique_id": "fish_trap"
+    },
+    {
+      "conditions": [
+        {
+          "type": "shopaholic:season",
+          "season": "summer"
+        }
+      ],
+      "stock_mechanic": "harvestfestival:limited_three",
+      "sublistings": [
+        {
+          "gold": 500,
+          "listing": {
+            "type": "shopaholic:item",
+            "stack": {
+              "Count": 1,
+              "id": "piscary:hatchery"
+            }
+          }
+        }
+      ],
+      "unique_id": "hatchery"
+    }
+  ],
+  "method": "right_click",
+  "name": {
+    "translate": "department.harvestfestival.tackle_shop"
+  },
+  "shop": "harvestfestival:tackle_shop",
+  "vendor_data": "settlements:npc",
+  "vendor_type": "entity"
+}
