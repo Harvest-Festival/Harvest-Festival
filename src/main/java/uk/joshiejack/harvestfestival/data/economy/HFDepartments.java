@@ -1,40 +1,57 @@
 package uk.joshiejack.harvestfestival.data.economy;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import uk.joshiejack.harvestfestival.HarvestFestival;
 import uk.joshiejack.harvestfestival.world.item.HFItems;
-import uk.joshiejack.horticulture.world.item.HorticultureItems;
 import uk.joshiejack.husbandry.world.item.HusbandryItems;
 import uk.joshiejack.penguinlib.data.generator.AbstractPenguinRegistryProvider;
 import uk.joshiejack.penguinlib.util.icon.ItemIcon;
-import uk.joshiejack.piscary.world.item.PiscaryItems;
 import uk.joshiejack.settlements.world.entity.SettlementsEntities;
 import uk.joshiejack.shopaholic.Shopaholic;
 import uk.joshiejack.shopaholic.api.shop.Condition;
-import uk.joshiejack.shopaholic.data.ShopaholicStockMechanics;
-import uk.joshiejack.shopaholic.data.shop.DepartmentBuilder;
 import uk.joshiejack.shopaholic.data.shop.ShopBuilder;
-import uk.joshiejack.shopaholic.data.shop.Vendor;
 import uk.joshiejack.shopaholic.data.shop.comparator.ComparatorBuilder;
 import uk.joshiejack.shopaholic.data.shop.listing.ListingBuilder;
-import uk.joshiejack.shopaholic.data.shop.listing.SublistingBuilder;
-import uk.joshiejack.shopaholic.plugin.simplyseasons.condition.SeasonCondition;
 import uk.joshiejack.shopaholic.world.shop.Department;
-import uk.joshiejack.shopaholic.world.shop.comparator.NumberComparator;
 import uk.joshiejack.shopaholic.world.shop.comparator.PlayerStatusComparator;
-import uk.joshiejack.shopaholic.world.shop.comparator.TeamStatusComparator;
-import uk.joshiejack.shopaholic.world.shop.condition.*;
+import uk.joshiejack.shopaholic.world.shop.condition.AndCondition;
+import uk.joshiejack.shopaholic.world.shop.condition.NotCondition;
+import uk.joshiejack.shopaholic.world.shop.condition.OrCondition;
 
 import java.time.DayOfWeek;
 import java.util.Map;
+
+import static java.time.DayOfWeek.*;
+import static net.minecraft.network.chat.Component.translatable;
+import static net.minecraft.world.entity.EntityType.*;
+import static net.minecraft.world.item.Items.*;
+import static net.minecraft.world.item.Items.EGG;
+import static uk.joshiejack.harvestfestival.data.economy.HFShops.ANIMAL_RANCH;
+import static uk.joshiejack.harvestfestival.data.economy.HFShops.POULTRY_FARM;
+import static uk.joshiejack.harvestfestival.data.economy.HFStockMechanics.*;
+import static uk.joshiejack.horticulture.world.item.HorticultureItems.WATERING_CAN;
+import static uk.joshiejack.husbandry.world.item.HusbandryItems.*;
+import static uk.joshiejack.husbandry.world.item.HusbandryItems.BRUSH;
+import static uk.joshiejack.piscary.world.item.PiscaryItems.*;
+import static uk.joshiejack.shopaholic.data.ShopaholicDepartments.itemIcon;
+import static uk.joshiejack.shopaholic.data.ShopaholicStockMechanics.LIMITED_ONE;
+import static uk.joshiejack.shopaholic.data.shop.DepartmentBuilder.department;
+import static uk.joshiejack.shopaholic.data.shop.Vendor.entityVendor;
+import static uk.joshiejack.shopaholic.data.shop.comparator.ComparatorBuilder.shippedAmount;
+import static uk.joshiejack.shopaholic.data.shop.listing.SublistingBuilder.itemListing;
+import static uk.joshiejack.shopaholic.plugin.simplyseasons.condition.SeasonCondition.inSeason;
+import static uk.joshiejack.shopaholic.world.shop.comparator.NumberComparator.number;
+import static uk.joshiejack.shopaholic.world.shop.comparator.TeamStatusComparator.teamStatus;
+import static uk.joshiejack.shopaholic.world.shop.condition.CompareCondition.compare;
+import static uk.joshiejack.shopaholic.world.shop.condition.EntityHasNBTTagCondition.entityHasNBTTag;
+import static uk.joshiejack.shopaholic.world.shop.condition.OpeningHoursCondition.openingHours;
 
 public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
     public static final ResourceLocation ANIMAL_RANCH_TOOLS = HarvestFestival.prefix("animal_ranch_tools");
@@ -68,38 +85,37 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
     }
 
     private void buildAnimalRanch(Map<ResourceLocation, Department> map) {
-        ShopBuilder.of(HFShops.ANIMAL_RANCH)
-                .vendor(Vendor.entity(SettlementsEntities.NPC.get()))
-                .condition(EntityHasNBTTagCondition.entityHasNBTTag("NPC", "harvestfestival:jim"))
-                .condition(OpeningHoursCondition.openingHours()
-                        .withHours(DayOfWeek.MONDAY, 10000, 15000)
-                        .withHours(DayOfWeek.TUESDAY, 10000, 15000)
-                        .withHours(DayOfWeek.WEDNESDAY, 10000, 15000)
-                        .withHours(DayOfWeek.THURSDAY, 10000, 15000)
-                        .withHours(DayOfWeek.FRIDAY, 10000, 15000)
-                        .withHours(DayOfWeek.SATURDAY, 10000, 15000)
+        ShopBuilder.of(ANIMAL_RANCH)
+                .vendor(entityVendor(SettlementsEntities.NPC.get()))
+                .condition(entityHasNBTTag("NPC", "harvestfestival:jim"))
+                .condition(openingHours()
+                        .withHours(MONDAY, 10000, 15000)
+                        .withHours(TUESDAY, 10000, 15000)
+                        .withHours(WEDNESDAY, 10000, 15000)
+                        .withHours(THURSDAY, 10000, 15000)
+                        .withHours(FRIDAY, 10000, 15000)
+                        .withHours(SATURDAY, 10000, 15000)
                         .build())
-                .condition(CompareCondition.compare(TeamStatusComparator.status("cow_tutorial_completed"),
-                        false, true, false, NumberComparator.number(1)))
-                .department(DepartmentBuilder.of(ANIMAL_RANCH_TOOLS, ItemIcon.EMPTY, Component.translatable("department.harvestfestival.animal_ranch_tools"))
-                        .listing(ListingBuilder.of("miracle_potion").addSublisting(SublistingBuilder.item(HusbandryItems.MIRACLE_POTION.get()).cost(1500)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
-                        .listing(ListingBuilder.of("name_tag").addSublisting(SublistingBuilder.item(Items.NAME_TAG).cost(250)).stockMechanic(HFStockMechanics.LIMITED_FOUR))
-                        .listing(ListingBuilder.of("lead").addSublisting(SublistingBuilder.item(Items.LEAD).cost(150)).stockMechanic(HFStockMechanics.LIMITED_FOUR))
-                        .listing(ListingBuilder.of("brush").addSublisting(SublistingBuilder.item(HusbandryItems.BRUSH.get()).cost(1000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
+                .condition(compare(teamStatus("cow_tutorial_completed"), false, true, false, number(1)))
+                .department(department(ANIMAL_RANCH_TOOLS, itemIcon(LEAD), translatable("department.harvestfestival.animal_ranch_tools"))
+                        .itemListing(MIRACLE_POTION.get(), 1500, LIMITED_ONE)
+                        .itemListing(NAME_TAG, 250, LIMITED_FOUR)
+                        .itemListing(LEAD, 150, LIMITED_FOUR)
+                        .itemListing(BRUSH, 1000, LIMITED_ONE)
                         //TODO? .listing(ListingBuilder.of("milker").addSublisting(SublistingBuilder.item(HusbandryItems.MILKER).cost(2000)).stockMechanic(HFStockMechanics.LIMITED_1))
-                        .listing(ListingBuilder.of("shears").addSublisting(SublistingBuilder.item(Items.SHEARS).cost(2000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE)) //TODO: Has Medium Barn Condition
+                        .itemListing(SHEARS, 2000, LIMITED_ONE) //TODO: Has Medium Barn Condition
                 )
-                .department(DepartmentBuilder.of(ANIMAL_RANCH_ANIMALS, new ItemIcon(Items.EGG.getDefaultInstance()), Component.translatable("department.harvestfestival.animal_ranch_animals"))
-                        .itemListing(HusbandryItems.FODDER.get(), 50)
-                        .itemListing(HusbandryItems.SLOP.get(), 100) //TODO: Has Large Barn Condition
-                        .itemListing(HusbandryItems.GENERIC_TREAT.get(), 10)
-                        .itemListing(HusbandryItems.COW_TREAT.get(), 30)
-                        .itemListing(HusbandryItems.SHEEP_TREAT.get(), 25) //TODO: Has Medium Barn Condition
-                        .itemListing(HusbandryItems.PIG_TREAT.get(), 50) //TODO: Has Large Barn Condition
-                        .itemListing(HusbandryItems.LLAMA_TREAT.get(), 60) //TODO: Has Large Barn Condition
-                        .entityListing(EntityType.COW, 3000) //TODO Has Space in Barn Condition, 4 Limit
-                        .entityListing(EntityType.SHEEP, 2500) //TODO Has Space in Barn Condition and Medium Barn Condition, 4 Limit
-                        .entityListing(EntityType.PIG, 8000) //TODO Has Space in Barn Condition and Large Barn Condition, 4 Limit
+                .department(department(ANIMAL_RANCH_ANIMALS, itemIcon(EGG), translatable("department.harvestfestival.animal_ranch_animals"))
+                        .itemListing(FODDER.get(), 50)
+                        .itemListing(SLOP.get(), 100) //TODO: Has Large Barn Condition
+                        .itemListing(GENERIC_TREAT.get(), 10)
+                        .itemListing(COW_TREAT.get(), 30)
+                        .itemListing(SHEEP_TREAT.get(), 25) //TODO: Has Medium Barn Condition
+                        .itemListing(PIG_TREAT.get(), 50) //TODO: Has Large Barn Condition
+                        .itemListing(LLAMA_TREAT.get(), 60) //TODO: Has Large Barn Condition
+                        .entityListing(COW, 3000) //TODO Has Space in Barn Condition, 4 Limit
+                        .entityListing(SHEEP, 2500) //TODO Has Space in Barn Condition and Medium Barn Condition, 4 Limit
+                        .entityListing(PIG, 8000) //TODO Has Space in Barn Condition and Large Barn Condition, 4 Limit
                 )
                 .save(map);
     }
@@ -159,43 +175,43 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
     }
 
     private void buildGeneralStore(Map<ResourceLocation, Department> map) {
-        Condition IN_SPRING = SeasonCondition.inSeason("spring");
-        Condition IN_SUMMER = SeasonCondition.inSeason("summer");
-        Condition IN_AUTUMN = SeasonCondition.inSeason("autumn");
-        Condition NOT_IN_WINTER = NotCondition.not(SeasonCondition.inSeason("winter"));
+        Condition IN_SPRING = inSeason("spring");
+        Condition IN_SUMMER = inSeason("summer");
+        Condition IN_AUTUMN = inSeason("autumn");
+        Condition NOT_IN_WINTER = NotCondition.not(inSeason("winter"));
         TagKey<Item> SPRING_CROPS = ItemTags.create(HarvestFestival.prefix("spring_crops"));
         TagKey<Item> SUMMER_CROPS = ItemTags.create(HarvestFestival.prefix("summer_crops"));
         TagKey<Item> AUTUMN_CROPS = ItemTags.create(HarvestFestival.prefix("autumn_crops"));
 
         ShopBuilder.of(HFShops.GENERAL_STORE)
-                .vendor(Vendor.entity(SettlementsEntities.NPC.get()))
-                .condition(EntityHasNBTTagCondition.entityHasNBTTag("NPC", "harvestfestival:jenni"))
+                .vendor(entityVendor(SettlementsEntities.NPC.get()))
+                .condition(entityHasNBTTag("NPC", "harvestfestival:jenni"))
                 //General store is open on the usual hours OR on a Wednesday if someone in the town has three hearts with jenni
-                .condition(OrCondition.or(OpeningHoursCondition.openingHours()
-                                .withHours(DayOfWeek.MONDAY, 9000, 17000)
-                                .withHours(DayOfWeek.TUESDAY, 9000, 17000)
+                .condition(OrCondition.or(openingHours()
+                                .withHours(MONDAY, 9000, 17000)
+                                .withHours(TUESDAY, 9000, 17000)
                                 .withHours(DayOfWeek.THURSDAY, 9000, 17000)
                                 .withHours(DayOfWeek.FRIDAY, 9000, 17000)
-                                .withHours(DayOfWeek.SATURDAY, 11000, 15000)
+                                .withHours(SATURDAY, 11000, 15000)
                                 .build(),
-                        AndCondition.and(OpeningHoursCondition.openingHours()
+                        AndCondition.and(openingHours()
                                         .withHours(DayOfWeek.WEDNESDAY, 8000, 18000)
                                         .build(),
-                                CompareCondition.compare(
-                                        TeamStatusComparator.status("general_store_wednesday"),
-                                        false, true, false, NumberComparator.number(1))
+                                compare(
+                                        teamStatus("general_store_wednesday"),
+                                        false, true, false, number(1))
                         ))
                 )
-                .department(DepartmentBuilder.of(GENERAL_STORE_FARMING, new ItemIcon(HorticultureItems.WATERING_CAN.get().getDefaultInstance()), Component.translatable("department.harvestfestival.general_store_farming"))
+                .department(department(GENERAL_STORE_FARMING, itemIcon(WATERING_CAN.get()), translatable("department.harvestfestival.general_store_farming"))
                         //Starters
-                        .listing(ListingBuilder.of("grass_starter").addSublisting(SublistingBuilder.item(HFItems.GRASS_STARTER.get())).condition(NotCondition.not(SeasonCondition.inSeason("winter"))))
+                        .itemListing(HFItems.GRASS_STARTER.get(), 100, NOT_IN_WINTER)
                         //SPRING
                         .itemListing("turnip", seedBagOf("turnip"), 35, IN_SPRING)
                         .itemListing("potato", seedBagOf("potato"), 40, IN_SPRING)
                         .itemListing("cucumber", seedBagOf("cucumber"), 45, IN_SUMMER) //TODO Add Year Two Town Age Condition
                         .itemListing("strawberry", seedBagOf("strawberry"), 90, IN_SPRING) //TODO Add Year Three Town Age Condition
                         .itemListing("cabbage", seedBagOf("cabbage"), 165, IN_SPRING, //VVV If we have shipped more than 1000 spring crops unlock cabbage
-                                CompareCondition.compare(ComparatorBuilder.shippedAmount().countTag(SPRING_CROPS).build(), false, true, true, NumberComparator.number(1000)))
+                                compare(shippedAmount().countTag(SPRING_CROPS).build(), false, true, true, number(1000)))
                         //SUMMER
                         .itemListing("onion", seedBagOf("onion"), 40, IN_SUMMER)
                         .itemListing("pumpkin", seedBagOf("pumpkin"), 50, IN_SUMMER)
@@ -203,7 +219,7 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
                         .itemListing("tomato", seedBagOf("tomato"), 55, IN_SUMMER) //TODO Add Year Two Town Age Condition
                         .itemListing("corn", seedBagOf("corn"), 95, IN_SUMMER) //TODO Add Year Three Town Age Condition
                         .itemListing("pineapple", seedBagOf("pineapple"), 220, IN_SUMMER,  ///VVV If we have shipped more than 1000 summer crops unlock pineapple
-                                CompareCondition.compare(ComparatorBuilder.shippedAmount().countTag(SUMMER_CROPS).build(), false, true, true, NumberComparator.number(1000)))
+                                compare(shippedAmount().countTag(SUMMER_CROPS).build(), false, true, true, number(1000)))
                         //AUTUMN
                         .itemListing("spinach", seedBagOf("spinach"), 40, IN_AUTUMN)
                         .itemListing("carrot", seedBagOf("carrot"), 55, IN_AUTUMN)
@@ -211,11 +227,11 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
                         .itemListing("eggplant", seedBagOf("eggplant"), 65, IN_AUTUMN) //TODO Add Year Two Town Age Condition
                         .itemListing("green_pepper", seedBagOf("green_pepper"), 100, IN_AUTUMN) //TODO Add Year Three Town Age Condition
                         .itemListing("sweet_potato", seedBagOf("sweet_potato"), 110, IN_AUTUMN, ///VVV If we have shipped more than 1000 autumn crops unlock sweet potato
-                                CompareCondition.compare(ComparatorBuilder.shippedAmount().countTag(AUTUMN_CROPS).build(), false, true, true, NumberComparator.number(1000)))
+                                compare(shippedAmount().countTag(AUTUMN_CROPS).build(), false, true, true, number(1000)))
                         //TODO: All Year & Trees & Fertilizers
                         .itemListing("wheat", seedBagOf("wheat"), 15, NOT_IN_WINTER)
                         .itemListing("nether_wart", seedBagOf("nether_wart"), 55, NOT_IN_WINTER,
-                                CompareCondition.compare(PlayerStatusComparator.status("visited_nether"), false, true, false, NumberComparator.number(1)))
+                                compare(PlayerStatusComparator.playerStatus("visited_nether"), false, true, false, number(1)))
                         .itemListing("orange_tree", seedlingOf("orange"), 2800, NOT_IN_WINTER)
                         .itemListing("banana_tree", seedlingOf("banana"), 2500, NOT_IN_WINTER)
                         .itemListing("apple_tree", seedlingOf("apple"), 1500, NOT_IN_WINTER)
@@ -227,16 +243,16 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
                         .itemListing("speed_fertilizer", fertilizerOf("speed"), 100)
                         .itemListing("turbo_fertilizer", fertilizerOf("turbo"), 150) //TODO: Add year two town age condition
                 )
-                .department(DepartmentBuilder.of(GENERAL_STORE_TOOLS, new ItemIcon(HorticultureItems.WATERING_CAN.get().getDefaultInstance()), Component.translatable("department.harvestfestival.general_store_tools"))
-                                .listing(ListingBuilder.of("hoe").addSublisting(SublistingBuilder.item(HFItems.BASIC_HOE.asItem()).cost(500)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
-                                .listing(ListingBuilder.of("sickle").addSublisting(SublistingBuilder.item(HusbandryItems.SICKLE.get()).cost(500)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
-                                .listing(ListingBuilder.of("watering_can").addSublisting(SublistingBuilder.item(HorticultureItems.WATERING_CAN.get()).cost(750)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
-                                .listing(ListingBuilder.of("axe").addSublisting(SublistingBuilder.item(HFItems.BASIC_AXE.get()).cost(1000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
-                                .listing(ListingBuilder.of("hammer").addSublisting(SublistingBuilder.item(HFItems.BASIC_HAMMER.get()).cost(1000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
-                        //TODO: .listing(ListingBuilder.of("shovel").addSublisting(SublistingBuilder.item(HusbandryItems.BASIC_SHOVEL.get()).cost(1000)).stockMechanic(HFStockMechanics.LIMITED_1))
+                .department(department(GENERAL_STORE_TOOLS, itemIcon(WATERING_CAN.get()), translatable("department.harvestfestival.general_store_tools"))
+                                .itemListing(HFItems.BASIC_HOE, 500, LIMITED_ONE)
+                                .itemListing(SICKLE, 500, LIMITED_ONE)
+                                .itemListing(WATERING_CAN.get(), 750, LIMITED_ONE)
+                                .itemListing(HFItems.BASIC_AXE, 1000, LIMITED_ONE)
+                                .itemListing(HFItems.BASIC_HAMMER, 1000, LIMITED_ONE)
+                        //TODO: .listing(ListingBuilder.of(with).addSublisting(SublistingBuilder.item(HusbandryItems.BASIC_SHOVEL.get()).cost(1000)).stockMechanic(HFStockMechanics.LIMITED_1))
 
                 )
-                .department(DepartmentBuilder.of(GENERAL_STORE_GENERAL, new ItemIcon(HorticultureItems.WATERING_CAN.get().getDefaultInstance()), Component.translatable("department.harvestfestival.general_store_general"))
+                .department(department(GENERAL_STORE_GENERAL, new ItemIcon(WATERING_CAN.get().getDefaultInstance()), translatable("department.harvestfestival.general_store_general"))
                         .itemListing(HFItems.BLUE_FEATHER.get(), 10000) //TODO: Add Can_Propose Condition (Has 10 hearts with someone)
                         //TODO .itemListing(GastronomyItems.RICEBALL.get(), 100)
                         //TODO .itemListing(GastronomyItems.COOKING_OIL.get(), 50)
@@ -262,49 +278,52 @@ public class HFDepartments extends AbstractPenguinRegistryProvider<Department> {
                 .save(map);
     }
 
+    private ItemIcon icon(ItemLike item) {
+        return new ItemIcon(item.asItem().getDefaultInstance());
+    }
+
     private void buildPoultryFarm(Map<ResourceLocation, Department> map) {
-        ShopBuilder.of(HFShops.POULTRY_FARM)
-                .vendor(Vendor.entity(SettlementsEntities.NPC.get()))
-                .condition(EntityHasNBTTagCondition.entityHasNBTTag("NPC", "harvestfestival:ashlee"))
-                .condition(OpeningHoursCondition.openingHours()
-                        .withHours(DayOfWeek.MONDAY, 6000, 12000)
-                        .withHours(DayOfWeek.TUESDAY, 6000, 12000)
-                        .withHours(DayOfWeek.WEDNESDAY, 6000, 12000)
-                        .withHours(DayOfWeek.THURSDAY, 6000, 12000)
-                        .withHours(DayOfWeek.FRIDAY, 6000, 12000)
-                        .withHours(DayOfWeek.SATURDAY, 6000, 12000)
+        ShopBuilder.of(POULTRY_FARM)
+                .vendor(entityVendor(SettlementsEntities.NPC.get()))
+                .condition(entityHasNBTTag("NPC", "harvestfestival:ashlee"))
+                .condition(openingHours()
+                        .withHours(MONDAY, 6000, 12000)
+                        .withHours(TUESDAY, 6000, 12000)
+                        .withHours(WEDNESDAY, 6000, 12000)
+                        .withHours(THURSDAY, 6000, 12000)
+                        .withHours(FRIDAY, 6000, 12000)
+                        .withHours(SATURDAY, 6000, 12000)
                         .build())
-                .department(DepartmentBuilder.of(HFShops.POULTRY_FARM, new ItemIcon(HusbandryItems.BIRD_FEED.get().getDefaultInstance()), Component.translatable("department.harvestfestival.poultry_farm"))
-                        .itemListing(HusbandryItems.BIRD_FEED.get(), 25)
-                       //TODO? .itemListing(HusbandryItems.RABBIT_FOOD.get(), 50)
-                        .itemListing(HusbandryItems.GENERIC_TREAT.get(), 10)
-                        .itemListing(HusbandryItems.CHICKEN_TREAT.get(), 25)
-                       //TODO?  .itemListing(HusbandryItems.DUCK_TREAT.get(), 20)
-                        .itemListing(HusbandryItems.RABBIT_TREAT.get(), 40)
-                        .listing(ListingBuilder.of("chicken").addSublisting(SublistingBuilder.entity(EntityType.CHICKEN).cost(1500)).stockMechanic(HFStockMechanics.LIMITED_FOUR)) //Add Condition for Space in Coop
+                .department(department(POULTRY_FARM, icon(BIRD_FEED), translatable("department.harvestfestival.poultry_farm"))
+                        .itemListing(BIRD_FEED.get(), 25)
+                        //TODO? .itemListing(HusbandryItems.RABBIT_FOOD.get(), 50)
+                        .itemListing(GENERIC_TREAT.get(), 10)
+                        .itemListing(CHICKEN_TREAT.get(), 25)
+                        //TODO?  .itemListing(HusbandryItems.DUCK_TREAT.get(), 20)
+                        .itemListing(RABBIT_TREAT.get(), 40)
+                        .entityListing(CHICKEN, 1500, LIMITED_FOUR) //Add Condition for Space in Coop
                         //TODO?. listing(ListingBuilder.of("duck").addSublisting(SublistingBuilder.entity(HusbandryEntities.DUCK.get()).cost(2000)).stockMechanic(HFStockMechanics.LIMITED_FOUR)) //Add Condition for Space in Coop and Medium Coop
-                        .listing(ListingBuilder.of("rabbit").addSublisting(SublistingBuilder.entity(EntityType.RABBIT).cost(5000)).stockMechanic(HFStockMechanics.LIMITED_FOUR)) //Add Condition for Space in Coop and Large Coop
-                        .listing(ListingBuilder.of("name_tag").addSublisting(SublistingBuilder.item(Items.NAME_TAG).cost(250)).stockMechanic(HFStockMechanics.LIMITED_FOUR)))
+                        .entityListing(RABBIT, 5000, LIMITED_FOUR) //Add Condition for Space in Coop and Large Coop
+                        .itemListing(NAME_TAG, 250, LIMITED_FOUR))
                 .save(map);
     }
 
     private void buildTackleShop(Map<ResourceLocation, Department> map) {
-        ShopBuilder.of(HFShops.TACKLE_SHOP)
-                .vendor(Vendor.entity(SettlementsEntities.NPC.get()))
-                .condition(EntityHasNBTTagCondition.entityHasNBTTag("NPC", "harvestfestival:jakob"))
-                .condition(OpeningHoursCondition.openingHours()
-                        .withHours(DayOfWeek.TUESDAY, 13000, 19000)
+        ShopBuilder.of(TACKLE_SHOP)
+                .vendor(entityVendor(SettlementsEntities.NPC.get()))
+                .condition(entityHasNBTTag("NPC", "harvestfestival:jakob"))
+                .condition(openingHours()
+                        .withHours(TUESDAY, 13000, 19000)
                         .withHours(DayOfWeek.WEDNESDAY, 13000, 19000)
                         .withHours(DayOfWeek.THURSDAY, 13000, 19000)
                         .withHours(DayOfWeek.FRIDAY, 13000, 19000)
                         .build())
-                .condition(CompareCondition.compare(TeamStatusComparator.status("helped_yulif"),
-                        false, true, false, NumberComparator.number(1)))
-                .department(DepartmentBuilder.of(TACKLE_SHOP, new ItemIcon(Items.FISHING_ROD.getDefaultInstance()), Component.translatable("department.harvestfestival.tackle_shop"))
-                                .itemListing(PiscaryItems.BAIT.get(), 5)
-                                .listing(ListingBuilder.of("fishing_rod").addSublisting(SublistingBuilder.item(Items.FISHING_ROD).cost(1000)).stockMechanic(ShopaholicStockMechanics.LIMITED_ONE))
-                                .listing(ListingBuilder.of("fish_trap").addSublisting(SublistingBuilder.item(PiscaryItems.FISH_TRAP.asItem()).cost(200)).stockMechanic(HFStockMechanics.LIMITED_FIVE))
-                                .listing(ListingBuilder.of("hatchery").addSublisting(SublistingBuilder.item(PiscaryItems.HATCHERY.asItem()).cost(500)).stockMechanic(HFStockMechanics.LIMITED_THREE).condition(SeasonCondition.inSeason("summer")))
+                .condition(compare(teamStatus("helped_yulif"), false, true, false, number(1)))
+                .department(department(TACKLE_SHOP, itemIcon(FISHING_ROD), translatable("department.harvestfestival.tackle_shop"))
+                                .itemListing(BAIT.get(), 5)
+                                .itemListing(FISHING_ROD, 1000, LIMITED_ONE)
+                                .itemListing(FISH_TRAP, 200, LIMITED_FIVE)
+                                .itemListing(HATCHERY, 500, LIMITED_THREE, inSeason("summer"))
                         //TODO: Fish Trap Blueprint, One Per Player
                         //TODO: Hatchery Blueprint, One Per Player
                 )
