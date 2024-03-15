@@ -17,7 +17,13 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:golden_apple"
+        "item": "harvestfestival:jam_bun"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "tag": "forge:crops/apple"
       },
       "value": -800
     },
@@ -29,9 +35,9 @@
     },
     {
       "item": {
-        "tag": "forge:crops/melon"
+        "tag": "forge:crops/tomato"
       },
-      "value": -800
+      "value": 200
     },
     {
       "item": {
@@ -41,19 +47,13 @@
     },
     {
       "item": {
-        "item": "harvestfestival:jam_bun"
+        "tag": "forge:crops/melon"
       },
-      "value": 200
+      "value": -800
     },
     {
       "item": {
-        "tag": "forge:crops/tomato"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/apple"
+        "item": "minecraft:golden_apple"
       },
       "value": -800
     }

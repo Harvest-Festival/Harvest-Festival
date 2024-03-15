@@ -25,13 +25,13 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:dusts/prismarine"
+        "tag": "forge:gems/prismarine"
       },
       "value": 500
     },
     {
       "item": {
-        "item": "piscary:stingray"
+        "item": "piscary:electric_ray"
       },
       "value": 1000
     },
@@ -43,9 +43,15 @@
     },
     {
       "item": {
-        "item": "horticulture:happy_eggplant"
+        "item": "harvestfestival:orichalc"
       },
-      "value": -400
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/prismarine"
+      },
+      "value": 500
     },
     {
       "item": {
@@ -55,25 +61,19 @@
     },
     {
       "item": {
-        "item": "piscary:electric_ray"
+        "tag": "forge:crops/eggplant"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "piscary:stingray"
       },
       "value": 1000
     },
     {
       "item": {
-        "item": "harvestfestival:orichalc"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:gems/prismarine"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:crops/eggplant"
+        "item": "horticulture:happy_eggplant"
       },
       "value": -400
     }

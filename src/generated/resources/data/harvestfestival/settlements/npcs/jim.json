@@ -41,39 +41,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:gems/pink_diamond"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "minecraft:saddle"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:name_tag"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
         "tag": "forge:gems/alexandrite"
       },
       "value": -800
-    },
-    {
-      "item": {
-        "item": "husbandry:boiled_egg"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "item": "harvestfestival:mayonnaise"
-      },
-      "value": -200
     },
     {
       "item": {
@@ -83,13 +53,37 @@
     },
     {
       "item": {
+        "item": "harvestfestival:mayonnaise"
+      },
+      "value": -200
+    },
+    {
+      "item": {
         "tag": "forge:crops/wheat"
       },
       "value": 500
     },
     {
       "item": {
-        "tag": "forge:gems/diamond"
+        "item": "husbandry:boiled_egg"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "item": "minecraft:saddle"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:gems/pink_diamond"
       },
       "value": -800
     },
@@ -101,9 +95,15 @@
     },
     {
       "item": {
-        "item": "minecraft:rabbit_foot"
+        "tag": "forge:gems/diamond"
       },
-      "value": 500
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:name_tag"
+      },
+      "value": 1000
     }
   ],
   "inside_color": "#DE7245",

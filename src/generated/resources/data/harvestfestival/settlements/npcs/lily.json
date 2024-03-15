@@ -29,13 +29,25 @@
   "gift_item_overrides": [
     {
       "item": {
+        "item": "minecraft:cake"
+      },
+      "value": -400
+    },
+    {
+      "item": {
         "item": "minecraft:cookie"
       },
       "value": -800
     },
     {
       "item": {
-        "item": "horticulture:cornflakes"
+        "item": "harvestfestival:tea"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "husbandry:ice_cream"
       },
       "value": -200
     },
@@ -47,19 +59,7 @@
     },
     {
       "item": {
-        "item": "harvestfestival:tea"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:cake"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "item": "husbandry:ice_cream"
+        "item": "horticulture:cornflakes"
       },
       "value": -200
     }

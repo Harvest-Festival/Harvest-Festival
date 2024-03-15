@@ -29,55 +29,7 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "horticulture:salad"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "item": "horticulture:boiled_spinach"
-      },
-      "value": -200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/beetroot"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:crops/carrot"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:crops/corn"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:melon"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
         "tag": "forge:crops/pineapple"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:crops/green_pepper"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "tag": "forge:gems/quartz"
       },
       "value": 500
     },
@@ -89,15 +41,51 @@
     },
     {
       "item": {
+        "tag": "forge:crops/potato"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:crops/beetroot"
+      },
+      "value": -800
+    },
+    {
+      "item": {
         "item": "horticulture:tomato_juice"
       },
       "value": -200
     },
     {
       "item": {
-        "tag": "forge:crops/potato"
+        "tag": "forge:gems/quartz"
       },
-      "value": -800
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:crops/corn"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "horticulture:salad"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "tag": "forge:crops/melon"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:crops/green_pepper"
+      },
+      "value": 200
     },
     {
       "item": {
@@ -107,7 +95,19 @@
     },
     {
       "item": {
-        "tag": "forge:crops/melon"
+        "tag": "forge:crops/carrot"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "horticulture:boiled_spinach"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "minecraft:melon"
       },
       "value": 1000
     }

@@ -33,13 +33,37 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:bone"
+        "item": "harvestfestival:blue_magic_flower"
       },
-      "value": 500
+      "value": 1000
     },
     {
       "item": {
-        "item": "harvestfestival:blue_magic_flower"
+        "item": "harvestfestival:red_magic_flower"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "harvestfestival:toy_flower"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:crops/corn"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "harvestfestival:moondrop_flower"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:gems/moonstone"
       },
       "value": 1000
     },
@@ -57,45 +81,9 @@
     },
     {
       "item": {
-        "item": "harvestfestival:toy_flower"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "harvestfestival:red_magic_flower"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "horticulture:cornflakes"
+        "item": "horticulture:baked_corn"
       },
       "value": 200
-    },
-    {
-      "item": {
-        "item": "harvestfestival:moondrop_flower"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:crops/green_pepper"
-      },
-      "value": -200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/corn"
-      },
-      "value": -200
-    },
-    {
-      "item": {
-        "tag": "forge:gems/moonstone"
-      },
-      "value": 1000
     },
     {
       "item": {
@@ -105,7 +93,19 @@
     },
     {
       "item": {
-        "item": "horticulture:baked_corn"
+        "tag": "forge:crops/green_pepper"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "item": "minecraft:bone"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "horticulture:cornflakes"
       },
       "value": 200
     }

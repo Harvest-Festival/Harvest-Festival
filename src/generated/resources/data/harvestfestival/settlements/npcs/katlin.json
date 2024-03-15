@@ -29,9 +29,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "tag": "forge:crops/beetroot"
+        "tag": "minecraft:wool"
       },
-      "value": 500
+      "value": 1000
     },
     {
       "item": {
@@ -47,9 +47,9 @@
     },
     {
       "item": {
-        "tag": "minecraft:wool"
+        "item": "minecraft:coal"
       },
-      "value": 1000
+      "value": -800
     },
     {
       "item": {
@@ -59,9 +59,9 @@
     },
     {
       "item": {
-        "item": "minecraft:coal"
+        "tag": "forge:crops/beetroot"
       },
-      "value": -800
+      "value": 500
     }
   ],
   "inside_color": "#DDDDDD",

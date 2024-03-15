@@ -49,6 +49,12 @@
   "gift_item_overrides": [
     {
       "item": {
+        "item": "minecraft:cocoa_beans"
+      },
+      "value": 500
+    },
+    {
+      "item": {
         "item": "minecraft:string"
       },
       "value": -800
@@ -64,12 +70,6 @@
         "item": "minecraft:fermented_spider_eye"
       },
       "value": -800
-    },
-    {
-      "item": {
-        "item": "minecraft:cocoa_beans"
-      },
-      "value": 500
     }
   ],
   "inside_color": "#BEC8EE",

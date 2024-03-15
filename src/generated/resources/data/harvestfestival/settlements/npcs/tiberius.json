@@ -25,39 +25,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:clock"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "harvestfestival:pink_cat_flower"
+        "tag": "forge:gems/sand_rose"
       },
       "value": -800
-    },
-    {
-      "item": {
-        "item": "minecraft:rabbit_foot"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:dyes"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "tag": "forge:dusts/redstone"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:crops/spinach"
-      },
-      "value": -400
     },
     {
       "item": {
@@ -73,9 +43,9 @@
     },
     {
       "item": {
-        "tag": "forge:gems/sand_rose"
+        "item": "minecraft:clock"
       },
-      "value": -800
+      "value": 1000
     },
     {
       "item": {
@@ -85,9 +55,39 @@
     },
     {
       "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:crops/spinach"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:dyes"
+      },
+      "value": -800
+    },
+    {
+      "item": {
         "item": "horticulture:boiled_spinach"
       },
       "value": -200
+    },
+    {
+      "item": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "harvestfestival:pink_cat_flower"
+      },
+      "value": -800
     }
   ],
   "inside_color": "#305A2E",

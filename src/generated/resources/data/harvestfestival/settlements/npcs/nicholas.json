@@ -21,24 +21,6 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:pufferfish"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "item": "minecraft:honeycomb"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:skeleton_skull"
-      },
-      "value": -800
-    },
-    {
-      "item": {
         "item": "husbandry:boiled_egg"
       },
       "value": 200
@@ -51,9 +33,9 @@
     },
     {
       "item": {
-        "item": "minecraft:golden_apple"
+        "item": "minecraft:bone"
       },
-      "value": 1000
+      "value": -800
     },
     {
       "item": {
@@ -63,15 +45,33 @@
     },
     {
       "item": {
-        "item": "minecraft:bone"
+        "item": "minecraft:honeycomb"
       },
-      "value": -800
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:golden_apple"
+      },
+      "value": 1000
     },
     {
       "item": {
         "tag": "forge:crops/apple"
       },
       "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:pufferfish"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:skeleton_skull"
+      },
+      "value": -800
     }
   ],
   "inside_color": "#DD9C0C",

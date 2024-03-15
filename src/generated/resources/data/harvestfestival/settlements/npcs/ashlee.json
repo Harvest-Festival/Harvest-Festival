@@ -17,33 +17,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:beef"
+        "tag": "husbandry:rabbit_food"
       },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "horticulture:baked_corn"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:rabbit"
-      },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "husbandry:bird_feed"
-      },
-      "value": 200
-    },
-    {
-      "item": {
-        "tag": "forge:crops/banana"
-      },
-      "value": 1000
+      "value": -400
     },
     {
       "item": {
@@ -59,21 +35,45 @@
     },
     {
       "item": {
-        "item": "minecraft:mutton"
+        "item": "horticulture:baked_corn"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "tag": "forge:crops/banana"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:beef"
       },
       "value": -800
     },
     {
       "item": {
-        "tag": "husbandry:rabbit_food"
+        "item": "minecraft:rabbit"
       },
-      "value": -400
+      "value": -800
     },
     {
       "item": {
         "item": "husbandry:ice_cream"
       },
       "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:mutton"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "husbandry:bird_feed"
+      },
+      "value": 200
     }
   ],
   "inside_color": "#C62D2D",

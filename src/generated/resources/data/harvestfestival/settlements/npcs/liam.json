@@ -29,9 +29,39 @@
   "gift_item_overrides": [
     {
       "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "item": "piscary:fish_stew"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "husbandry:ice_cream"
+      },
+      "value": -800
+    },
+    {
+      "item": {
         "tag": "forge:nuggets/iron"
       },
       "value": 500
+    },
+    {
+      "item": {
+        "item": "horticulture:pumpkin_stew"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "item": "minecraft:painting"
+      },
+      "value": 1000
     },
     {
       "item": {
@@ -41,13 +71,13 @@
     },
     {
       "item": {
-        "item": "minecraft:cake"
+        "item": "harvestfestival:orichalc"
       },
-      "value": 200
+      "value": 500
     },
     {
       "item": {
-        "item": "piscary:fish_stew"
+        "item": "minecraft:mushroom_stew"
       },
       "value": -400
     },
@@ -59,27 +89,9 @@
     },
     {
       "item": {
-        "item": "husbandry:ice_cream"
+        "item": "minecraft:cake"
       },
-      "value": -800
-    },
-    {
-      "item": {
-        "item": "minecraft:painting"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/iron"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:rabbit_stew"
-      },
-      "value": -400
+      "value": 200
     },
     {
       "item": {
@@ -89,19 +101,7 @@
     },
     {
       "item": {
-        "item": "minecraft:mushroom_stew"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "item": "harvestfestival:orichalc"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "horticulture:pumpkin_stew"
+        "item": "minecraft:rabbit_stew"
       },
       "value": -400
     }

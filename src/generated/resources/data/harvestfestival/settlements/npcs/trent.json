@@ -21,39 +21,9 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "minecraft:milk_bucket"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:cooked_porkchop"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "tag": "forge:gems/jade"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "item": "minecraft:cooked_beef"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "minecraft:sunflower"
+        "item": "harvestfestival:cheese"
       },
       "value": 1000
-    },
-    {
-      "item": {
-        "tag": "forge:slimeballs"
-      },
-      "value": -800
     },
     {
       "item": {
@@ -63,43 +33,31 @@
     },
     {
       "item": {
-        "tag": "forge:gems/sapphire"
-      },
-      "value": -400
-    },
-    {
-      "item": {
-        "tag": "forge:gems/agate"
-      },
-      "value": 200
-    },
-    {
-      "item": {
         "tag": "forge:gems/fluorite"
       },
       "value": -400
     },
     {
       "item": {
-        "tag": "forge:gems/emerald"
+        "item": "minecraft:cooked_porkchop"
       },
-      "value": -400
+      "value": 500
     },
     {
       "item": {
-        "tag": "forge:gems/adamantite"
+        "item": "piscary:pirate_treasure"
       },
       "value": -800
     },
     {
       "item": {
-        "item": "harvestfestival:cheese"
+        "tag": "forge:gems/sapphire"
       },
-      "value": 1000
+      "value": -400
     },
     {
       "item": {
-        "tag": "forge:gems/topaz"
+        "item": "minecraft:milk_bucket"
       },
       "value": 500
     },
@@ -111,15 +69,57 @@
     },
     {
       "item": {
-        "item": "piscary:pirate_treasure"
+        "tag": "minecraft:bookshelf_books"
+      },
+      "value": -200
+    },
+    {
+      "item": {
+        "tag": "forge:gems/emerald"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:gems/agate"
+      },
+      "value": 200
+    },
+    {
+      "item": {
+        "tag": "forge:slimeballs"
       },
       "value": -800
     },
     {
       "item": {
-        "tag": "minecraft:bookshelf_books"
+        "item": "minecraft:sunflower"
       },
-      "value": -200
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "minecraft:cooked_beef"
+      },
+      "value": 500
+    },
+    {
+      "item": {
+        "tag": "forge:gems/jade"
+      },
+      "value": -400
+    },
+    {
+      "item": {
+        "tag": "forge:gems/adamantite"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "tag": "forge:gems/topaz"
+      },
+      "value": 500
     }
   ],
   "inside_color": "#F65FAB",

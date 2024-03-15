@@ -1,8 +1,6 @@
 {
   "class": {
-    "age": "child",
-    "floats": true,
-    "small_arms": true
+    "age": "child"
   },
   "gift_category_overrides": [
     {
@@ -37,31 +35,13 @@
   "gift_item_overrides": [
     {
       "item": {
-        "item": "horticulture:boiled_spinach"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:cactus"
-      },
-      "value": 1000
-    },
-    {
-      "item": {
-        "item": "minecraft:lily_pad"
-      },
-      "value": 500
-    },
-    {
-      "item": {
-        "item": "harvestfestival:wild_grapes"
-      },
-      "value": -800
-    },
-    {
-      "item": {
         "item": "horticulture:salad"
+      },
+      "value": 1000
+    },
+    {
+      "item": {
+        "item": "horticulture:boiled_spinach"
       },
       "value": 1000
     },
@@ -85,9 +65,27 @@
     },
     {
       "item": {
+        "item": "minecraft:lily_pad"
+      },
+      "value": 500
+    },
+    {
+      "item": {
         "tag": "forge:crops/spinach"
       },
       "value": 500
+    },
+    {
+      "item": {
+        "item": "harvestfestival:wild_grapes"
+      },
+      "value": -800
+    },
+    {
+      "item": {
+        "item": "minecraft:cactus"
+      },
+      "value": 1000
     }
   ],
   "inside_color": "#228C00",
